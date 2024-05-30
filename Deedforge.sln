@@ -7,9 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deedforge", "Deedforge\Deed
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deedforge.Client", "Deedforge\Deedforge.Client\Deedforge.Client.csproj", "{C0FA29B0-3F67-433F-BED6-6CFDA048130F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deedforge.Domain", "Deedforge.Domain\Deedforge.Domain.csproj", "{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deedforge.Domain", "Deedforge.Domain\Deedforge.Domain.csproj", "{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deedforge.Shared", "Deedforge.Shared\Deedforge.Shared.csproj", "{0D94C418-4F60-4185-939F-1039100A60C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deedforge.Shared", "Deedforge.Shared\Deedforge.Shared.csproj", "{0D94C418-4F60-4185-939F-1039100A60C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8CA71FDD-49EB-4845-84BC-90CF31852DBE}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
