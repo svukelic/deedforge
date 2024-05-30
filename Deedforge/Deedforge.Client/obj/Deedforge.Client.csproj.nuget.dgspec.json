@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj": {}
+    "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj": {
+    "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
         "projectName": "Deedforge.Domain",
-        "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
+        "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
         "packagesPath": "C:\\Users\\svenc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\obj\\",
+        "outputPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\svenc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj": {
+    "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj",
         "projectName": "Deedforge.Shared",
-        "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj",
+        "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj",
         "packagesPath": "C:\\Users\\svenc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Shared\\obj\\",
+        "outputPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\svenc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj": {
-                "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj"
+              "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj": {
+                "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj"
               }
             }
           }
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj": {
+    "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
+        "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
         "projectName": "Deedforge.Client",
-        "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
+        "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
         "packagesPath": "C:\\Users\\svenc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\obj\\",
+        "outputPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\svenc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -152,11 +152,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj": {
-                "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj"
+              "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj": {
+                "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj"
               },
-              "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj": {
-                "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj"
+              "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj": {
+                "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Deedforge.Shared.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QUIrvic9XpsL+Z2pjQWQWUlVAzLDN0/cTOBsEhkcSODj/ZKvU4snIocunbOcNewBZ0KrlRYbQF7yXd/hfsl+WQ==",
+  "dgSpecHash": "cvj3h8fO8+lVfxpIo6rhv+F3ggIQzfElw3F0//2AqsA+5nHL38sla/TBo0LWHt0aIXaAaC/Gs+gelixIiGe8xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
+  "projectFilePath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

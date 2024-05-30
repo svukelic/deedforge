@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
       "projectName": "Deedforge.Domain",
-      "projectPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
+      "projectPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Deedforge.Domain.csproj",
       "packagesPath": "C:\\Users\\svenc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge.Domain\\obj\\",
+      "outputPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\svenc\\AppData\\Roaming\\NuGet\\NuGet.Config",

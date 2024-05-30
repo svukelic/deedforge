@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bMi7Z/oC3iHTb/6jqQotdlUf5g4d0qWVEJwwEEcE6E1LZH3uTkHeZo2h84/3e5ajsxPv1CNXd2P1IbEKzJHhUQ==",
+  "dgSpecHash": "w3Qi4jaPsxxSO4BR3YMS/K3Xv7N/ymq4btLHam6PPEZ6hwKpvDmN4jxBcvaVZDwGZtHrlPFlcc8P0u5H52H7nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
+  "projectFilePath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\svenc\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.3\\microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
     "C:\\Users\\svenc\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.3\\microsoft.aspnetcore.components.8.0.3.nupkg.sha512",
