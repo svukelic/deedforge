@@ -1,0 +1,71 @@
+﻿@using Deedforge.Client.Helpers
+@implements IDisposable
+@inject NavigationManager NavigationManager
+
+<MudNavMenu Color="Color.Warning" Bordered="true">
+    <MudNavLink Href="/" Icon="@CustomIcons.Castle" Match="NavLinkMatch.All">Home</MudNavLink>
+
+    <MudNavLink Href="/character-creation" Icon="@Icons.Material.Filled.Engineering" Match="NavLinkMatch.Prefix">Character Creation</MudNavLink>
+
+    <MudDivider />
+
+    <MudNavGroup Title="Core Rules" Icon="@Icons.Material.Filled.LocalLibrary">
+        <MudNavLink Href="/core-rules/skills" Icon="@CustomIcons.WeightLiftingUp" Match="NavLinkMatch.Prefix">Skill Rules</MudNavLink>
+        <MudNavLink Href="/core-rules/skills-list" Icon="@CustomIcons.Skills" Match="NavLinkMatch.Prefix">List of Skills</MudNavLink>
+        <MudNavLink Href="/core-rules/actions-reactions" Icon="@CustomIcons.TeamIdea" Match="NavLinkMatch.Prefix">Actions & Reactions</MudNavLink>
+        <MudNavLink Href="/core-rules/damage-wounds" Icon="@CustomIcons.ArmSling" Match="NavLinkMatch.Prefix">Damage & Wounds</MudNavLink>
+        <MudNavGroup Title="Attacking" Icon="@CustomIcons.SwordSlice">
+            <MudNavLink Href="/core-rules/attacking/melee" Icon="@CustomIcons.AxeSwing" Match="NavLinkMatch.Prefix">Melee</MudNavLink>
+            <MudNavLink Href="/core-rules/attacking/ranged" Icon="@CustomIcons.ArrowFlights" Match="NavLinkMatch.Prefix">Ranged</MudNavLink>
+            <MudNavLink Href="/core-rules/attacking/magic" Icon="@CustomIcons.FireSpellCast" Match="NavLinkMatch.Prefix">Magic</MudNavLink>
+        </MudNavGroup>
+    </MudNavGroup>
+
+    <MudNavGroup Title="Character Rules" Icon="@CustomIcons.Conqueror">
+        <MudNavLink Href="/character-rules/archetypes" Icon="@CustomIcons.LaurelCrown" Match="NavLinkMatch.Prefix">Archetypes</MudNavLink>
+        <MudNavLink Href="/character-rules/professions" Icon="@CustomIcons.Farmer" Match="NavLinkMatch.Prefix">Professions</MudNavLink>
+        <MudNavLink Href="/character-rules/ancestries" Icon="@CustomIcons.FamilyTree" Match="NavLinkMatch.Prefix">Ancestries</MudNavLink>
+        <MudNavLink Href="/character-rules/traits" Icon="@CustomIcons.MasterOfArms" Match="NavLinkMatch.Prefix">Traits</MudNavLink>
+    </MudNavGroup>
+
+    <MudNavGroup Title="Encounters" Icon="@CustomIcons.Confrontation">
+        <MudNavLink Href="/encounters/combat" Icon="@CustomIcons.CrossedSwords" Match="NavLinkMatch.Prefix">Combat</MudNavLink>
+        <MudNavLink Href="/encounters/social" Icon="@CustomIcons.Discussion" Match="NavLinkMatch.Prefix">Social</MudNavLink>
+        <MudNavLink Href="/encounters/exploration" Icon="@CustomIcons.TreasureMap" Match="NavLinkMatch.Prefix">Exploration</MudNavLink>
+    </MudNavGroup>
+
+    <MudNavGroup Title="Gear" Icon="@CustomIcons.BattleGear">
+        <MudNavLink Href="/gear/armors" Icon="@CustomIcons.Breastplate" Match="NavLinkMatch.Prefix">Armors</MudNavLink>
+        <MudNavLink Href="/gear/shields" Icon="@CustomIcons.VikingShield" Match="NavLinkMatch.Prefix">Shields</MudNavLink>
+        <MudNavLink Href="/gear/weapons" Icon="@CustomIcons.SwitchWeapon" Match="NavLinkMatch.Prefix">Weapons</MudNavLink>
+        <MudNavLink Href="/gear/enchanted-items" Icon="@CustomIcons.MagicAxe" Match="NavLinkMatch.Prefix">Enchanted Items</MudNavLink>
+        <MudNavLink Href="/gear/adventuring-items" Icon="@CustomIcons.Backpack" Match="NavLinkMatch.Prefix">Adventuring Items</MudNavLink>
+        <MudNavLink Href="/gear/ammunition" Icon="@CustomIcons.Quiver" Match="NavLinkMatch.Prefix">Ammunition</MudNavLink>
+        <MudNavLink Href="/gear/prosthetics" Icon="@CustomIcons.HandWing" Match="NavLinkMatch.Prefix">Prosthetics</MudNavLink>
+    </MudNavGroup>
+
+    <MudDivider />
+
+    <MudNavLink Href="/change-log" Icon="@Icons.Material.Filled.Notes" Match="NavLinkMatch.Prefix">Change Log</MudNavLink>
+</MudNavMenu>
+
+@code {
+    private string? currentUrl;
+
+    protected override void OnInitialized()
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+}

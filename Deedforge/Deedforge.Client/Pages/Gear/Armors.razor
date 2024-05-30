@@ -1,0 +1,41 @@
+﻿@page "/gear/armors"
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Gear - Armors
+</PageTitle>
+
+<h1>Armors</h1>
+
+<div>
+    <br />
+
+    <MudText Typo="Typo.body1">Armors are a type of protective gear worn across the entirety of the body. Armors require specific training to be used, usually bestowed by the character's pick of Profession.</MudText>
+
+    <br />
+
+    <MudText Typo="Typo.body1"><b>Endurance</b> represents the overall durability the character has while wearing a particular armor. Endurance determines the value that the enemy needs to surpass when rolling to attack to actually hit you. Endurance can be further increased with specific features and effects, but is also decreased when the Armor receives <MudLink Href="/core-rules/damage-wounds">Damage</MudLink>.</MudText>
+
+    <br />
+
+    <MudText Typo="Typo.body1"><b>Number of Reactions</b> shows how many Reactions can a character wearing a particular armor take each Turn. More details regarding actions can be found here: <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink></MudText>
+
+    <br />
+</div>
+
+<MudTable Items="@CompendiumService.Compendium.Armors" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh><MudText Typo="Typo.h5">Name</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h5">Description</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h5">Endurance</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h5">Number of Reactions</MudText></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Description">@context.Description</MudTd>
+        <MudTd DataLabel="Endurance">@context.Endurance</MudTd>
+        <MudTd DataLabel="Number of Reactions">@context.NumberOfReactions</MudTd>
+    </RowTemplate>
+</MudTable>

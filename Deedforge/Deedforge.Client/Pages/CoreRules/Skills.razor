@@ -1,0 +1,224 @@
+﻿@page "/core-rules/skills"
+
+<PageTitle>
+    Core Rules - Skills
+</PageTitle>
+
+<h1>Skills</h1>
+
+<MudGrid>
+    <MudItem xs="6">
+        <MudText Typo="@Typo.body1">
+            The skills are the bread and butter of who your character is and what they can do.
+            <br />
+            <br />
+            Skills are used to determine how well you do anything that you attempt to do, be it recall knowledge about particular subject, strike a foe or resist a mind-bending effect.
+            <br />
+            <br />
+            Character's starting Skill Proficiencies are defined as part of the <MudLink Href="/character-creation">Character Creation</MudLink> process.
+            <br />
+            <br />
+            <b>Base Die.</b> Base Die is always a d12. When making a skill check or a weapon check, you always roll a Base Die, even if you are untrained in the skill
+            <br />
+            <br />
+            <b>Proficiency Die.</b> When you are making a Skill Check, you roll a Proficiency Die. Which die you roll depends your Proficiency tier with that skill.
+        </MudText>
+    </MudItem>
+    <MudItem xs="6">
+        <MudSimpleTable>
+            <thead class="table-header">
+                <tr>
+                    <th><MudText Typo="@Typo.h6">Proficiency Tier</MudText></th>
+                    <th><MudText Typo="@Typo.h6">Proficiency Die</MudText></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inexperienced</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Trained</td>
+                    <td>d4</td>
+                </tr>
+                <tr>
+                    <td>Adept</td>
+                    <td>d6</td>
+                </tr>
+                <tr>
+                    <td>Veteran</td>
+                    <td>d8</td>
+                </tr>
+                <tr>
+                    <td>Master</td>
+                    <td>d10</td>
+                </tr>
+                <tr>
+                    <td>Legendary</td>
+                    <td>d12</td>
+                </tr>
+            </tbody>
+        </MudSimpleTable>
+    </MudItem>
+</MudGrid>
+
+<br />
+
+<MudText Typo="@Typo.h5">
+    Resolving Skill Rolls
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    When a Skill Check is called, you roll a Base Die and a Proficiency Die corresponding to your proficiency in that Skill.
+    <br />
+    <br />
+    <b>Final result of a Skill Check is the sum of Base Die and the Proficiency Die that you rolled for that check.</b>
+    <br />
+    <br />
+    In order to ascertain whether the Skill Check was successful, the GM decides whether the roll was made as part of a Contested Check or Against Difficulty Rating.
+    <br />
+    <br />
+    Contested Check means that two different characters made Skill Checks opposing each other (for example, trying to push each other), and it is considered that whoever rolled higher is the winner of that contest.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Attributes
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Attributes are special Skills that are primarily used and called out by the GM to determine whether a character can resist or persist through an effect they were exposed to.
+    <br />
+    <br />
+    All Skills are split into five groups of Attributes. It is said that a Skill “contributes” to the Attribute it is assigned to.
+    <br />
+    <br />
+    Attributes otherwise functional equal to Skills, except one important distinction: a character cannot invest a Skill Boost in an Attribute. Instead, for every three Skill Boosts in Skills which contribute to a particular Attribute, that Attribute automatically gains a Skill Boost. Certain features may grant a character an ability for a specific Skill to contribute to additional Attributes.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Upper & Lower Hand
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    When a feature states that you have Upper Hand on a check or a roll, you roll an additional Proficiency Die and add the result of that roll to your check.
+    <br />
+    <br />
+    When a feature states that you have Lower Hand on a check or a roll, you do not roll Proficiency Die for that check. If you are Inexperienced in the Skill you are rolling with a Lower Hand, you then halve the result.
+    <br />
+    <br />
+    If you have both Upper and Lower Hand at the same time, they negate each other and you don’t roll any additional dice.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Difficulty Rating & Passive Checks
+</MudText>
+
+<br />
+
+<MudGrid>
+    <MudItem xs="6">
+        <MudText Typo="@Typo.body1">
+            Certain actions require players to make a Skill Check in order to determine whether they are successful, but there is nothing to “contest” that roll. In that case, a Difficulty Rating (DR) is used.
+            <br />
+            <br />
+            <b>Proficiency Tier for Passive DR</b> denotes what is the Difficulty Rating based on the specific Skill Proficiency Tier for Passive Checks against that Skill.
+            <br />
+            <br />
+            e.g. When a character is trying to sneak past a guard who is not actively searching for intruders, they will make a Subterfuge check against guard’s Passive Perception DR. If the guard has Adept Proficiency in Perception, the DR for that check is set as 6.            <br />
+        </MudText>
+    </MudItem>
+    <MudItem xs="6">
+        <MudSimpleTable>
+            <thead class="table-header">
+                <tr>
+                    <th><MudText Typo="@Typo.h6">Difficulty</MudText></th>
+                    <th><MudText Typo="@Typo.h6">Proficiency Tier<br />for Passive DR</MudText></th>
+                    <th><MudText Typo="@Typo.h6">Difficulty Rating</MudText></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trivial</td>
+                    <td>Trained</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Easy</td>
+                    <td>Adept</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Moderate</td>
+                    <td>Veteran</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Hard</td>
+                    <td>Master</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Very Hard</td>
+                    <td>Legendary</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </MudSimpleTable>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Success Tiers
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    <b>Success Tier</b> denotes how well a character has done on a particular skill check. A character is said to met a Success Tier for each increment of 4 they have exceeded the Difficulty Rating of the check.
+    <br />
+    <br />
+    Certain features grant additional benefits for each Success Tier. For example, Forage Rest Action grants more gathered materials for each Success Tier.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Group Checks
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    When the entire party of characters attempts to engage in a particular activity, the GM may call for a <b>Group Check</b>.
+    <br />
+    <br />
+    When a Group Check is called, the entire party rolls the Skill Check. If half or more of the rolls beat the DR (or contested roll), it is considered that the entire party succeeded.
+    <br />
+    <br />
+    Every additional success after meeting the prerequisites is considered to increase Success Tier of the overall roll.
+    <br />
+    <br />
+    If a character rolls double the DR of the check, it counts as an additional success.
+</MudText>
+
+<br />
+<br />

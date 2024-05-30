@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\obj\\Debug\\net8.0\\compressed\\fvbd33oj5i.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Deedforge.Client.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Deedforge.Client.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\svenc\\source\\repos\\Deedforge\\Deedforge\\Deedforge.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Deedforge.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Deedforge.Client.props",
+      "PackagePath": "build\\Deedforge.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Deedforge.Client.props",
+      "PackagePath": "buildMultiTargeting\\Deedforge.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Deedforge.Client.props",
+      "PackagePath": "buildTransitive\\Deedforge.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

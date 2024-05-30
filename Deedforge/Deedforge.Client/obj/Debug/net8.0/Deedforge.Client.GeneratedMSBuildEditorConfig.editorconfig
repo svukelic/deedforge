@@ -1,0 +1,63 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Deedforge.Client
+build_property.RootNamespace = Deedforge.Client
+build_property.ProjectDir = C:\Users\svenc\source\repos\Deedforge\Deedforge\Deedforge.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\svenc\source\repos\Deedforge\Deedforge\Deedforge.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Pages/CoreRules/Attacking/Melee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXEF0dGFja2luZ1xNZWxlZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Pages/CoreRules/Skills.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXFNraWxscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Pages/CoreRules/SkillsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXFNraWxsc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Pages/Gear/Armors.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VhclxBcm1vcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Pages/Gear/Shields.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VhclxTaGllbGRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Um91dGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-osn6vvwp7s
+
+[C:/Users/svenc/source/repos/Deedforge/Deedforge/Deedforge.Client/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-dimy7hultj

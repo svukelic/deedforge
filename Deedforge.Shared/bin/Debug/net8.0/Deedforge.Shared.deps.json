@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Deedforge.Shared/1.0.0": {
+        "dependencies": {
+          "Deedforge.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Deedforge.Shared.dll": {}
+        }
+      },
+      "Deedforge.Domain/1.0.0": {
+        "runtime": {
+          "Deedforge.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Deedforge.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Deedforge.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

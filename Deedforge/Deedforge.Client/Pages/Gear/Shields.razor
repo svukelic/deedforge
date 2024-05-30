@@ -1,0 +1,42 @@
+﻿@page "/gear/shields"
+@using Deedforge.Shared.Compendium
+@using Deedforge.Client.Helpers
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Gear - Shields
+</PageTitle>
+
+<h1>Shields</h1>
+
+<div>
+    <br />
+
+    <MudText Typo="Typo.body1">Shields are defensive items that, just like Armors, require training in order to be properly used.</MudText>
+
+    <br />
+
+    <MudText Typo="Typo.body1">While wielding a Shield that you are trained in, you gain benefits and effects from the Properties column of the worn Shield.</MudText>
+
+    <br />
+
+    <MudText Typo="Typo.body1"><b>Endurance</b> represents the overall durability the Shield has when a character wielding it takes <i>Block</i> Reaction (if the Shield provides that capability). Endurance is decreased when the Shield receives <MudLink Href="/core-rules/damage-wounds">Damage</MudLink>.</MudText>
+
+    <br />
+</div>
+
+<MudTable Items="@CompendiumService.Compendium.Shields" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh><MudText Typo="Typo.h5">Name</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h5">Description</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h5">Endurance</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h5">Properties</MudText></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Description">@context.Description</MudTd>
+        <MudTd DataLabel="Endurance">@context.Endurance</MudTd>
+        <MudTd DataLabel="Properties">@MarkupStringHelper.GetMarkupString(context.Property)</MudTd>
+    </RowTemplate>
+</MudTable>

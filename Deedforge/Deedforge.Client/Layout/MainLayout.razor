@@ -1,0 +1,63 @@
+﻿@using Deedforge.Shared.Compendium
+@inherits LayoutComponentBase
+
+@inject ICompendiumService CompendiumObj
+@inject IDataFetchService DataFetchService
+
+<MudThemeProvider IsDarkMode="true" Theme="@MyCustomTheme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudDrawer
+        @bind-Open="@_drawerOpen"
+        Fixed="true"
+        Elevation="1"
+        Color="Color.Dark"
+        Variant="@DrawerVariant.Mini"
+        OpenMiniOnHover="true"
+        ClipMode="DrawerClipMode.Never">
+        <NavMenu />
+        <MudSpacer></MudSpacer>
+        <MudImage Src="images/DeedforgeLogo-nobg.png" Alt="Deedforge" />
+    </MudDrawer>
+    <MudMainContent Class="container-background">
+        <MudContainer MaxWidth="MaxWidth.Large" Class="py-8">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        CompendiumObj.Compendium = await DataFetchService.GetCompendiumData();
+    }
+
+    MudTheme MyCustomTheme = new MudTheme()
+    {
+        PaletteDark = new PaletteDark()
+        {
+            Dark = "rgba(35, 35, 35, 1)",
+            Tertiary = "rgba(146, 142, 117, 1)",
+        },
+        LayoutProperties = new LayoutProperties()
+        {
+            DrawerMiniWidthLeft = "80px"
+        },
+        Typography = new Typography()
+        {
+            Default = new Default()
+            {
+                FontFamily = new[] { "Marcellus-Regular" }
+            }
+        }
+    };
+
+    bool _drawerOpen = false;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}
