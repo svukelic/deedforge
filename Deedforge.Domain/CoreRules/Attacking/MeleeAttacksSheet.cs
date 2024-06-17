@@ -344,6 +344,7 @@
                 {
                     Name = "Dervish's Slash",
                     Description = "On a hit, the target becomes Numb (Leg).",
+                    BaseForm = BaseAttackForms.Slash
                 }
             };
         }

@@ -10,6 +10,6 @@ namespace Deedforge.Domain.CharacterRules.Archetypes
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public List<ArchetypeFeature> Features { get; set; }
+        //public List<ArchetypeFeature> Features { get; set; }
     }
 }

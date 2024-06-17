@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Deedforge.Client",
   "resources": {
-    "hash": "sha256-YY4RKsEX0et4WvbfikNP3CqgW9SU7M+eoLuUvihi6n4=",
+    "hash": "sha256-D3t53QcVcU2OO0BQpZF4WQ1taJtotPXhLkP5Jhh1Ngs=",
     "jsModuleNative": {
       "dotnet.native.8.0.3.9nm7bajy7e.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
     },
@@ -211,14 +211,14 @@
       "mscorlib.wasm": "sha256-/xjZuJwCmantx5vGyH5ZZ8keySSTeu+YHKQRJbZzcuM=",
       "netstandard.wasm": "sha256-vuFKmCGJbyv85DrzI6S1ZvCikuhIllH6hqbXIL+fUAA=",
       "System.Private.CoreLib.wasm": "sha256-SZkozEDkHEFN0VaDmhl2HOenGaqTOmHqEGkraz3Aejc=",
-      "Deedforge.Domain.wasm": "sha256-IqkeZkViIxi3Z1xeFZpp0aqpWD9A8lz7DA5zNNJCZDA=",
-      "Deedforge.Shared.wasm": "sha256-VR+JYro575zFIIJln7bi+GhvooWo4CxcGtO+D9PNaPA=",
-      "Deedforge.Client.wasm": "sha256-M6i5FtH/WwoypjXjs6GRMh1Cl92Iy9cCKHJbMW8dhHw="
+      "Deedforge.Domain.wasm": "sha256-fUxQ3obXZqXi2P/5inpcH5uAR1a28MNZCo7yRFIz69w=",
+      "Deedforge.Shared.wasm": "sha256-I3tMHP0YD8LhOLvRURMNhpRqOCWRCue9dP8HUnFOfF0=",
+      "Deedforge.Client.wasm": "sha256-Rm0tLSVK9eLLmt9FRs4wy6hlNWbHLFOrBqMpTne837M="
     },
     "pdb": {
-      "Deedforge.Domain.pdb": "sha256-P+6QxJ7ULiXbDeriFxZVAW12Z1N/GNirE48BRBfiGHE=",
-      "Deedforge.Shared.pdb": "sha256-d0omsFZcnzoRv5HOEt99tVKzJ+O3reZl8q2R/x8SLZA=",
-      "Deedforge.Client.pdb": "sha256-U39l3KXIWQrYGi2TR0is0OWllaT/RaeynfHZ6QkrIfk="
+      "Deedforge.Domain.pdb": "sha256-4YSEfNtAedcRpLnLTiwCihjmRl92CnM4fAc9Yvq6yHM=",
+      "Deedforge.Shared.pdb": "sha256-LQ/VMbvzyPwDGwoHtyQ9+VR8FRyvV4bFa/Bs+l/frUo=",
+      "Deedforge.Client.pdb": "sha256-TJJb5Loi6Wk/wOMw++JoLhRANjxg3wIM3bGLqHzi5LE="
     }
   },
   "cacheBootResources": true,
