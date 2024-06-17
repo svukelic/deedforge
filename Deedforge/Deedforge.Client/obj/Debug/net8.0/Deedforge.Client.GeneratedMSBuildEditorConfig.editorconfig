@@ -22,6 +22,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge.Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/svenc/source/repos/svukelic/deedforge/Deedforge/Deedforge.Client/Pages/CoreRules/Attacking/AttackStyleComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXEF0dGFja2luZ1xBdHRhY2tTdHlsZUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/svenc/source/repos/svukelic/deedforge/Deedforge/Deedforge.Client/Pages/CoreRules/Attacking/Melee.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29yZVJ1bGVzXEF0dGFja2luZ1xNZWxlZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

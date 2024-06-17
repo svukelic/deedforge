@@ -60,6 +60,7 @@ C:\Users\svenc\source\repos\Deedforge\Deedforge\Deedforge\obj\Debug\net8.0\refin
 C:\Users\svenc\source\repos\Deedforge\Deedforge\Deedforge\obj\Debug\net8.0\Deedforge.pdb
 C:\Users\svenc\source\repos\Deedforge\Deedforge\Deedforge\obj\Debug\net8.0\Deedforge.genruntimeconfig.cache
 C:\Users\svenc\source\repos\Deedforge\Deedforge\Deedforge\obj\Debug\net8.0\ref\Deedforge.dll
+C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\Deedforge.Client.staticwebassets.runtime.json
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\appsettings.json
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
@@ -73,7 +74,6 @@ C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.NET.WebAssembly.Webcil.dll
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
-C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\Deedforge.Client.staticwebassets.runtime.json
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\Deedforge.staticwebassets.runtime.json
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\Deedforge.exe
 C:\Users\svenc\source\repos\svukelic\deedforge\Deedforge\Deedforge\bin\Debug\net8.0\Deedforge.deps.json

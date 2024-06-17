@@ -1,4 +1,5 @@
-﻿using Deedforge.Domain.Gear;
+﻿using Deedforge.Domain.CoreRules.Attacking;
+using Deedforge.Domain.Gear;
 using Deedforge.Shared.Compendium;
 using System.Reflection;
 
@@ -13,7 +14,7 @@ namespace Deedforge.Services
             var data = new CompendiumData
             {
                 Armors = await GetProperties<Armor, Armors>(),
-                Shields = await GetProperties<Shield, Shields>()
+                Shields = await GetProperties<Shield, Shields>(),
             };
 
             return data;

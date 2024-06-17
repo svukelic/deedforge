@@ -1,4 +1,7 @@
 ﻿@page "/core-rules/attacking/melee"
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
 
 <PageTitle>
     Core Rules - Attacking - Melee
@@ -8,11 +11,8 @@
 
 <MudTabs Outlined="true" Position="@Position.Left" Rounded="true" Border="true"
          ApplyEffectsToContainer="true" Class="mt-8" PanelClass="pa-6">
-    <MudTabPanel Text="Base Attack Forms">
-        <MudText>Content One</MudText>
-    </MudTabPanel>
     <MudTabPanel Text="Berserker">
-        <MudText>Content One</MudText>
+        <AttackStyleComponent AttackStyle="@CompendiumService.Compendium.MeleeAttackSheets.Berserker" />
     </MudTabPanel>
     <MudTabPanel Text="Maverick">
         <MudText>Content Two</MudText>

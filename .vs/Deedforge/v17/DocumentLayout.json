@@ -3,60 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\corerules\\skillslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\corerules\\skillslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\corerules\\skills.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\corerules\\skills.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\helpers\\customicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\helpers\\customicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge\\wwwroot\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|solutionrelative:deedforge\\deedforge\\wwwroot\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\gear\\armors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\gear\\armors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\gear\\shields.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\gear\\shields.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\corerules\\attacking\\attackstylecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\corerules\\attacking\\attackstylecomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\corerules\\attacking\\melee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\corerules\\attacking\\melee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\corerules\\attacking\\meleeattackssheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\corerules\\attacking\\meleeattackssheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\gear\\shields.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\gear\\shields.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\helpers\\markupstringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\helpers\\markupstringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\gear\\armors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\gear\\armors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\gear\\shields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\gear\\shields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D94C418-4F60-4185-939F-1039100A60C2}|Deedforge.Shared\\Deedforge.Shared.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.shared\\helpers\\stringhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D94C418-4F60-4185-939F-1039100A60C2}|Deedforge.Shared\\Deedforge.Shared.csproj|solutionrelative:deedforge.shared\\helpers\\stringhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\corerules\\attacking\\baseattackforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\corerules\\attacking\\baseattackforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge\\services\\datafetchservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,12 +35,52 @@
       "RelativeMoniker": "D:0:0:{0D94C418-4F60-4185-939F-1039100A60C2}|Deedforge.Shared\\Deedforge.Shared.csproj|solutionrelative:deedforge.shared\\compendium\\compendiumdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\corerules\\attacking\\baseattackforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\corerules\\attacking\\baseattackforms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\gear\\armors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\gear\\armors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\corerules\\attacking\\meleeattackssheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\corerules\\attacking\\meleeattackssheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\corerules\\skills.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\corerules\\skills.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\gear\\shields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\gear\\shields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\gear\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|solutionrelative:deedforge.domain\\gear\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\corerules\\skillslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\corerules\\skillslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\gear\\armors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\gear\\armors.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge.client\\helpers\\customicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0FA29B0-3F67-433F-BED6-6CFDA048130F}|Deedforge\\Deedforge.Client\\Deedforge.Client.csproj|solutionrelative:deedforge\\deedforge.client\\helpers\\customicons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge\\wwwroot\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|solutionrelative:deedforge\\deedforge\\wwwroot\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D94C418-4F60-4185-939F-1039100A60C2}|Deedforge.Shared\\Deedforge.Shared.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.shared\\helpers\\stringhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D94C418-4F60-4185-939F-1039100A60C2}|Deedforge.Shared\\Deedforge.Shared.csproj|solutionrelative:deedforge.shared\\helpers\\stringhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DC040FA-0B15-4BCE-8F62-3EF080BDC835}|Deedforge.Domain\\Deedforge.Domain.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge.domain\\gear\\weapons\\magicweapons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,11 +94,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Layout\\MainLayout.razor",
@@ -99,11 +107,12 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-27T10:15:59.813Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Layout\\NavMenu.razor",
@@ -116,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "custom.css",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\wwwroot\\custom.css",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge\\wwwroot\\custom.css",
@@ -129,15 +138,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Home.razor",
               "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\Home.razor",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAEkAAAA6AAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-30T09:56:27.357Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CompendiumData.cs",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Compendium\\CompendiumData.cs",
+              "RelativeDocumentMoniker": "Deedforge.Shared\\Compendium\\CompendiumData.cs",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Compendium\\CompendiumData.cs",
+              "RelativeToolTip": "Deedforge.Shared\\Compendium\\CompendiumData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:02:47.552Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataFetchServices.cs",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
+              "RelativeDocumentMoniker": "Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
+              "RelativeToolTip": "Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T07:03:23.531Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -151,31 +188,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Melee.razor",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
+              "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
+              "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T06:51:05.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttackStyleComponent.razor",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\AttackStyleComponent.razor",
+              "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\AttackStyleComponent.razor",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\AttackStyleComponent.razor",
+              "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\AttackStyleComponent.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-30T17:43:54.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeleeAttacksSheet.cs",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
+              "RelativeDocumentMoniker": "Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
+              "RelativeToolTip": "Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:51:18.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseAttackForms.cs",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
+              "RelativeDocumentMoniker": "Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
+              "RelativeToolTip": "Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowGcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T06:51:22.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Weapons\\Weapon.cs",
+              "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Weapons\\Weapon.cs",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Weapons\\Weapon.cs",
+              "RelativeToolTip": "Deedforge.Domain\\Gear\\Weapons\\Weapon.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T17:50:37.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "SkillsList.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\SkillsList.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\SkillsList.razor",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\SkillsList.razor",
               "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\SkillsList.razor",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADMAAAAAAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T12:36:46.05Z"
+              "WhenOpened": "2024-05-30T12:36:46.05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Skills.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Skills.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Skills.razor",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Skills.razor",
               "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Skills.razor",
-              "ViewState": "AQIAALoAAAAAAAAAAAAcwN4AAAAGAAAA",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAN4AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T11:10:07.685Z"
+              "WhenOpened": "2024-05-30T11:10:07.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "CustomIcons.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Helpers\\CustomIcons.cs",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Helpers\\CustomIcons.cs",
@@ -187,19 +291,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "MarkupStringHelper.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Helpers\\MarkupStringHelper.cs",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Helpers\\MarkupStringHelper.cs",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Helpers\\MarkupStringHelper.cs",
               "RelativeToolTip": "Deedforge\\Deedforge.Client\\Helpers\\MarkupStringHelper.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA0wAkAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T07:48:11.663Z"
+              "WhenOpened": "2024-05-30T07:48:11.663Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "StringHelpers.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Helpers\\StringHelpers.cs",
               "RelativeDocumentMoniker": "Deedforge.Shared\\Helpers\\StringHelpers.cs",
@@ -211,67 +316,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Shields.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Gear\\Shields.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\Gear\\Shields.razor",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Gear\\Shields.razor",
               "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\Gear\\Shields.razor",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAABcAAAA5AQAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAABoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T07:25:49.934Z"
+              "WhenOpened": "2024-05-30T07:25:49.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Armors.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Gear\\Armors.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\Gear\\Armors.razor",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Gear\\Armors.razor",
               "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\Gear\\Armors.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAACrAQAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T18:58:15.909Z"
+              "WhenOpened": "2024-05-29T18:58:15.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "Shields.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Shields.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Shields.cs",
               "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Shields.cs",
               "RelativeToolTip": "Deedforge.Domain\\Gear\\Shields.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwAkAAADBAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T07:03:54.895Z"
+              "WhenOpened": "2024-05-30T07:03:54.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DataFetchServices.cs",
-              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
-              "RelativeDocumentMoniker": "Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
-              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
-              "RelativeToolTip": "Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T07:03:23.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CompendiumData.cs",
-              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Compendium\\CompendiumData.cs",
-              "RelativeDocumentMoniker": "Deedforge.Shared\\Compendium\\CompendiumData.cs",
-              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Compendium\\CompendiumData.cs",
-              "RelativeToolTip": "Deedforge.Shared\\Compendium\\CompendiumData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T07:02:47.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "Armors.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Armors.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Armors.cs",
@@ -279,47 +363,12 @@
               "RelativeToolTip": "Deedforge.Domain\\Gear\\Armors.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T07:01:11.033Z"
+              "WhenOpened": "2024-05-30T07:01:11.033Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BaseAttackForms.cs",
-              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
-              "RelativeDocumentMoniker": "Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
-              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
-              "RelativeToolTip": "Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowBMAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T06:51:22.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MeleeAttacksSheet.cs",
-              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
-              "RelativeDocumentMoniker": "Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
-              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
-              "RelativeToolTip": "Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T06:51:18.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Melee.razor",
-              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
-              "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
-              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
-              "RelativeToolTip": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-30T06:51:05.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "MagicWeapons.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Weapons\\MagicWeapons.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Weapons\\MagicWeapons.cs",

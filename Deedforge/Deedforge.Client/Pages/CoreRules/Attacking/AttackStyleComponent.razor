@@ -1,0 +1,49 @@
+﻿@using Deedforge.Domain.CoreRules.Attacking
+@using Deedforge.Shared.Compendium
+@using Deedforge.Client.Helpers
+
+<MudGrid>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">
+            @AttackStyle.Name @StyleType
+        </MudText>
+    </MudItem>
+    <MudItem xs="8">
+        <MudText Typo="@Typo.body2">
+            <i>@AttackStyle.Description</i>
+        </MudText>
+    </MudItem>
+    <MudItem xs="12">
+        <MudTable Items="@AttackStyle.Attacks" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+            <HeaderContent>
+                <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
+                <MudTh><MudText Typo="Typo.h6">Form</MudText></MudTh>
+                <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Name"><strong>@context.Name</strong></MudTd>
+                <MudTd DataLabel="Form">@context.BaseForm.Name</MudTd>
+                <MudTd DataLabel="Description"><i>@context.Description</i></MudTd>
+            </RowTemplate>
+        </MudTable>
+    </MudItem>
+</MudGrid>
+
+@code {
+    [Parameter]
+    public required AttacksSheet AttackStyle { get; set; }
+    public string StyleType { get
+        {
+            switch (AttackStyle.Type)
+            {
+                case FormType.Melee:
+                    return "Melee Style";
+                case FormType.Ranged:
+                    return "Ranged Style";
+                case FormType.Magic:
+                    return "Magic Tradition";
+                default:
+                    return "n/a";
+            }
+        } }
+}
