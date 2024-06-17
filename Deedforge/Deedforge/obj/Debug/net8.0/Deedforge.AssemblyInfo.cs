@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Deedforge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ea686840c505156b59f1aac76a4698aa8201e0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9a9bad6799adaa470414f3169027e1ca78aa461")]
 [assembly: System.Reflection.AssemblyProductAttribute("Deedforge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Deedforge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

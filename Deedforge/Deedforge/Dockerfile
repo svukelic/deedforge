@@ -3,11 +3,9 @@
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Deedforge/Deedforge/Deedforge.csproj", "Deedforge/Deedforge/"]
 COPY ["Deedforge.Domain/Deedforge.Domain.csproj", "Deedforge.Domain/"]
@@ -19,7 +17,6 @@ WORKDIR "/src/Deedforge/Deedforge"
 RUN dotnet build "./Deedforge.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./Deedforge.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final

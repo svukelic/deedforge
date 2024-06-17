@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|solutionrelative:deedforge\\deedforge\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|c:\\users\\svenc\\source\\repos\\svukelic\\deedforge\\deedforge\\deedforge\\deedforge.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4C0FE749-D9C0-42B0-93AB-FCC99D269601}|Deedforge\\Deedforge\\Deedforge.csproj|solutionrelative:deedforge\\deedforge\\deedforge.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -109,11 +113,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Layout\\MainLayout.razor",
@@ -127,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Layout\\NavMenu.razor",
@@ -140,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "custom.css",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\wwwroot\\custom.css",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge\\wwwroot\\custom.css",
@@ -153,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\Home.razor",
@@ -166,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CompendiumData.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Compendium\\CompendiumData.cs",
               "RelativeDocumentMoniker": "Deedforge.Shared\\Compendium\\CompendiumData.cs",
@@ -179,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "DataFetchServices.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge\\Services\\DataFetchServices.cs",
@@ -191,6 +195,19 @@
               "IsPinned": true
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Dockerfile",
+              "RelativeDocumentMoniker": "Deedforge\\Deedforge\\Dockerfile",
+              "ToolTip": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Dockerfile",
+              "RelativeToolTip": "Deedforge\\Deedforge\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-17T10:34:53.026Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
@@ -200,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Deedforge.Client",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Deedforge.Client.csproj",
@@ -213,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Deedforge",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge\\Deedforge.csproj",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge\\Deedforge.csproj",
@@ -226,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Container.targets",
               "DocumentMoniker": "C:\\Users\\svenc\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
@@ -239,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Archetype.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CharacterRules\\Archetypes\\Archetype.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\CharacterRules\\Archetypes\\Archetype.cs",
@@ -252,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Melee.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\Melee.razor",
@@ -264,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AttackStyleComponent.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\AttackStyleComponent.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Attacking\\AttackStyleComponent.razor",
@@ -276,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MeleeAttacksSheet.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\CoreRules\\Attacking\\MeleeAttacksSheet.cs",
@@ -289,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BaseAttackForms.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\CoreRules\\Attacking\\BaseAttackForms.cs",
@@ -301,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Weapons\\Weapon.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Weapons\\Weapon.cs",
@@ -313,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SkillsList.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\SkillsList.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\SkillsList.razor",
@@ -325,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Skills.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Skills.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\CoreRules\\Skills.razor",
@@ -337,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "CustomIcons.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Helpers\\CustomIcons.cs",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Helpers\\CustomIcons.cs",
@@ -349,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MarkupStringHelper.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Helpers\\MarkupStringHelper.cs",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Helpers\\MarkupStringHelper.cs",
@@ -361,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "StringHelpers.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Shared\\Helpers\\StringHelpers.cs",
               "RelativeDocumentMoniker": "Deedforge.Shared\\Helpers\\StringHelpers.cs",
@@ -373,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Shields.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Gear\\Shields.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\Gear\\Shields.razor",
@@ -385,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Armors.razor",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge\\Deedforge.Client\\Pages\\Gear\\Armors.razor",
               "RelativeDocumentMoniker": "Deedforge\\Deedforge.Client\\Pages\\Gear\\Armors.razor",
@@ -397,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Shields.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Shields.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Shields.cs",
@@ -409,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Armors.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Armors.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Armors.cs",
@@ -421,7 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "MagicWeapons.cs",
               "DocumentMoniker": "C:\\Users\\svenc\\source\\repos\\svukelic\\deedforge\\Deedforge.Domain\\Gear\\Weapons\\MagicWeapons.cs",
               "RelativeDocumentMoniker": "Deedforge.Domain\\Gear\\Weapons\\MagicWeapons.cs",
