@@ -19,7 +19,7 @@ WORKDIR "/src/Deedforge/Deedforge"
 RUN dotnet build "./Deedforge.csproj"
 
 FROM build AS publish
-RUN dotnet publish "./Deedforge.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Deedforge.csproj" /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
