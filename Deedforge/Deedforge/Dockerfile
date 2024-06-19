@@ -16,7 +16,7 @@ COPY ["Deedforge/Deedforge.Client/Deedforge.Client.csproj", "Deedforge/Deedforge
 RUN dotnet restore "./Deedforge/Deedforge/Deedforge.csproj"
 COPY . .
 WORKDIR "/src/Deedforge/Deedforge"
-RUN dotnet build "./Deedforge.csproj" -c $BUILD_CONFIGURATION -o "app/build"
+RUN dotnet build "./Deedforge.csproj" -c $BUILD_CONFIGURATION -o build
 
 FROM build AS publish
 RUN dotnet publish "./Deedforge.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
