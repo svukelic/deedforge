@@ -14,17 +14,36 @@
         </MudText>
     </MudItem>
     <MudItem xs="12">
-        <MudTable Items="@AttackStyle.Attacks" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+        <MudTable Items="@AttacksContext" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
             <HeaderContent>
                 <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
-                <MudTh><MudText Typo="Typo.h6">Form</MudText></MudTh>
-                <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
+                <MudTh><MudText Typo="Typo.h6">Base Form</MudText></MudTh>
+                <MudTh><MudText Typo="Typo.h6">Attack Description</MudText></MudTh>
             </HeaderContent>
             <RowTemplate>
-                <MudTd DataLabel="Name"><strong>@context.Name</strong></MudTd>
-                <MudTd DataLabel="Form">@context.BaseForm.Name</MudTd>
-                <MudTd DataLabel="Description"><i>@context.Description</i></MudTd>
+                <MudTd DataLabel="Name"><strong>@context.Item.Name</strong></MudTd>
+                <MudTd DataLabel="Form"><MudButton Variant="Variant.Outlined" Size="Size.Small" FullWidth="true" OnClick="@(() => context.ToggleDetails())">@context.Item.BaseForm.Name</MudButton></MudTd>
+                <MudTd DataLabel="Description"><i>@context.Item.Description</i></MudTd>
             </RowTemplate>
+            <ChildRowContent>
+                @if (context.ShowDetails)
+                {
+                    <MudTr>
+                        <td colspan="4">
+                            <MudCard Elevation="0">
+                                <MudCardHeader>
+                                    <CardHeaderContent>
+                                        <MudText Typo="Typo.body1"><strong>@context.Item.BaseForm.Name</strong> Attack Form</MudText>
+                                    </CardHeaderContent>
+                                </MudCardHeader>
+                                <MudCardContent>
+                                    <MudText Typo="Typo.body2">@context.Item.BaseForm.Description</MudText>
+                                </MudCardContent>
+                            </MudCard>
+                        </td>
+                    </MudTr>
+                }
+            </ChildRowContent>
         </MudTable>
     </MudItem>
 </MudGrid>
@@ -32,6 +51,7 @@
 @code {
     [Parameter]
     public required AttacksSheet AttackStyle { get; set; }
+    
     public string StyleType { get
         {
             switch (AttackStyle.Type)
@@ -46,4 +66,17 @@
                     return "n/a";
             }
         } }
+
+    private List<TableChildRowWrapper<Attack>> AttacksContext { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        AttacksContext = new List<TableChildRowWrapper<Attack>>();
+
+        foreach (var attack in AttackStyle.Attacks)
+        {
+            AttacksContext.Add(new TableChildRowWrapper<Attack>(attack));
+        }
+    }
 }
