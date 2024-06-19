@@ -22,3 +22,11 @@
 .mud-simple-table {
     background-color: var(--mud-palette-dark) !important;
 }
+
+.mud-table {
+    background-color: var(--mud-palette-dark) !important;
+}
+
+.mud-tabs-toolbar {
+    background-color: var(--mud-palette-dark) !important;
+}
