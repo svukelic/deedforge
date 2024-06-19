@@ -23,5 +23,5 @@ RUN dotnet publish "./Deedforge.csproj" /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /publish .
+COPY --from=publish /src/Deedforge/Deedforge/bin/Release/net8.0/publish .
 ENTRYPOINT ["dotnet", "Deedforge.dll"]
