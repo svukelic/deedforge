@@ -21,7 +21,7 @@
 
     <br />
 
-    <MudText Typo="Typo.body1"><b>Endurance</b> represents the overall durability the Shield has when a character wielding it takes <i>Block</i> Reaction (if the Shield provides that capability). Endurance is decreased when the Shield receives <MudLink Href="/core-rules/damage-wounds">Damage</MudLink>.</MudText>
+    <MudText Typo="Typo.body1"><b>Grit</b> represents the overall durability the Shield has. When a character wielding the Shield takes <i>Block</i> Reaction, any received <MudLink Href="/core-rules/damage-wounds">Damage</MudLink> is subtracted from Shield's Grit instead of the character's Endurance. Character wielding a Shield can take <i>Raise Shield</i> action, which restores an amount of Grit to the Shield equal to the character's Defense Skill Tier.</MudText>
 </div>
 
 <br />
@@ -31,13 +31,13 @@
     <HeaderContent>
         <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
         <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
-        <MudTh><MudText Typo="Typo.h6">Endurance</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h6">Grit</MudText></MudTh>
         <MudTh><MudText Typo="Typo.h6">Properties</MudText></MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="Name"><strong>@context.Name</strong></MudTd>
         <MudTd DataLabel="Description"><i>@context.Description</i></MudTd>
-        <MudTd DataLabel="Endurance">@context.Endurance</MudTd>
+        <MudTd DataLabel="Grit">@context.Grit</MudTd>
         <MudTd DataLabel="Properties">@MarkupStringHelper.GetMarkupString(context.Property)</MudTd>
     </RowTemplate>
 </MudTable>

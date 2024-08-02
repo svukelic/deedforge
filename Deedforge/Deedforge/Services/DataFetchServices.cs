@@ -13,6 +13,7 @@ namespace Deedforge.Services
 
             var data = new CompendiumData
             {
+                MeleeAttacks = await GetProperties<AttackForm, MeleeAttacks>(),
                 Armors = await GetProperties<Armor, Armors>(),
                 Shields = await GetProperties<Shield, Shields>(),
             };
