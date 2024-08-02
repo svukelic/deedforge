@@ -9,4 +9,83 @@
 
 <h1>Attacking with Melee</h1>
 
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Simple Attacks
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    In order to attack with a melee attack, a character needs to have a melee weapon equipped or use their fists (or some other form of natural weapon).
+    <br />
+    <br />
+    Each melee weapon has a set of Attacks it can perform. A character can then use <i>Perform Attack</i> action in order to use one of their Attacks available to them and inflict that attack's effects on their target.
+    <br />
+    <br />
+    <i>Perform Attack</i> action can be used twice per turn.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Combo Attacks
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    While wielding a melee weapon, a character can perform a powerful <i>Combo Attack</i>.
+    <br />
+    <br />
+    <i>Combo Attack</i> is started by a character designating their target and taking <i>Chain Attack</i> action.
+    <ul>
+        <li>
+            - <i>Chain Attack</i> can be used once per turn.
+        </li>
+        <li>
+            - <i>Chain Attack</i> counts as <i>Perform Attack</i> action.
+        </li>
+        <li>
+            - <i>Chain Attack</i> doesn't deal damage, but applies all other effects.
+        </li>
+        <li>
+            - Ending a turn outside of the range of the target ends the current Chain and the Combo Attack.
+        </li>
+        <li>
+            - Not using <i>Chain Attack</i> on your target during your turn ends the current Chain and the Combo Attack.
+        </li>
+        <li>
+            - <i>Perform Attack</i> cannot be used against the designated target of the Chain.
+        </li>
+    </ul>
+    <br />
+    <br />
+    While the Chain is active, the character can take <i>Perform Combo Attack</i> action in order to perform a Combo Attack.
+    <br />
+    <br />
+    <i>Perform Combo Attack</i> also counts as <i>Perform Attack</i> action and requires an attack roll.
+    <br />
+    <br />
+    On hit, Combo Attack inflicts damage based on number of successful Chain Attacks (up to 3) against the target.
+    <br />
+    <br />
+    The damage is equal to two times the successful attacks for one-handed weapon, and four times for two-handed or dual-wielded weapons.
+    <br />
+    <br />
+    Additionally, Chain Attacks from other characters can contribute to the ongoing Chain and Combo Attack, but only once per character and up to 3 additional Chain Attacks.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Melee Attacks
+</MudText>
+
+<br />
+
 <AttackListComponent AttackList="@CompendiumService.Compendium.MeleeAttacks" />

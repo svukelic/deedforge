@@ -11,7 +11,7 @@
         public static AttackForm Cleave = new AttackForm
         {
             Name = "Cleave",
-            Description = "A wide, sweeping attack intended to hit multiple enemies in a single swing. Attacks two additional targets with the same Weapon check within Melee vicinty of the original target."
+            Description = "A wide, sweeping attack intended to hit multiple enemies in a single swing. Attacks two additional targets with the same attack roll within Melee vicinty of the original target."
         };
 
         public static AttackForm Disarm = new AttackForm

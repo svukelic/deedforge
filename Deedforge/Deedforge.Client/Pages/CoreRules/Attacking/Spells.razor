@@ -1,0 +1,79 @@
+﻿@page "/core-rules/attacking/spells"
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Core Rules - Attacking - Spells
+</PageTitle>
+
+<h1>Attacking with Spells</h1>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Simple Spells
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    In order to attack with a spell, a character needs to have a magic weapon equipped and know a Spell Tradition.
+    <br />
+    <br />
+    Each magic weapon has a set of Spell Forms it can perform. A character can then use <i>Cast Spell</i> action in order to use one of the Spell Forms available to them in order to inflict spell's effects on their target. Specific Spell that is cast depends on the used Spell Tradition. A character can use any Spell Tradition they know when they cast a spell.
+    <br />
+    <br />
+    <i>Cast Spell</i> action can be used twice per turn.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Complex Spells
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    While wielding a magic weapon, a character can perform a powerful <i>Complex Spell</i>.
+    <br />
+    <br />
+    <i>Complex Spell</i> is started by a character declaring which Complex Spell they are casting and taking <i>Invoke Spell</i> action.
+    <ul>
+        <li>
+            - <i>Invoke Spell</i> can be used once per turn.
+        </li>
+        <li>
+            - <i>Invoke Spell</i> counts as <i>Cast Spell</i> action, although it doesn't cast any spells nor effects on its own.
+        </li>
+        <li>
+            - Not using <i>Invoke Spell</i> on your turn ends the current Invocation and Complex Spell.
+        </li>
+        <li>
+            - Character cannot take Move Action while the Invocation lasts.
+        </li>
+    </ul>
+    <br />
+    <br />
+    When all the Spell Forms needed for the Complex Spell are invoked, the character then casts the Complex Spell.
+    <br />
+    <br />
+    Each Complex Spell has a unique, potent effect.
+    <br />
+    <br />
+    A character knows number of Complex Spells equal to three times their Intellect Proficiency Tier, and unless otherwise specified, can only know Complex Spells from known Spell Traditions.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Spell Attacks
+</MudText>
+
+<br />
+
+<!--<AttackListComponent AttackList="@CompendiumService.Compendium.MeleeAttacks" />-->
