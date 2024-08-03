@@ -30,3 +30,20 @@
 .mud-tabs-toolbar {
     background-color: var(--mud-palette-dark) !important;
 }
+
+.round-image-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 50% !important;
+}
+
+.round-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mud-button-group-vertical {
+    width: 100%;
+}

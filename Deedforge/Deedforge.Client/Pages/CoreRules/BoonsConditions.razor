@@ -1,0 +1,71 @@
+﻿@page "/core-rules/boons-conditions"
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Core Rules - Boons & Conditions
+</PageTitle>
+
+<h1>Boons & Conditions</h1>
+
+<br />
+
+<MudText Typo="@Typo.h5">
+    Boons
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Boons are positive effects that grant characters temporary advantages or enhanced abilities. These beneficial states can be acquired through successful actions, magic, or other fortunate circumstances.
+    <br />
+    <br />
+    Boons typically have a duration and may provide bonuses to certain rolls, grant special abilities, or offer protection against specific threats.
+</MudText>
+
+<br />
+
+<MudTable Items="@CompendiumService.Compendium.Boons" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h6">Effect</MudText></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name"><strong>@context.Name</strong></MudTd>
+        <MudTd DataLabel="Description"><i>@context.Description</i></MudTd>
+        <MudTd DataLabel="Effect">@context.Effect</MudTd>
+    </RowTemplate>
+</MudTable>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Conditions
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Conditions are negative effects that impose disadvantages or limitations on characters. These detrimental states can result from enemy attacks, environmental hazards, or failed actions.
+    <br />
+    <br />
+    Conditions often have a duration and may inflict penalties on rolls, restrict actions, or cause ongoing harm to the affected character.
+</MudText>
+
+<br />
+
+<MudTable Items="@CompendiumService.Compendium.Conditions" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
+        <MudTh><MudText Typo="Typo.h6">Effect</MudText></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name"><strong>@context.Name</strong></MudTd>
+        <MudTd DataLabel="Description"><i>@context.Description</i></MudTd>
+        <MudTd DataLabel="Effect">@context.Effect</MudTd>
+    </RowTemplate>
+</MudTable>

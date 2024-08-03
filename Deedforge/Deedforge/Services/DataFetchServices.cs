@@ -1,4 +1,5 @@
 ﻿using Deedforge.Domain.CoreRules.Attacking;
+using Deedforge.Domain.CoreRules.Statuses;
 using Deedforge.Domain.Gear;
 using Deedforge.Shared.Compendium;
 using System.Reflection;
@@ -13,6 +14,8 @@ namespace Deedforge.Services
 
             var data = new CompendiumData
             {
+                Boons = await GetProperties<Status, Boons>(),
+                Conditions = await GetProperties<Status, Conditions>(),
                 MeleeAttacks = await GetProperties<AttackForm, MeleeAttacks>(),
                 Armors = await GetProperties<Armor, Armors>(),
                 Shields = await GetProperties<Shield, Shields>(),
