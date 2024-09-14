@@ -23,7 +23,7 @@
             Name = "Tower Shield",
             Description = "A large, heavy shield designed for maximum protection. It covers a significant portion of the body, making it ideal for defensive stances.",
             Grit = 4,
-            Property = "While wielding a Tower Shield, you have Lower Hand on all <i>Reflex</i> and <i>Subterfuge</i> checks.\r\nAdditionally, whenever you are forced to make a Reflex check against an Area Effect, you can now as a Reaction make a contested Defense check. On a successful check, the Shield absorbs the Damage instead of you and you are unaffected by any additional effect usually incurred by the triggering Area Effect."
+            Property = "While wielding a Tower Shield, you have Lower Hand on all <i>Reflex</i> and <i>Subterfuge</i> checks.\r\n\r\nWhenever you are forced to make a Reflex check against an Area Effect, you can now as a Reaction make a contested Defense check. On a successful check, the Shield absorbs the Damage instead of you and you are unaffected by any additional effect usually incurred by the triggering Area Effect."
         };
     }
 

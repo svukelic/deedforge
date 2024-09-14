@@ -1,0 +1,96 @@
+﻿@page "/character-rules/deeds"
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Adventuring - Deeds
+</PageTitle>
+
+<h1>Deeds</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Deeds are predictions of a character’s destiny. They provide a structure approach to constructing a character’s personal story, while still maintaining freedom of choice for both the player and the Guide.
+    <br />
+    <br />
+    Deeds consist of a short, generic description of something a character will do at one point of the game, as well as rewards that character will receive for that accomplishment.
+    <br />
+    <br />
+    The Guide is heavily encouraged to weave the game’s story around the player’s chosen Deeds, thus providing ample opportunity for character growth and an entertaining storyline to follow.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Discussing Deeds
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    When creating a character, the player and the Guide should discuss which Deeds make sense for the character they have envisioned. While there is a lot of Deeds, the players shouldn’t feel burdened by having to read through all the Deeds. Rather, the player can simply outline what they have in mind for their character, their motivations and key characteristics, and the Guide can assign a Deed that fits the best. Alternatively, for a player who isn’t sure what their character is about, the Deeds can serve as convenient instructions to building a character.
+    <br />
+    <br />
+    The Deeds are written generically so that they address archetypal tropes. The players and the Guide are encouraged to add as much specifics to chosen Deeds as they see fit.
+    <br />
+    <br />
+    <b>Example:</b> the player chooses “The Empress” as their Major Deed.
+    The player and the Guide that the specifics of the Deed is that the player’s character will save their clan from slavery.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Changing Deeds
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Player characters tend to grow as the game progresses. As such, there may come a time when their old destinies no longer fit who they are.
+    <br />
+    <br />
+    While there is no established mechanic how to approach this, the players are encouraged to discuss with their Guide if they feel the road ahead of their character no longer fits who that character is. The Guide in turn is encouraged to setup events which would justify the change of the character’s Deed or Deeds.
+    <br />
+    <br />
+    Note that changing character’s Deeds is not something that should be undertaken lightly, as it may have negative repercussions for the story, both character’s personal as well as overall game story. Before approaching this topic, both as a player and as a Guide, make sure you know why this is important for you and your character, as well as what you want for the future.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Prestige Campaign
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Prestige Campaign is a special type of a campaign which can be transitioned to at the Guide’s behest once players have unlocked and picked their Prestige Titles.
+    <br />
+    <br />
+    Prestige Campaign introduces mechanics like settlement and kingdom building, politics, management, etc.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    List of Deeds
+</MudText>
+
+<br />
+
+<MudGrid Spacing="4" Justify="Justify.SpaceAround">
+    @foreach (var deed in @CompendiumService.Compendium.Deeds)
+    {
+        <DeedComponent DeedInstance="@deed" />
+    }
+</MudGrid>
+
+<br />
+<br />

@@ -1,0 +1,51 @@
+﻿<MudPaper Class="d-flex flex-column align-center justify-center mud-width-full py-8 my-2 flex-grow-1" Height="120px">
+    <MudText Typo="Typo.body1" Align="Align.Center">@ValueTitle</MudText>
+    <MudDivider Style="margin: 2px 0;" />
+    <MudGrid Justify="Justify.SpaceEvenly">
+        <MudItem xs="2" Class="d-flex align-center justify-center" Style="height: 100%;">
+            <MudIconButton Icon="@Icons.Material.Filled.KeyboardArrowUp" OnClick="(()=>UpdateValue(true))" Size="Size.Large" />
+        </MudItem>
+        <MudItem xs="4" Class="d-flex flex-column justify-center">
+            <MudText Typo="Typo.h6" Align="Align.Center">@_value</MudText>
+        </MudItem>
+        <MudItem xs="2" Class="d-flex align-center justify-center" Style="height: 100%;">
+            <MudIconButton Icon="@Icons.Material.Filled.KeyboardArrowDown" OnClick="(()=>UpdateValue(false))" Size="Size.Large" />
+        </MudItem>
+    </MudGrid>
+</MudPaper>
+
+@code {
+    [Parameter]
+    public string? ValueTitle { get; set; }
+
+    [Parameter]
+    public int DefaultValue { get; set; }
+
+    [Parameter]
+    public int? MinValue { get; set; }
+
+    [Parameter]
+    public int? MaxValue { get; set; }
+
+    private int _value { get; set; }
+
+    protected override void OnInitialized()
+    {
+        _value = DefaultValue;
+
+        if (MinValue is null)
+        {
+            MinValue = 0;
+        }
+
+        if (MaxValue is null)
+        {
+            MaxValue = 999;
+        }
+    }
+
+    void UpdateValue(bool increase)
+    {
+        _value = Math.Clamp(_value + (increase ? 1 : -1), MinValue!.Value, MaxValue!.Value);
+    }
+}

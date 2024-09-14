@@ -47,3 +47,34 @@
 .mud-button-group-vertical {
     width: 100%;
 }
+
+.image-container {
+    position: relative;
+    width: 500px; /* Adjust size as needed */
+    height: 500px; /* Adjust size as needed */
+    border-radius: 50%; /* Creates a circular container */
+    overflow: hidden;
+}
+
+.base-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 90%; /* Lower the height to reduce the size */
+    transform: translate(-50%, -50%) scale(0.9); /* Scale down the image and ensure it's centered */
+    object-fit: cover;
+    border-radius: 50%; /* Ensures the base image is circular */
+    clip-path: circle(50% at 50% 50%); /* Circular clip to maintain rounded edges */
+    z-index: 1;
+}
+
+.frame-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the frame covers the container */
+    z-index: 2;
+}

@@ -8,185 +8,144 @@
 
 <br />
 
-<div style="display: flex; height: 70vh;">
+<div style="display: flex;">
 
-<MudGrid Justify="Justify.SpaceBetween">
-    <MudItem xs="2" Style="height: 100%; flex: 1; display: flex; flex-direction: column;">
+    <MudGrid Justify="Justify.SpaceBetween">
+        <MudItem xs="3" Style="height: 100%; flex: 1; display: flex; flex-direction: column;">
 
-        <MudPaper Class="round-image-container" Elevation="0">
-            <MudImage Src="https://i.redd.it/uu7edj0kiw3b1.jpg" Fluid="true" Alt="Token" Elevation="25" Class="round-image" />
-        </MudPaper>
-
-        <MudCard Style="flex-grow: 1; margin: 20px 0;">
-            <MudCardContent>
-                <MudText Typo="Typo.h6">Armor & Shield Training</MudText>
-                <MudText Typo="Typo.body2">- WiP</MudText>
-
-                <MudDivider Style="margin: 10px 0;" />
-
-                <MudText Typo="Typo.h6">Fighting Styles & Spell Traditions</MudText>
-                <MudText Typo="Typo.body2">- WiP</MudText>
-
-                <MudDivider Style="margin: 10px 0;" />
-
-                <MudText Typo="Typo.h6">Senses</MudText>
-                <MudText Typo="Typo.body2">- WiP</MudText>
-
-                <MudDivider Style="margin: 10px 0;" />
-
-                <MudText Typo="Typo.h6">Knowledge</MudText>
-                <MudText Typo="Typo.body2">- WiP</MudText>
-            </MudCardContent>
-        </MudCard>
-
-    </MudItem>
-        <MudItem xs="5" Style="height: 100%;">
-
-        <MudCard Style="height:120px;">
-            <MudCardContent Class="d-flex flex-column align-left justify-center mud-width-full py-8">
-                <MudText Typo="Typo.h5">Name Placeholder</MudText>
-                <br />
-                <MudGrid Justify="Justify.SpaceBetween">
-                    <MudItem xs="4">
-                        <MudText Typo="Typo.h6" Align="Align.Center">Profession</MudText>
+            <MudPaper Style="display: flex; flex-direction: column; height: 100%;" Class="px-4 py-4 my-4">
+                <MudGrid Style="display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+                    <MudItem xs="12" Style="flex: 1; display: flex; flex-direction: column;">
+                        <MudText Typo="Typo.body1"><b>ARMOR & SHIELD TRAINING</b></MudText>
+                        <MudText Typo="Typo.body2">- WiP</MudText>
                     </MudItem>
-                    <MudItem xs="4">
-                        <MudText Typo="Typo.h6" Align="Align.Center">Ancestry</MudText>
+                    <MudItem xs="12" Style="flex: 0 0 auto;">
+                        <MudDivider Style="margin: 10px 0;" />
                     </MudItem>
-                    <MudItem xs="4">
-                        <MudText Typo="Typo.h6" Align="Align.Center">Culture</MudText>
+                    <MudItem xs="12" Style="flex: 1; display: flex; flex-direction: column;">
+                        <MudText Typo="Typo.body1"><b>FIGHTING STYLES & SPELL TRADITIONS</b></MudText>
+                        <MudText Typo="Typo.body2">- WiP</MudText>
+                    </MudItem>
+                    <MudItem xs="12" Style="flex: 0 0 auto;">
+                        <MudDivider Style="margin: 10px 0;" />
+                    </MudItem>
+                    <MudItem xs="12" Style="flex: 1; display: flex; flex-direction: column;">
+                        <MudText Typo="Typo.body1"><b>SENSES</b></MudText>
+                        <MudText Typo="Typo.body2">- WiP</MudText>
+                    </MudItem>
+                    <MudItem xs="12" Style="flex: 0 0 auto;">
+                        <MudDivider Style="margin: 10px 0;" />
+                    </MudItem>
+                    <MudItem xs="12" Style="flex: 1; display: flex; flex-direction: column;">
+                        <MudText Typo="Typo.body1"><b>KNOWLEDGE</b></MudText>
+                        <MudText Typo="Typo.body2">- WiP</MudText>
                     </MudItem>
                 </MudGrid>
-            </MudCardContent>
-        </MudCard>
+            </MudPaper>
 
-        <br />
-        <br />
+        </MudItem>
 
-        <MudGrid Justify="Justify.SpaceBetween" Spacing="2">
-            <MudItem xs="4">
-                <MudPaper Class="d-flex flex-column align-center justify-center mud-width-full py-8" Height="120px">
-                    <MudText Typo="Typo.body1" Align="Align.Center">Maximum Endurance</MudText>
-                    <MudDivider Style="margin: 10px 0;" />
-                    <MudText Typo="Typo.h6" Align="Align.Center">10</MudText>
-                </MudPaper>
-            </MudItem>
-            <MudItem xs="4">
-                <MudPaper Class="d-flex flex-column align-center justify-center mud-width-full py-8" Height="120px">
-                    <MudText Typo="Typo.body1" Align="Align.Center">Current Endurance</MudText>
-                    <MudDivider Style="margin: 10px 0;" />
-                    <MudGrid Justify="Justify.SpaceEvenly">
-                        <MudItem xs="2" Class="d-flex align-center justify-center" Style="height: 100%;">
-                            <MudIconButton Icon="@Icons.Material.Filled.KeyboardArrowUp" OnClick="(()=>UpdateCurrentEndurance(true))" Size="Size.Large" />
+        <MudItem xs="6" Style="height: 100%; flex: 1; display: flex; flex-direction: column;">
+
+            <MudCard Style="height:120px;" Class="mt-4">
+                <MudCardContent Class="d-flex flex-column align-left justify-center mud-width-full py-8">
+                    <MudText Typo="Typo.h5">Name Placeholder</MudText>
+                    <br />
+                    <MudGrid Justify="Justify.SpaceBetween">
+                        <MudItem xs="4">
+                            <MudText Typo="Typo.h6" Align="Align.Center">Profession</MudText>
                         </MudItem>
-                        <MudItem xs="4" Class="d-flex flex-column justify-center">
-                            <MudText Typo="Typo.h6" Align="Align.Center">@CurrentEndurance</MudText>
+                        <MudItem xs="4">
+                            <MudText Typo="Typo.h6" Align="Align.Center">Ancestry</MudText>
                         </MudItem>
-                        <MudItem xs="2" Class="d-flex align-center justify-center" Style="height: 100%;">
-                            <MudIconButton Icon="@Icons.Material.Filled.KeyboardArrowDown" OnClick="(()=>UpdateCurrentEndurance(false))" Size="Size.Large" />
+                        <MudItem xs="4">
+                            <MudText Typo="Typo.h6" Align="Align.Center">Culture</MudText>
                         </MudItem>
                     </MudGrid>
-                </MudPaper>
-            </MudItem>
-            <MudItem xs="4">
-                <MudPaper Class="d-flex flex-column align-center justify-center mud-width-full py-8" Height="120px">
-                    <MudText Typo="Typo.body1" Align="Align.Center">Grit</MudText>
+                </MudCardContent>
+            </MudCard>
+
+            <MudGrid Class="my-2">
+                <MudItem xs="3" Class="d-flex flex-column" Style="height: 100%;">
+                    <Deedforge.Client.Components.NumericCard ValueTitle="Maximum Endurance" DefaultValue="10" />
+                    <Deedforge.Client.Components.NumericCard ValueTitle="Current Endurance" DefaultValue="10" MaxValue="10" />
+                </MudItem>
+
+                <MudItem xs="6" Class="d-flex flex-column align-center justify-center mud-width-full py-8">
+                    <MudImage Src="https://i.redd.it/uu7edj0kiw3b1.jpg" Fluid="true" Alt="Token" Elevation="25" />
+                </MudItem>
+
+                <MudItem xs="3" Class="d-flex flex-column" Style="height: 100%;">
+                    <Deedforge.Client.Components.NumericCard ValueTitle="Grit" DefaultValue="0" />
+                    <Deedforge.Client.Components.NumericCard ValueTitle="Exhaustion" DefaultValue="0" MaxValue="10" />
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Justify="Justify.SpaceBetween" Spacing="2" Class="my-4">
+                <MudItem xs="4">
+                    <MudCard Style="min-height: 150px; height: 100%;">
+                        <MudCardContent>
+                            <MudText Typo="Typo.body1">Boons</MudText>
+                            <MudDivider Style="margin: 10px 0;" />
+                            <MudText Typo="Typo.body2">- WiP</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCard Style="min-height: 150px; height: 100%;">
+                        <MudCardContent>
+                            <MudText Typo="Typo.body1">Conditions</MudText>
+                            <MudDivider Style="margin: 10px 0;" />
+                            <MudText Typo="Typo.body2">- WiP</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="4">
+                    <MudCard Style="min-height: 150px; height: 100%;">
+                        <MudCardContent>
+                            <MudText Typo="Typo.body1">Injuries</MudText>
+                            <MudDivider Style="margin: 10px 0;" />
+                            <MudText Typo="Typo.body2">- WiP</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+
+            <MudGrid Justify="Justify.SpaceBetween" Spacing="2" Class="mt-2 mb-4" Style="flex-grow: 1;">
+                <MudItem xs="6">
+                    <MudCard Style="min-height: 100px; height: 100%;">
+                        <MudCardContent>
+                            <MudText Typo="Typo.body1">Resistances</MudText>
+                            <MudDivider Style="margin: 10px 0;" />
+                            <MudText Typo="Typo.body2">- WiP</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+                <MudItem xs="6">
+                    <MudCard Style="min-height: 100px; height: 100%;">
+                        <MudCardContent>
+                            <MudText Typo="Typo.body1">Vulnerabilities</MudText>
+                            <MudDivider Style="margin: 10px 0;" />
+                            <MudText Typo="Typo.body2">- WiP</MudText>
+                        </MudCardContent>
+                    </MudCard>
+                </MudItem>
+            </MudGrid>
+
+        </MudItem>
+
+        <MudItem xs="3" Style="height: 100%; flex: 1; display: flex; flex-direction: column;">
+
+            <MudCard Style="min-height: 100px; flex-grow: 1;" Class="my-4">
+                <MudCardContent>
+                    <MudText Typo="Typo.h6">Skills</MudText>
                     <MudDivider Style="margin: 10px 0;" />
-                    <MudText Typo="Typo.h6" Align="Align.Center">10</MudText>
-                </MudPaper>
-            </MudItem>
-        </MudGrid>
+                    <MudText Typo="Typo.body2">- WiP</MudText>
+                </MudCardContent>
+            </MudCard>
 
-        <br />
-        <br />
-
-        <MudGrid Justify="Justify.SpaceBetween" Spacing="2">
-            <MudItem xs="4">
-                <MudCard Style="min-height: 150px; height: 100%;">
-                    <MudCardContent>
-                        <MudText Typo="Typo.body1">Boons</MudText>
-                        <MudDivider Style="margin: 10px 0;" />
-                        <MudText Typo="Typo.body2">- WiP</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-            <MudItem xs="4">
-                <MudCard Style="min-height: 150px; height: 100%;">
-                    <MudCardContent>
-                        <MudText Typo="Typo.body1">Conditions</MudText>
-                        <MudDivider Style="margin: 10px 0;" />
-                        <MudText Typo="Typo.body2">- WiP</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-            <MudItem xs="4">
-                <MudCard Style="min-height: 150px; height: 100%;">
-                    <MudCardContent>
-                        <MudText Typo="Typo.body1">Injuries</MudText>
-                        <MudDivider Style="margin: 10px 0;" />
-                        <MudText Typo="Typo.body2">- WiP</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-        </MudGrid>
-
-        <br />
-        <br />
-
-        <MudGrid Justify="Justify.SpaceBetween" Spacing="2">
-            <MudItem xs="6">
-                <MudCard Style="min-height: 100px; height: 100%;">
-                    <MudCardContent>
-                        <MudText Typo="Typo.body1">Resistances</MudText>
-                        <MudDivider Style="margin: 10px 0;" />
-                        <MudText Typo="Typo.body2">- WiP</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-            <MudItem xs="6">
-                <MudCard Style="min-height: 100px; height: 100%;">
-                    <MudCardContent>
-                        <MudText Typo="Typo.body1">Vulnerabilities</MudText>
-                        <MudDivider Style="margin: 10px 0;" />
-                        <MudText Typo="Typo.body2">- WiP</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-        </MudGrid>
-
-    </MudItem>
-    <MudItem xs="5" Style="height: 100%;">
-
-        <MudCard Style="height:120px;">
-            <MudCardContent>
-                <MudGrid Justify="Justify.SpaceEvenly">
-                    <MudItem xs="2" Class="d-flex align-center justify-center" Style="height: 100%;">
-                        <MudIconButton Icon="@Icons.Material.Filled.KeyboardArrowUp" OnClick="(()=>UpdateExhaustion(true))" Size="Size.Large" />
-                    </MudItem>
-                    <MudItem xs="4" Class="d-flex flex-column justify-center">
-                        <MudText Typo="Typo.body1" Align="Align.Center">Exhaustion:</MudText>
-                        <MudText Typo="Typo.h6" Align="Align.Center">@Exhaustion</MudText>
-                    </MudItem>
-                    <MudItem xs="2" Class="d-flex align-center justify-center" Style="height: 100%;">
-                        <MudIconButton Icon="@Icons.Material.Filled.KeyboardArrowDown" OnClick="(()=>UpdateExhaustion(false))" Size="Size.Large" />
-                    </MudItem>
-                </MudGrid>
-            </MudCardContent>
-        </MudCard>
-
-        <br />
-        <br />
-
-        <MudCard Style="min-height: 100px;">
-            <MudCardContent>
-                <MudText Typo="Typo.h6">Skills</MudText>
-                <MudDivider Style="margin: 10px 0;" />
-                <MudText Typo="Typo.body2">- WiP</MudText>
-            </MudCardContent>
-        </MudCard>
-
-    </MudItem>
-</MudGrid>
+        </MudItem>
+    </MudGrid>
 
 </div>
 
@@ -204,18 +163,3 @@
         <MudText>Content Disabled</MudText>
     </MudTabPanel>
 </MudTabs>
-
-@code {
-    private int Exhaustion = 0;
-    void UpdateExhaustion(bool increase)
-    {
-        Exhaustion = Math.Clamp(Exhaustion + (increase ? 1 : -1), 0, 10);
-    }
-
-    private int MaximumEndurance = 10;
-    private int CurrentEndurance = 10;
-    void UpdateCurrentEndurance(bool increase)
-    {
-        CurrentEndurance = Math.Clamp(CurrentEndurance + (increase ? 1 : -1), 0, MaximumEndurance);
-    }
-}

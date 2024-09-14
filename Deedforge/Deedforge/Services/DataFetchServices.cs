@@ -1,4 +1,7 @@
-﻿using Deedforge.Domain.CoreRules.Attacking;
+﻿using Deedforge.Domain.Adventuring;
+using Deedforge.Domain.CharacterRules.Professions;
+using Deedforge.Domain.CharacterRules.Professions.Collection;
+using Deedforge.Domain.CoreRules.Attacking;
 using Deedforge.Domain.CoreRules.Statuses;
 using Deedforge.Domain.Gear;
 using Deedforge.Shared.Compendium;
@@ -14,11 +17,13 @@ namespace Deedforge.Services
 
             var data = new CompendiumData
             {
+                Deeds = await GetProperties<Deed, Deeds>(),
                 Boons = await GetProperties<Status, Boons>(),
                 Conditions = await GetProperties<Status, Conditions>(),
                 MeleeAttacks = await GetProperties<AttackForm, MeleeAttacks>(),
                 Armors = await GetProperties<Armor, Armors>(),
                 Shields = await GetProperties<Shield, Shields>(),
+                Professions = (await GetProperties<Profession, Professions>()).OrderBy(x => x.Order).ToList(),
             };
 
             return data;

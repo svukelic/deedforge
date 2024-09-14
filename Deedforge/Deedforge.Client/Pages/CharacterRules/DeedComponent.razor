@@ -1,0 +1,41 @@
+﻿@using Deedforge.Domain.Adventuring
+@using Deedforge.Shared.Compendium
+@using Deedforge.Client.Helpers
+
+<MudItem xs="4" Class="mb-4">
+    <div style="display: flex; justify-content: center; align-items: center; height: 50vh; max-height: 600px;">
+        <MudImage Src="@DeedInstance.ImageUrl" Alt="@DeedInstance.Name" Style="max-width: 100%; max-height: 100%; height: auto;" />
+    </div>
+
+    <br />
+
+    <MudText Typo="@Typo.h4" Align="Align.Center" Class="mt-2 mb-2">
+        @DeedInstance.Name
+    </MudText>
+
+    <br />
+
+    <MudText Typo="@Typo.body1" Style="height: 120px;">
+        @DeedInstance.Description
+    </MudText>
+
+    <MudDivider Class="mt-4 mb-4" />
+
+    <MudText Typo="@Typo.body1">
+        <b>Reward:</b> @DeedInstance.Reward
+    </MudText>
+
+    <br />
+    <br />
+
+    <MudText Typo="@Typo.body1">
+        <b>Unlocks</b> the following Prestige Titles:
+        <br />
+        @MarkupStringHelper.ReturnStringsWithCommas(@DeedInstance.PrestigeTitles.Select(x => x.Name).ToList());
+    </MudText>
+</MudItem>
+
+@code {
+    [Parameter]
+    public required Deed DeedInstance { get; set; }
+}

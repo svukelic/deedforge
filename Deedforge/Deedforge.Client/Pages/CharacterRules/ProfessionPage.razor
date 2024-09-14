@@ -1,0 +1,124 @@
+﻿@page "/character-rules/professions/{Profession}"
+@using Deedforge.Client.Helpers
+@using Deedforge.Domain.CharacterRules.Professions
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Professions - @Profession
+</PageTitle>
+
+<MudGrid Spacing="4">
+    <MudItem xs="6">
+        <MudText Typo="@Typo.h4">
+            @Profession
+        </MudText>
+
+        <br />
+
+        <MudText Typo="@Typo.body1">
+            @ProfessionDetails.Description1
+            <br />
+            <br />
+            @ProfessionDetails.Description2
+        </MudText>
+
+        <br />
+        <br />
+
+        <MudText Typo="@Typo.body1">
+            <b>Granted Skills: </b> @ProfessionDetails.GrantedSkills
+        </MudText>
+
+        <br />
+
+        <MudText Typo="@Typo.body1">
+            <b>Limitations: </b> @ProfessionDetails.Limitations
+        </MudText>
+    </MudItem>
+    <MudItem xs="6" style="display: flex; justify-content: center; align-items: center;">
+        <div class="image-container">
+            <img src="@ProfessionDetails.ImageUrl" alt="Base Image" class="base-image">
+            <img src="images/RealFrame.png" alt="Frame Image" class="frame-image">
+        </div>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+<MudGrid Spacing="3">
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">
+            Combat Feature
+        </MudText>
+
+        <MudDivider />
+
+        <MudText Typo="@Typo.h5">
+            @ProfessionDetails.CombatFeature.Name
+        </MudText>
+
+        <br />
+
+        <MudText Typo="@Typo.body1">
+            @MarkupStringHelper.GetMarkupString(ProfessionDetails.CombatFeature.Description)
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">
+            Social Feature
+        </MudText>
+
+        <MudDivider />
+
+        <MudText Typo="@Typo.h5">
+            @ProfessionDetails.SocialFeature.Name
+        </MudText>
+
+        <br />
+
+        <MudText Typo="@Typo.body1">
+            @MarkupStringHelper.GetMarkupString(@ProfessionDetails.SocialFeature.Description)
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">
+            Respite Feature
+        </MudText>
+
+        <MudDivider />
+
+        <MudText Typo="@Typo.h5">
+            @ProfessionDetails.RespiteFeature.Name
+        </MudText>
+
+        <br />
+
+        <MudText Typo="@Typo.body1">
+            @MarkupStringHelper.GetMarkupString(@ProfessionDetails.RespiteFeature.Description)
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+@code {
+    private string _profession { get; set; }
+    [Parameter]
+    public string Profession
+    {
+        get { return _profession; }
+        set { _profession = value.CapitalizeFirstLetter(); }
+    }
+
+    private Profession? ProfessionDetails { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        ProfessionDetails = CompendiumService.Compendium.Professions.FirstOrDefault(w => w.Name == Profession);
+        await base.OnParametersSetAsync();
+    }
+}

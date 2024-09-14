@@ -1,0 +1,54 @@
+﻿@page "/character-rules/professions"
+@using Deedforge.Domain.CharacterRules.Professions
+@using Deedforge.Shared.Compendium
+
+@inject ICompendiumService CompendiumService
+
+<PageTitle>
+    Character Rules - Professions
+</PageTitle>
+
+<h1>Professions</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Professions are specific "jobs" or roles that adventurers take on, defining their expertise and capabilities.
+    <br />
+    <br />
+    Professions dictate what a character does and how they contribute to the party.
+    <br />
+    <br />
+    Each Profession provides a unique set of abilities across different scenarios:
+    <br />
+    • Combat Features for battle situations.
+    <br />
+    • Social Features for interactions and negotiations.
+    <br />
+    • Respite Features for activities between adventures.
+    <br />
+    <br />
+</MudText>
+
+<br />
+<br />
+
+<MudGrid Spacing="3" Justify="Justify.SpaceAround">
+    @foreach (var profession in CompendiumService.Compendium.Professions)
+    {
+        <MudItem xs="4" style="display: flex; flex-direction: column; align-items: center;">
+            <MudText Typo="@Typo.h6">
+                @{
+                    var displayText = profession.OrderRoman + ".";
+                }
+                @displayText
+            </MudText>
+
+            <br />
+
+            <MudLink Typo="Typo.h5" Href=@($"/character-rules/professions/{profession.Name}") Match="NavLinkMatch.Prefix">
+                @profession.Name
+            </MudLink>
+        </MudItem>
+    }
+</MudGrid>
