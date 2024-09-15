@@ -1,6 +1,4 @@
 using Deedforge.Components;
-using Deedforge.Services;
-using Deedforge.Shared.Compendium;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,10 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
-
-builder.Services.AddTransient<IDataFetchService, DataFetchService>();
-
-builder.Services.AddSingleton<ICompendiumService, CompendiumService>();
 
 builder.Services.AddMudServices();
 
@@ -40,9 +34,9 @@ app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(Deedforge.Client._Imports).Assembly);
 
-app.MapGet("/api/compendium", async (IDataFetchService dataFetchService) =>
-{
-    return TypedResults.Ok(await dataFetchService.GetCompendiumData());
-});
+//app.MapGet("/api/compendium", async (IDataFetchService dataFetchService) =>
+//{
+//    return TypedResults.Ok(await dataFetchService.GetCompendiumData());
+//});
 
 app.Run();

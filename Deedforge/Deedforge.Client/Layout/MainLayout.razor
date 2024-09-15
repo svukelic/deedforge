@@ -1,9 +1,6 @@
 ﻿@using Deedforge.Shared.Compendium
 @inherits LayoutComponentBase
 
-@inject ICompendiumService CompendiumObj
-@inject IDataFetchService DataFetchService
-
 <MudThemeProvider IsDarkMode="true" Theme="@MyCustomTheme" />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -30,11 +27,6 @@
 </MudLayout>
 
 @code {
-    protected override async Task OnInitializedAsync()
-    {
-        CompendiumObj.Compendium = await DataFetchService.GetCompendiumData();
-    }
-
     MudTheme MyCustomTheme = new MudTheme()
     {
         PaletteDark = new PaletteDark()

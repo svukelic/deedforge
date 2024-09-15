@@ -1,8 +1,6 @@
 ﻿@page "/gear/armors"
 @using Deedforge.Shared.Compendium
 
-@inject ICompendiumService CompendiumService
-
 <PageTitle>
     Gear - Armors
 </PageTitle>
@@ -26,7 +24,7 @@
 <br />
 <br />
 
-<MudTable Items="@CompendiumService.Compendium.Armors" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+<MudTable Items="@Compendium.CompendiumData.Armors" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
     <HeaderContent>
         <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
         <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>

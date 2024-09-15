@@ -1,8 +1,6 @@
 ﻿@page "/core-rules/attacking/melee"
 @using Deedforge.Shared.Compendium
 
-@inject ICompendiumService CompendiumService
-
 <PageTitle>
     Core Rules - Attacking - Melee
 </PageTitle>
@@ -87,6 +85,6 @@
 
         <br />
 
-        <AttackListComponent AttackList="@CompendiumService.Compendium.MeleeAttacks" />
+        <AttackListComponent AttackList="@Compendium.CompendiumData.MeleeAttacks" />
     </MudItem>
 </MudGrid>

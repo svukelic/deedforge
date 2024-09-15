@@ -1,38 +1,33 @@
 ﻿using Deedforge.Domain.Adventuring;
-using Deedforge.Domain.CharacterRules.Professions;
 using Deedforge.Domain.CharacterRules.Professions.Collection;
+using Deedforge.Domain.CharacterRules.Professions;
 using Deedforge.Domain.CoreRules.Attacking;
 using Deedforge.Domain.CoreRules.Statuses;
 using Deedforge.Domain.Gear;
-using Deedforge.Shared.Compendium;
 using System.Reflection;
 
-namespace Deedforge.Services
+namespace Deedforge.Shared.Compendium
 {
-    public class DataFetchService : IDataFetchService
+    public class Compendium
     {
-        public async Task<CompendiumData> GetCompendiumData()
+        public static CompendiumData CompendiumData { get; set; } = GetCompendiumData();
+            
+        private static CompendiumData GetCompendiumData()
         {
-            await Task.Yield();
-
-            var data = new CompendiumData
+            return new CompendiumData
             {
-                Deeds = await GetProperties<Deed, Deeds>(),
-                Boons = await GetProperties<Status, Boons>(),
-                Conditions = await GetProperties<Status, Conditions>(),
-                MeleeAttacks = await GetProperties<AttackForm, MeleeAttacks>(),
-                Armors = await GetProperties<Armor, Armors>(),
-                Shields = await GetProperties<Shield, Shields>(),
-                Professions = (await GetProperties<Profession, Professions>()).OrderBy(x => x.Order).ToList(),
+                Deeds = GetProperties<Deed, Deeds>(),
+                Boons = GetProperties<Status, Boons>(),
+                Conditions = GetProperties<Status, Conditions>(),
+                MeleeAttacks = GetProperties<AttackForm, MeleeAttacks>(),
+                Armors = GetProperties<Armor, Armors>(),
+                Shields = GetProperties<Shield, Shields>(),
+                Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
             };
-
-            return data;
         }
 
-        public async Task<List<T>> GetProperties<T, P>()
+        public static List<T> GetProperties<T, P>()
         {
-            await Task.Yield();
-
             var properties = GetFields<T, P>();
 
             return properties;

@@ -1,8 +1,6 @@
 ﻿@page "/core-rules/boons-conditions"
 @using Deedforge.Shared.Compendium
 
-@inject ICompendiumService CompendiumService
-
 <PageTitle>
     Core Rules - Boons & Conditions
 </PageTitle>
@@ -26,7 +24,7 @@
 
 <br />
 
-<MudTable Items="@CompendiumService.Compendium.Boons" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+<MudTable Items="@Compendium.CompendiumData.Boons" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
     <HeaderContent>
         <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
         <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
@@ -57,7 +55,7 @@
 
 <br />
 
-<MudTable Items="@CompendiumService.Compendium.Conditions" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+<MudTable Items="@Compendium.CompendiumData.Conditions" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
     <HeaderContent>
         <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
         <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>

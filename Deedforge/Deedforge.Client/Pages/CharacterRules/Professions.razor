@@ -2,8 +2,6 @@
 @using Deedforge.Domain.CharacterRules.Professions
 @using Deedforge.Shared.Compendium
 
-@inject ICompendiumService CompendiumService
-
 <PageTitle>
     Character Rules - Professions
 </PageTitle>
@@ -34,21 +32,21 @@
 <br />
 
 <MudGrid Spacing="3" Justify="Justify.SpaceAround">
-    @foreach (var profession in CompendiumService.Compendium.Professions)
+    @foreach (var profession in Compendium.CompendiumData.Professions)
     {
-        <MudItem xs="4" style="display: flex; flex-direction: column; align-items: center;">
-            <MudText Typo="@Typo.h6">
-                @{
-                    var displayText = profession.OrderRoman + ".";
-                }
-                @displayText
-            </MudText>
+    <MudItem xs="4" style="display: flex; flex-direction: column; align-items: center;">
+        <MudText Typo="@Typo.h6">
+            @{
+                var displayText = profession.OrderRoman + ".";
+            }
+            @displayText
+        </MudText>
 
-            <br />
+        <br />
 
-            <MudLink Typo="Typo.h5" Href=@($"/character-rules/professions/{profession.Name}") Match="NavLinkMatch.Prefix">
-                @profession.Name
-            </MudLink>
-        </MudItem>
+        <MudLink Typo="Typo.h5" Href=@($"/character-rules/professions/{profession.Name}") Match="NavLinkMatch.Prefix">
+            @profession.Name
+        </MudLink>
+    </MudItem>
     }
 </MudGrid>

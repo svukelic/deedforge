@@ -1,8 +1,6 @@
 ﻿@page "/character-rules/deeds"
 @using Deedforge.Shared.Compendium
 
-@inject ICompendiumService CompendiumService
-
 <PageTitle>
     Adventuring - Deeds
 </PageTitle>
@@ -86,7 +84,7 @@
 <br />
 
 <MudGrid Spacing="4" Justify="Justify.SpaceAround">
-    @foreach (var deed in @CompendiumService.Compendium.Deeds)
+    @foreach (var deed in Compendium.CompendiumData.Deeds)
     {
         <DeedComponent DeedInstance="@deed" />
     }

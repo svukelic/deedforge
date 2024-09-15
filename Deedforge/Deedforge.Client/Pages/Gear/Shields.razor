@@ -2,8 +2,6 @@
 @using Deedforge.Shared.Compendium
 @using Deedforge.Client.Helpers
 
-@inject ICompendiumService CompendiumService
-
 <PageTitle>
     Gear - Shields
 </PageTitle>
@@ -27,7 +25,7 @@
 <br />
 <br />
 
-<MudTable Items="@CompendiumService.Compendium.Shields" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+<MudTable Items="@Compendium.CompendiumData.Shields" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
     <HeaderContent>
         <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
         <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
