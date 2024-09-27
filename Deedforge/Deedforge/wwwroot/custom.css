@@ -78,3 +78,7 @@
     object-fit: cover; /* Ensures the frame covers the container */
     z-index: 2;
 }
+
+.centered-table :is(th, td) {
+    text-align: center !important;
+}

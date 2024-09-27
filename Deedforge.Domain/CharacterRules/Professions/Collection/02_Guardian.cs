@@ -14,7 +14,7 @@
             CombatFeature = new ProfessionFeature
             {
                 Name = "Shield Bash",
-                Description = "Any shield that you have equipped is also considered a weapon with Light Weapon Design and Bash and Shove Attacks, and your other weapon doesn't need to be a Light weapon in order for you to have it equipped alongside your Shield.<br /><br />Additionally, you can enter a Protective Stance by spending 1 AP. The Stance lasts until the start of your next turn, during which you gain the following effects:<br />- You have Upper Hand on all Defense Checks.<br />- Your Movement Speed is halved."
+                Description = "Any shield that you have equipped is also considered a weapon with Light Weapon Design and Bash Attack, and your other weapon doesn't need to be a Light weapon in order for you to have it equipped alongside your Shield.<br /><br />Additionally, you can enter a Protective Stance by spending 1 AP. The Stance lasts until the start of your next turn, during which you gain the following effects:<br />- You have Upper Hand on all Defense Checks.<br />- Your Movement Speed is halved."
             },
             SocialFeature = new ProfessionFeature
             {

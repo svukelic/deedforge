@@ -34,7 +34,7 @@
         {
             Name = "Hastened",
             Description = "The world around the character appears to move in slow motion. Their reflexes are supercharged, allowing them to act with preternatural speed.",
-            Effect = "Start turn with +1 AP."
+            Effect = "Start turn with 1 additional AP."
         };
 
         public static Status Hidden = new Status

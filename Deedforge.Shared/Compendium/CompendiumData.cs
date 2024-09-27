@@ -8,14 +8,25 @@ namespace Deedforge.Shared.Compendium
 {
     public class CompendiumData
     {
+        #region Core Rules
         public List<Deed> Deeds { get; set; } = new List<Deed>();
         public List<Status> Boons { get; set; } = new List<Status>();
         public List<Status> Conditions { get; set; } = new List<Status>();
-        public List<Armor> Armors { get; set; } = new List<Armor>();
-        public List<Shield> Shields { get; set; } = new List<Shield>();
+        #endregion
+
+        #region Attacks
         public List<AttackForm> MeleeAttacks { get; set; } = new List<AttackForm>();
         public List<AttackForm> RangedAttacks { get; set; } = new List<AttackForm>();
         public List<AttackForm> SpellAttacks { get; set; } = new List<AttackForm>();
+        #endregion
+
+        #region Character Rules
         public List<Profession> Professions { get; set; } = new List<Profession>();
+        #endregion
+
+        #region Gear
+        public List<Armor> Armors { get; set; } = new List<Armor>();
+        public List<Shield> Shields { get; set; } = new List<Shield>();
+        #endregion
     }
 }

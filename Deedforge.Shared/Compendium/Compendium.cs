@@ -19,10 +19,13 @@ namespace Deedforge.Shared.Compendium
                 Deeds = GetProperties<Deed, Deeds>(),
                 Boons = GetProperties<Status, Boons>(),
                 Conditions = GetProperties<Status, Conditions>(),
+                
                 MeleeAttacks = GetProperties<AttackForm, MeleeAttacks>(),
+
+                Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
+
                 Armors = GetProperties<Armor, Armors>(),
                 Shields = GetProperties<Shield, Shields>(),
-                Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
             };
         }
 

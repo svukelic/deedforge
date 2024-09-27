@@ -14,7 +14,7 @@
             CombatFeature = new ProfessionFeature
             {
                 Name = "Battle Fury",
-                Description = "You have the ability to enter a furious stance known as the Battle Fury as a Preparation Action, and it lasts until the end of your next turn. While you are in Battle Fury, you gain the following effects:<br /> - You gain Enraged Status that cannot be stripped from you in any way while you are in Battle Fury.<br /> - You have Upper Hand on all Fortitude checks.<br /> - If you have suffered a Wound since your last turn, the first time you hit an enemy in current turn is considered a Severe Hit."
+                Description = "You have the ability to enter a furious stance known as the Battle Fury as a Preparation Action, and it lasts until the end of your next turn. While you are in Battle Fury, you gain the following effects:<br /><br /> - You gain Enraged Status that cannot be stripped from you in any way while you are in Battle Fury.<br /> - You have Upper Hand on all Fortitude checks.<br /> - If you have suffered a Wound since your last turn, the first time you hit an enemy in current turn is considered a Severe Hit."
             },
             SocialFeature = new ProfessionFeature
             {

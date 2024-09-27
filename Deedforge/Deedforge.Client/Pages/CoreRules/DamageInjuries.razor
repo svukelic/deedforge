@@ -8,33 +8,170 @@
 
 <br />
 
-<MudGrid>
-    <MudItem xs="6">
-        <MudText Typo="@Typo.body1">
-            The skills are the bread and butter of who your character is and what they can do.
-            <br />
-            <br />
-            Skills are used to determine how well you do anything that you attempt to do, be it recall knowledge about particular subject, strike a foe or resist a mind-bending effect.
-            <br />
-            <br />
-            Character's starting Skill Proficiencies are defined as part of the <MudLink Href="/character-creation">Character Creation</MudLink> process.
-            <br />
-            <br />
-            <b>Base Die.</b> Base Die is always a d12. When making a skill check or a weapon check, you always roll a Base Die, even if you are untrained in the skill
-            <br />
-            <br />
-            <b>Proficiency Die.</b> When you are making a Skill Check, you roll a Proficiency Die. Which die you roll depends your Proficiency tier with that skill.
+<MudText Typo="@Typo.h5">
+    Damage
+</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Damage represents the immediate harm inflicted on a character during combat or hazardous situations, and is a synonym for when a character loses Endurance.
+    <br />
+    <br />
+    When a character is hit by an attack or affected by a damaging effect, they take damage. The amount of damage is subtracted from the character's Endurance. Unless otherwise specified, the amount of damage is equal to 1.
+    <br />
+    <br />
+    Different weapons and effects deal different types of damage. Some creatures or characters may have Resistances or Vulnerabilities to certain damage types.
+    <br />
+    <br />
+    If the Attack roll against a character is equal to double or more of their current Endurance, the Attack inflicts an Injury.
+    <br />
+    <br />
+    If the character's Endurance is reduced to zero, they are considered to be Exposed. Certain features or effects take advantage of this state.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Damage Types
+</MudText>
+<br />
+
+<MudGrid Spacing="3">
+    <MudItem xs="3">
+        <MudText Typo="Typo.body1">
+            <b>Material Damage</b>
         </MudText>
+        <br />
+        <MudDivider />
+        <br />
+        • Physical<br />
+        • Poison<br />
+        • Sonic
     </MudItem>
-    <MudItem xs="6">
-        
+    <MudItem xs="3">
+        <MudText Typo="Typo.body1">
+            <b>Elemental Damage</b>
+        </MudText>
+        <br />
+        <MudDivider />
+        <br />
+        • Acid<br />
+        • Fire<br />
+        • Ice<br />
+        • Lightning<br />
+        • Psychic
+    </MudItem>
+    <MudItem xs="3">
+        <MudText Typo="Typo.body1">
+            <b>Unnatural Damage</b>
+        </MudText>
+        <br />
+        <MudDivider />
+        <br />
+        • Hallowed<br />
+        • Profane
     </MudItem>
 </MudGrid>
 
 <br />
+<br />
 
 <MudText Typo="@Typo.h5">
-    Resolving Skill Rolls
+    Injuries
+</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Injuries are more severe and lasting forms of harm that occur when a character's defenses are overwhelmed.
+    <br />
+    <br />
+    Unlike damage, which is temporary and easily recovered, Injuries represent significant trauma that can have ongoing effects on a character's performance and well-being.
+    <br />
+    <br />
+    <b>Injury Location.</b> When a character suffers an Injury, the player must roll a 1d12 to determine the location of the Injury.
+    <br />
+    <br />
+    <b>Effects of Injuries.</b> Injuries can impose penalties on various actions, or cause ongoing effects until healed. Specific Injury effects depend on combination of the Injury Location and the Damage type of the Attack that inflicted the Injury.
 </MudText>
 
 <br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    List of Injuries
+</MudText>
+<br />
+
+<MudCard>
+    <MudCardContent>
+        <MudTable Items="@InjuryLocations" Hover="true" Breakpoint="Breakpoint.None" Dense="true" FixedHeader="true">
+            <ColGroup>
+                <col style="width: 200px;" />
+                <col />
+            </ColGroup>
+            <HeaderContent>
+                <MudTh>Injury Location</MudTh>
+                <MudTh>
+                    <MudTabs Elevation="0" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-0" Color="Color.Primary">
+                        @foreach (var damageType in DamageTypes)
+                        {
+                            <MudTabPanel Text="@damageType" />
+                        }
+                    </MudTabs>
+                </MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Injury Location">@context.Location</MudTd>
+                <MudTd>
+                    <MudTabs Elevation="0" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-0" Color="Color.Primary">
+                        @foreach (var damageType in DamageTypes)
+                        {
+                            <MudTabPanel>
+                                <MudRating SelectedValue="@GetDamageRating(context.Location, damageType)" ReadOnly="true" />
+                            </MudTabPanel>
+                        }
+                    </MudTabs>
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+    </MudCardContent>
+</MudCard>
+
+<br />
+<br />
+
+@code {
+    public class InjuryInfo
+    {
+        public string Location { get; set; }
+        public string Effect { get; set; }
+    }
+
+    public List<InjuryInfo> InjuryLocations = new List<InjuryInfo>
+    {
+        new InjuryInfo { Location = "Arm", Effect = "Reduced manual dexterity, difficulty wielding weapons or tools" },
+        new InjuryInfo { Location = "Leg", Effect = "Impaired movement speed, balance issues" },
+        new InjuryInfo { Location = "Eye", Effect = "Partial vision loss, reduced accuracy in ranged attacks" },
+        new InjuryInfo { Location = "Ear", Effect = "Hearing loss, balance problems, reduced awareness" },
+        new InjuryInfo { Location = "Heart", Effect = "Reduced stamina, risk of fatal complications" },
+        new InjuryInfo { Location = "Liver", Effect = "Lowered poison resistance, slower healing" },
+        new InjuryInfo { Location = "Brain", Effect = "Cognitive impairment, potential loss of specific skills or memories" },
+        new InjuryInfo { Location = "Lungs", Effect = "Shortness of breath, reduced endurance" },
+        new InjuryInfo { Location = "Spine", Effect = "Partial paralysis, severe movement restrictions" },
+        new InjuryInfo { Location = "Abdomen", Effect = "Internal bleeding risk, reduced carrying capacity" },
+        new InjuryInfo { Location = "Throat", Effect = "Breathing difficulties, problems with verbal communication" },
+        new InjuryInfo { Location = "Skin", Effect = "Increased vulnerability to environmental factors, risk of infection, reduced charisma" }
+    };
+
+    public List<string> DamageTypes = new List<string>
+    {
+        "Acid", "Fire", "Ice", "Lightning", "Psychic", "Physical", "Poison", "Sonic", "Hallowed", "Profane"
+    };
+
+    private int GetDamageRating(string location, string damageType)
+    {
+        // This is a placeholder function. In a real application, you would implement
+        // logic to return the appropriate damage rating based on the injury location and damage type.
+        Random rand = new Random();
+        return rand.Next(1, 6);  // Returns a random number between 1 and 5
+    }
+}

@@ -1,0 +1,105 @@
+﻿@page "/core-rules/reputation"
+
+<PageTitle>
+    Core Rules - Reputation
+</PageTitle>
+
+<h1>Reputation</h1>
+
+<br />
+
+<MudText Typo="@Typo.h5">Reputation Facets</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Reputation Facets are the core of the Reputation system, representing different aspects of a character's reputation:
+    <br /><br />
+    Characters earn Positive or Negative Reputation Tokens for each aspect based on their actions and decisions.
+</MudText>
+
+<br />
+<br />
+
+<MudSimpleTable Class="centered-table" Dense="true" Hover="true" Bordered="false" Striped="false" Style="overflow-x: auto;">
+    <thead>
+        <tr>
+            <th><b>Positive Token</b></th>
+            <th><b>Facet</b></th>
+            <th><b>Negative Token</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mercy</td>
+            <td> ← <i>Compassion</i> → </td>
+            <td>Ruthlessness</td>
+        </tr>
+        <tr>
+            <td>Generosity</td>
+            <td> ← <i>Altruism</i> → </td>
+            <td>Greed</td>
+        </tr>
+        <tr>
+            <td>Truth</td>
+            <td> ← <i>Honesty</i> → </td>
+            <td>Lie</td>
+        </tr>
+        <tr>
+            <td>Reliability</td>
+            <td> ← <i>Loyalty</i> → </td>
+            <td>Betrayal</td>
+        </tr>
+        <tr>
+            <td>Valor</td>
+            <td> ← <i>Courage</i> → </td>
+            <td>Cowardice</td>
+        </tr>
+        <tr>
+            <td>Genius</td>
+            <td> ← <i>Smarts</i> → </td>
+            <td>Buffoon</td>
+        </tr>
+        <tr>
+            <td>Coolness</td>
+            <td> ← <i>Composure</i> → </td>
+            <td>Panic</td>
+        </tr>
+    </tbody>
+</MudSimpleTable>
+
+<br />
+<br />
+
+<MudGrid Spacing="4" Justify="Justify.SpaceEvenly">
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">Earning Tokens</MudText>
+        <br />
+        <MudText Typo="@Typo.body1">
+            Characters earn Reputation Tokens through:
+            <br /><br />
+            • Key story decisions<br />
+            • Roleplaying aligned with specific aspects<br />
+            • Completing quests or challenges related to aspects<br />
+            • Character interactions and their outcomes<br />
+            <br />
+            The Guide awards tokens based on the significance and impact of the character's actions.
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">Spending Tokens</MudText>
+        <br />
+        <MudText Typo="@Typo.body1">
+            Reputation Tokens can be spent in various ways.
+            The players are encouraged to come up with creative uses for their tokens, and the Guide decides the effects based on what players want to achieve.
+            <br /><br />
+            • Influencing other characters to sway decisions or gain favors<br />
+            • Enhance related skills temporarily<br />
+            • Gain social advantage in relevant interactions<br />
+            • Trade for various resources or gear<br />
+            • Improve relationships with factions and organizations<br />
+            • Call for divine intervention from a higher power<br />
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
