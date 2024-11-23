@@ -274,7 +274,7 @@ namespace Deedforge.Domain.CoreRules
         #endregion
 
         #region Ice Injuries
-        public static 
+        
         #endregion
     }
 }

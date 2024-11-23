@@ -6,14 +6,14 @@
         {
             Name = "Bolstered",
             Description = "A surge of confidence flows through the character, steadying their hand and sharpening their mind. Their actions feel more assured, as if guided by an unseen force.",
-            Effect = "When making any Skill Check, roll Base Die twice and take the higher result."
+            Effect = "Upper Hand on the next Skill Check."
         };
 
         public static Status Empowered = new Status
         {
             Name = "Empowered",
             Description = "Raw energy courses through the character's veins, focusing into a singular point of power. Their next action crackles with potential, ready to be unleashed.",
-            Effect = "Upper Hand on the next Skill Check with a specific Skill."
+            Effect = "Next Execution Roll result is increased by one Tier."
         };
 
         public static Status FleetFooted = new Status
@@ -21,13 +21,6 @@
             Name = "Fleet-Footed",
             Description = "The character's feet barely touch the ground as they move with impossible grace and speed. Distance becomes meaningless in the face of their swiftness.",
             Effect = "Can take Move action at the start of the turn at no AP cost."
-        };
-
-        public static Status Focused = new Status
-        {
-            Name = "Focused",
-            Description = "Time seems to slow as the character's senses heighten to an uncanny degree. They perceive vulnerabilities in their target with crystal clarity.",
-            Effect = "Next attack is done as if the target is Exposed, regardless of their current Endurance."
         };
 
         public static Status Hastened = new Status
@@ -69,7 +62,7 @@
         {
             Name = "Unyielding",
             Description = "An indomitable will suffuses the character's being. They become an immovable force, standing firm against any attempt to hinder or move them.",
-            Effect = "Immune to Pinned and Stunned, and all knock-back effects."
+            Effect = "Immune to Pinned, Prone and Stunned, and all knock-back effects."
         };
     }
 }

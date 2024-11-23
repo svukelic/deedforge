@@ -13,6 +13,7 @@
     <ProjectReference Include="..\..\Deedforge.Domain\Deedforge.Domain.csproj" />
     <ProjectReference Include="..\..\Deedforge.Shared\Deedforge.Shared.csproj" />
     <ProjectReference Include="..\Deedforge.Client\Deedforge.Client.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
   </ItemGroup>

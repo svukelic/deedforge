@@ -20,7 +20,7 @@
         {
             Name = "Burning",
             Description = "The target is on fire.",
-            Effect = "Receive 1 damage at the start of the turn."
+            Effect = "Lose 1 Endurance at the start of the turn."
         };
 
         public static Status Clumsy = new Status
@@ -48,7 +48,7 @@
         {
             Name = "Dazed",
             Description = "The target is having trouble catching up to events.",
-            Effect = "Lower Hand on all Skill checks."
+            Effect = "Lower Hand on all rolls."
         };
 
         public static Status Deafened = new Status
@@ -56,6 +56,13 @@
             Name = "Deafened",
             Description = "The target cannot hear.",
             Effect = "Automatically fail all hearing-based checks. Cannot benefit from auditory warnings or communications."
+        };
+
+        public static Status Distracted = new Status
+        {
+            Name = "Distracted",
+            Description = "The target's attention is diverted.",
+            Effect = "Result of the next Execution Roll against the target is increased by one Tier. Unless otherwise specified, the target stops being Distracted when hit or at the start of their turn."
         };
 
         public static Status Drenched = new Status
@@ -111,7 +118,14 @@
         {
             Name = "Pinned",
             Description = "The target is pinned down.",
-            Effect = "Movement Speed becomes 0. Cannot take the Dodge action. Attack rolls against PPinned characters have Upper Hand."
+            Effect = "Movement Speed becomes 0. Cannot take any Armor action. Attack rolls against Pinned characters have Upper Hand."
+        };
+
+        public static Status Prone = new Status
+        {
+            Name = "Prone",
+            Description = "The target is prone.",
+            Effect = "Movement Speed is halved. Lower Hand on all Armor actions. Attack rolls against Prone characters have Upper Hand."
         };
 
         public static Status Sickened = new Status
