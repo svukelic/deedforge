@@ -1,0 +1,79 @@
+﻿@using Deedforge.Domain.CoreRules
+@using Deedforge.Domain.Gear.Weapons
+
+@if (Actions != null)
+{
+    foreach (var action in Actions)
+    {
+        <MudCard Class="my-8">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudGrid Justify="Justify.SpaceBetween">
+                        <MudItem xs="3">
+                            <MudText Typo="Typo.h5">@action.Name</MudText>
+                        </MudItem>
+                        <MudItem xs="3">
+                            @if(action.IsReaction)
+                            {
+                                <MudText Typo="Typo.h6"><i>Reaction</i></MudText>
+                            }
+                            else
+                            {
+                                <MudText Typo="Typo.h6"><i>Action</i></MudText>
+                            }
+                        </MudItem>
+                    </MudGrid>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudGrid Justify="Justify.Center" Class="py-8">
+                    <MudItem xs="3">
+                        <MudText Typo="Typo.body1">
+                            Fumbled Success
+                        </MudText>
+                        <MudDivider Class="my-2" />
+                        <MudText Typo="Typo.body1">
+                            @action.Tier1
+                        </MudText>
+                    </MudItem>
+                    <MudItem xs="3">
+                        <MudText Typo="Typo.body1">
+                            Basic Success
+                        </MudText>
+                        <MudDivider Class="my-2" />
+                        <MudText Typo="Typo.body1">
+                            @action.Tier2
+                        </MudText>
+                    </MudItem>
+                    <MudItem xs="3">
+                        <MudText Typo="Typo.body1">
+                            Superior Success
+                        </MudText>
+                        <MudDivider Class="my-2" />
+                        <MudText Typo="Typo.body1">
+                            @action.Tier3
+                        </MudText>
+                    </MudItem>
+                    <MudItem xs="3">
+                        <MudText Typo="Typo.body1">
+                            Critical Success
+                        </MudText>
+                        <MudDivider Class="my-2" />
+                        <MudText Typo="Typo.body1">
+                            @action.Tier4
+                        </MudText>
+                    </MudItem>
+                </MudGrid>
+            </MudCardContent>
+        </MudCard>
+    }
+}
+else
+{
+    <p>Weapon not provided.</p>
+}
+
+@code {
+    [Parameter]
+    public List<SuccessAction>? Actions { get; set; }
+}

@@ -1,8 +1,9 @@
 ﻿using Deedforge.Domain.Adventuring;
 using Deedforge.Domain.CharacterRules.Professions;
-using Deedforge.Domain.CoreRules.Attacking;
 using Deedforge.Domain.CoreRules.Statuses;
-using Deedforge.Domain.Gear;
+using Deedforge.Domain.Gear.Armors;
+using Deedforge.Domain.Gear.Shields;
+using Deedforge.Domain.Gear.Weapons;
 
 namespace Deedforge.Shared.Compendium
 {
@@ -14,12 +15,6 @@ namespace Deedforge.Shared.Compendium
         public List<Status> Conditions { get; set; } = new List<Status>();
         #endregion
 
-        #region Attacks
-        public List<AttackForm> MeleeAttacks { get; set; } = new List<AttackForm>();
-        public List<AttackForm> RangedAttacks { get; set; } = new List<AttackForm>();
-        public List<AttackForm> SpellAttacks { get; set; } = new List<AttackForm>();
-        #endregion
-
         #region Character Rules
         public List<Profession> Professions { get; set; } = new List<Profession>();
         #endregion
@@ -27,6 +22,7 @@ namespace Deedforge.Shared.Compendium
         #region Gear
         public List<Armor> Armors { get; set; } = new List<Armor>();
         public List<Shield> Shields { get; set; } = new List<Shield>();
+        public List<Weapon> Weapons { get; set; } = new List<Weapon>();
         #endregion
     }
 }

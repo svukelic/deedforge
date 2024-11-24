@@ -82,3 +82,11 @@
 .centered-table :is(th, td) {
     text-align: center !important;
 }
+
+.italic-font {
+    font-style: italic !important;
+}
+
+.bold-font {
+    font-weight: bold !important;
+}

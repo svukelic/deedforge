@@ -58,17 +58,17 @@
             GoverningAttribute = Attributes.Agility
         };
 
-        public static Skill Stealth = new Skill
+        public static Skill SleightOfHand = new Skill
         {
-            Name = "Stealth",
-            Description = "Employs knowledge of light, shadow, and sound propagation to move undetected and conceal oneself effectively. Understanding of typical patrol patterns and attention spans enhances ability to avoid detection.",
+            Name = "Sleight of Hand",
+            Description = "Applies fine motor control and misdirection techniques for sleight of hand, forgery, and trap-setting. Knowledge of common security measures and psychological tendencies aids in concealing objects and creating convincing deceptions.",
             GoverningAttribute = Attributes.Agility
         };
 
-        public static Skill Trickery = new Skill
+        public static Skill Subterfuge = new Skill
         {
-            Name = "Trickery",
-            Description = "Applies fine motor control and misdirection techniques for sleight of hand, forgery, and trap-setting. Knowledge of common security measures and psychological tendencies aids in concealing objects and creating convincing deceptions.",
+            Name = "Subterfuge",
+            Description = "Employs knowledge of light, shadow, and sound propagation to move undetected and conceal oneself effectively. Understanding of typical patrol patterns and attention spans enhances ability to avoid detection.",
             GoverningAttribute = Attributes.Agility
         };
 
@@ -89,7 +89,7 @@
         public static Skill Forestry = new Skill
         {
             Name = "Forestry",
-            Description = "Navigating and utilizing natural environments, as well as possessing knowledge about plants, animals, and various terrains.",
+            Description = "Navigating and utilizing natural environments, as well as possessing knowledge about plants and various terrains.",
             GoverningAttribute = Attributes.Intellect
         };
 

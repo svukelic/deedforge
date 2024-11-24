@@ -20,7 +20,7 @@
             Character's starting Skill Proficiencies are defined as part of the <MudLink Href="/character-creation">Character Creation</MudLink> process.
             <br />
             <br />
-            <b>Base Die.</b> Base Die is always a d12. When making a skill check or a weapon check, you always roll a Base Die, even if you are untrained in the skill
+            <b>Base Die.</b> Base Die is always a d12. When making a Skill check, you always roll a Base Die, even if you are untrained in the skill.
             <br />
             <br />
             <b>Proficiency Die.</b> When you are making a Skill Check, you roll a Proficiency Die. Which die you roll depends your Proficiency tier with that skill.
@@ -67,22 +67,68 @@
 <br />
 
 <MudText Typo="@Typo.h5">
-    Resolving Skill Rolls
+    Skill Checks
 </MudText>
 
 <br />
 
 <MudText Typo="@Typo.body1">
-    When a Skill Check is called, you roll a Base Die and a Proficiency Die corresponding to your proficiency in that Skill.
+    Skill Check is a roll made to determine the outcome of an action that requires a degree of skill or knowledge, and which uses a specific Skill.
+    <br />
+    In order to make a Skill Check, you roll a Base Die and a Proficiency Die corresponding to your proficiency in that Skill, and add the results together.
+    <br />
+    However, certain Actions that require a Skill Check may have an opposing force that you need to overcome, in which case you subtract the Bane Modifier, which is defined by the Action itself, from your final result.
+    <br />
+    Therefore, the formula for a Skill Check is as follows:
+    <br />
+    <b>Skill Check Result = Base Die Result + Proficiency Die Result - Bane Modifier</b>
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Resolving Skill Checks & Determining Success Tiers
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    The resulting effect of a Skill Check depends on the <b>Success Tier</b>. Your final result falls into one of these Success Tiers:
     <br />
     <br />
-    <b>Final result of a Skill Check is the sum of Base Die and the Proficiency Die that you rolled for that check.</b>
+    <b>6 and below:</b> Fumbled Success
+    <br />
+    <b>7-12:</b> Basic Success
+    <br />
+    <b>13-18:</b> Superior Success
+    <br />
+    <b>19 and above:</b> Epic Success
     <br />
     <br />
-    In order to ascertain whether the Skill Check was successful, the Guide decides whether the roll was made as part of a Contested Check or Against Difficulty Rating.
+    <i>Additionally, you can choose to take lower Success Tier, should you wish to do so.</i>
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Critical Rolls
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Whenever you roll a maximum result on a Proficiency Die, it is considered you had a Critical Roll. When that happens, you can choose one of the following effects:
+    <br />
+    - Roll an additional Proficiency Die and add the result to your check.
+    <br />
+    - Gain an additional AP for that Turn.
     <br />
     <br />
-    Contested Check means that two different characters made Skill Checks opposing each other (for example, trying to push each other), and it is considered that whoever rolled higher is the winner of that contest.
+    Critical Rolls can be triggered only once per Turn.
+    <br />
+    Certain features may grant you additional effects to choose when you roll a Critical Roll.
 </MudText>
 
 <br />
@@ -111,13 +157,13 @@
 <br />
 
 <MudText Typo="@Typo.body1">
-    Whenever a character rolls maximum roll on a Base Die when making a Skill Check, that is considered to be a <b>Breakthrough</b>. A character can have only three Breakthroughs per Adventure (or less, in case of shorter Adventures, as decided by the Guide), and can only have one Breakthrough per Skill per Adventure.
+    Whenever a character rolls maximum roll on a Base Die (12) when making a Skill Check, that is considered to be a <b>Breakthrough</b>. A character can have only three Breakthroughs per <MudLink Href="/adventuring/adventures">Adventure</MudLink> (or less, in case of shorter Adventures, as decided by the Guide), and can only have one Breakthrough per Skill per Adventure.
     <br />
     <br />
     When a Breakthrough happens, at the end of either that Sessions or Adventure (as decided by the player), that character gains a <MudLink Href="/character-rules/traits">Trait</MudLink> belonging to the Skill they rolled a Breakthrough in.
     <br />
     <br />
-    For every <b>two</b> Traits a character has in a particular Skill, that Skill increases by one Proficiency Tier.
+    For every <b>two</b> Traits a character has in a particular Skill, that Skill increases by one Proficiency Tier. A Skill cannot have higher Proficiency Tier than the Proficiency Tier of the Attribute it belongs to.
     <br />
     <br />
     For every <b>two</b> Proficiency Tiers in Skills contributing to a particular Attribute, that Attribute increases by one Proficiency Tier.
@@ -136,91 +182,20 @@
 <br />
 
 <MudText Typo="@Typo.body1">
-    When a feature states that you have Upper Hand on a check or a roll, you roll an additional Proficiency Die and add the result of that roll to your check.
+    When you have Upper Hand on a Skill Check, you reroll the Base Die and take the higher result.
     <br />
     <br />
-    When a feature states that you have Lower Hand on a check or a roll, you do not roll Proficiency Die for that check. If you are Inexperienced in the Skill you are rolling with a Lower Hand, you then halve the result.
+    When you have Lower Hand on a Skill Check, you reroll the Base Die and take the lower result. If you are Inexperienced in the Skill you are rolling with a Lower Hand, you then halve the result.
     <br />
     <br />
-    If you have both Upper and Lower Hand at the same time, they negate each other and you don’t roll any additional dice.
-</MudText>
-
-<br />
-<br />
-
-<MudText Typo="@Typo.h5">
-    Difficulty Rating & Passive Checks
-</MudText>
-
-<br />
-
-<MudGrid>
-    <MudItem xs="6">
-        <MudText Typo="@Typo.body1">
-            Certain actions require players to make a Skill Check in order to determine whether they are successful, but there is nothing to “contest” that roll. In that case, a Difficulty Rating (DR) is used.
-            <br />
-            <br />
-            <b>Proficiency Tier for Passive DR</b> denotes what is the Difficulty Rating based on the specific Skill Proficiency Tier for Passive Checks against that Skill.
-            <br />
-            <br />
-            e.g. When a character is trying to sneak past a guard who is not actively searching for intruders, they will make a Subterfuge check against guard’s Passive Perception DR. If the guard has Adept Proficiency in Perception, the DR for that check is set as 6.
-            <br />
-        </MudText>
-    </MudItem>
-    <MudItem xs="6">
-        <MudSimpleTable>
-            <thead class="table-header">
-                <tr>
-                    <th><MudText Typo="@Typo.h6">Difficulty</MudText></th>
-                    <th><MudText Typo="@Typo.h6">Proficiency Tier<br />for Passive DR</MudText></th>
-                    <th><MudText Typo="@Typo.h6">Difficulty Rating</MudText></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Trivial</td>
-                    <td>Trained</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Easy</td>
-                    <td>Adept</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Moderate</td>
-                    <td>Veteran</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Hard</td>
-                    <td>Master</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Very Hard</td>
-                    <td>Legendary</td>
-                    <td>12</td>
-                </tr>
-            </tbody>
-        </MudSimpleTable>
-    </MudItem>
-</MudGrid>
-
-<br />
-<br />
-
-<MudText Typo="@Typo.h5">
-    Success Tiers
-</MudText>
-
-<br />
-
-<MudText Typo="@Typo.body1">
-    <b>Success Tier</b> denotes how well a character has done on a particular skill check. A character is said to met a Success Tier for each increment of 4 they have exceeded the Difficulty Rating of the check.
+    Upper Hand and Lower Hand cancel each other out.
     <br />
     <br />
-    Certain features grant additional benefits for each Success Tier. For example, Forage Rest Action grants more gathered materials for each Success Tier.
+    You may have multiple instances of Upper Hand or Lower Hand on a single Skill Check.
+    <br />
+    - If you have double Upper Hand, instead of rerolling the Base Die, your Success Tier increases by one.
+    <br />
+    - If you have double Lower Hand, instead of rerolling the Base Die, your Success Tier decreases by one.
 </MudText>
 
 <br />

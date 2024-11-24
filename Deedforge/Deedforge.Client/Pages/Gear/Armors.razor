@@ -1,4 +1,6 @@
 ﻿@page "/gear/armors"
+@using Deedforge.Client.Helpers
+@using Deedforge.Domain.Gear.Armors
 @using Deedforge.Shared.Compendium
 
 <PageTitle>
@@ -10,31 +12,61 @@
 <div>
     <br />
 
-    <MudText Typo="Typo.body1">Armors are a type of protective gear worn across the entirety of the body. Armors require specific training to be used, usually bestowed by the character's pick of Profession.</MudText>
+    <MudText Typo="Typo.body1">Armors are a type of protective gear worn across the entirety of the body.</MudText>
 
     <br />
 
-    <MudText Typo="Typo.body1"><b>Endurance</b> represents the overall durability the character has while wearing a particular armor. Endurance determines the value that the enemy needs to surpass when rolling to attack to actually hit you. Endurance can be further increased with specific features and effects, but is also decreased when the Armor receives <MudLink Href="/core-rules/damage-wounds">Damage</MudLink>.</MudText>
+    <MudText Typo="Typo.body1"><b>Base Endurance</b> represents the base durability the character has while wearing a particular armor. Overall Endurance can be further increased with specific features and effects, but is also decreased when the character receives <MudLink Href="/core-rules/damage-wounds">Damage</MudLink>.</MudText>
 
     <br />
 
-    <MudText Typo="Typo.body1"><b>Number of Reactions</b> shows how many Reactions can a character wearing a particular armor take each Turn. More details regarding actions can be found here: <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink></MudText>
+    <MudText Typo="Typo.body1"><b>Number of Reactions</b> shows how many Reactions can a character wearing a particular armor take each Round. More details regarding actions can be found here: <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink></MudText>
+
+    <br />
+
+    <MudText Typo="Typo.body1"><b>Granted Actions</b> defines which <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink> are granted to the character wearing the Armor.</MudText>
 </div>
 
 <br />
 <br />
 
-<MudTable Items="@Compendium.CompendiumData.Armors" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
-    <HeaderContent>
-        <MudTh><MudText Typo="Typo.h6">Name</MudText></MudTh>
-        <MudTh><MudText Typo="Typo.h6">Description</MudText></MudTh>
-        <MudTh><MudText Typo="Typo.h6">Endurance</MudText></MudTh>
-        <MudTh><MudText Typo="Typo.h6">Number of Reactions</MudText></MudTh>
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd DataLabel="Name"><strong>@context.Name</strong></MudTd>
-        <MudTd DataLabel="Description"><i>@context.Description</i></MudTd>
-        <MudTd DataLabel="Endurance">@context.Endurance</MudTd>
-        <MudTd DataLabel="Number of Reactions">@context.NumberOfReactions</MudTd>
-    </RowTemplate>
-</MudTable>
+<MudDataGrid Items="@Compendium.CompendiumData.Armors"
+             ReadOnly="true" EditMode="@DataGridEditMode.Cell">
+    <Columns>
+        <HierarchyColumn T="Armor" />
+        <PropertyColumn Property="x => x.Name" CellClass="bold-font">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Armor</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.Description" CellClass="italic-font">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Description</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.Endurance">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Base Endurance</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.NumberOfReactions">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Number of Reactions</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.SuccessActions">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Granted Actions</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions.Select(s => s.Name).ToList(), true)
+            </CellTemplate>
+        </PropertyColumn>
+    </Columns>
+    <ChildRowContent>
+        <Deedforge.Client.Components.SuccessActionsComponent Actions="@context.Item.SuccessActions" />
+    </ChildRowContent>
+    <PagerContent>
+        <MudDataGridPager T="Armor" />
+    </PagerContent>
+</MudDataGrid>

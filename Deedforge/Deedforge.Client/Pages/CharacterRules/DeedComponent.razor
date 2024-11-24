@@ -31,7 +31,7 @@
     <MudText Typo="@Typo.body1">
         <b>Unlocks</b> the following Prestige Titles:
         <br />
-        @MarkupStringHelper.ReturnStringsWithCommas(@DeedInstance.PrestigeTitles.Select(x => x.Name).ToList());
+        @MarkupStringHelper.GetStringsWithCommas(@DeedInstance.PrestigeTitles.Select(x => x.Name).ToList());
     </MudText>
 </MudItem>
 

@@ -12,20 +12,15 @@
     <MudNavGroup Title="Core Rules" Icon="@Icons.Material.Filled.LocalLibrary">
         <MudNavLink Href="/core-rules/skills" Icon="@CustomIcons.WeightLiftingUp" Match="NavLinkMatch.Prefix">Skill Rules</MudNavLink>
         <MudNavLink Href="/core-rules/skills-list" Icon="@CustomIcons.Skills" Match="NavLinkMatch.Prefix">List of Skills</MudNavLink>
-        <MudNavLink Href="/core-rules/actions-reactions" Icon="@CustomIcons.TeamIdea" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Actions & Reactions</MudNavLink>
-        <MudNavLink Href="/core-rules/damage-injuries" Icon="@CustomIcons.ArmSling" Match="NavLinkMatch.Prefix">Damage & Injuries</MudNavLink>
+        <MudNavLink Href="/core-rules/actions-reactions" Icon="@CustomIcons.TeamIdea" Match="NavLinkMatch.Prefix">Actions & Reactions</MudNavLink>
+        <MudNavLink Href="/core-rules/attacking" Icon="@CustomIcons.AxeSwing" Match="NavLinkMatch.Prefix">Attacking</MudNavLink>
+        <MudNavLink Href="/core-rules/damage-wounds" Icon="@CustomIcons.ArmSling" Match="NavLinkMatch.Prefix">Damage & Wounds</MudNavLink>
         <MudNavLink Href="/core-rules/boons-conditions" Icon="@CustomIcons.VoodooDoll" Match="NavLinkMatch.Prefix">Boons & Conditions</MudNavLink>
 
-        <MudNavGroup Title="Spatial Rules" Icon="@CustomIcons.SwordSlice">
-            <MudNavLink Href="/core-rules/spatial/vicinity" Icon="@CustomIcons.Distance" Match="NavLinkMatch.Prefix">Vicinity</MudNavLink>
-            <MudNavLink Href="/core-rules/spatial/vision" Icon="@CustomIcons.Eyeball" Match="NavLinkMatch.Prefix">Vision</MudNavLink>
-            <MudNavLink Href="/core-rules/spatial/movement" Icon="@CustomIcons.NinjaRun" Match="NavLinkMatch.Prefix">Movement</MudNavLink>
-        </MudNavGroup>
-
-        <MudNavGroup Title="Attacking" Icon="@CustomIcons.SwordSlice">
-            <MudNavLink Href="/core-rules/attacking/melee" Icon="@CustomIcons.AxeSwing" Match="NavLinkMatch.Prefix">Melee</MudNavLink>
-            <MudNavLink Href="/core-rules/attacking/ranged" Icon="@CustomIcons.ArrowFlights" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Ranged</MudNavLink>
-            <MudNavLink Href="/core-rules/attacking/spells" Icon="@CustomIcons.FireSpellCast" Match="NavLinkMatch.Prefix">Spells</MudNavLink>
+        <MudNavGroup Title="Spatial Rules" Icon="@CustomIcons.Awareness">
+            <MudNavLink Href="/core-rules/spatial/vicinity" Icon="@CustomIcons.Distance" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Vicinity</MudNavLink>
+            <MudNavLink Href="/core-rules/spatial/vision" Icon="@CustomIcons.Eyeball" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Vision</MudNavLink>
+            <MudNavLink Href="/core-rules/spatial/movement" Icon="@CustomIcons.NinjaRun" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Movement</MudNavLink>
         </MudNavGroup>
 
         <MudNavLink Href="/core-rules/reputation" Icon="@CustomIcons.Jury" Match="NavLinkMatch.Prefix">Reputation</MudNavLink>
@@ -41,15 +36,16 @@
 
     <MudNavGroup Title="Adventuring" Icon="@CustomIcons.TreasureMap">
         <MudNavLink Href="/adventuring/adventures" Icon="@CustomIcons.Journey" Match="NavLinkMatch.Prefix">Adventures</MudNavLink>
+        <MudNavLink Href="/adventuring/dangers" Icon="@CustomIcons.LightningStorm" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Dangers</MudNavLink>
         <MudNavLink Href="/adventuring/encounters" Icon="@CustomIcons.CrossedSwords" Match="NavLinkMatch.Prefix">Encounters</MudNavLink>
         <MudNavLink Href="/adventuring/respites" Icon="@CustomIcons.Campfire" Match="NavLinkMatch.Prefix">Respites</MudNavLink>
-        <MudNavLink Href="/adventuring/treasures-consequences" Icon="@CustomIcons.TreasureChest" Match="NavLinkMatch.Prefix">Treasures</MudNavLink>
+        <MudNavLink Href="/adventuring/treasures-consequences" Icon="@CustomIcons.TreasureChest" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Treasures</MudNavLink>
     </MudNavGroup>
 
     <MudNavGroup Title="Gear" Icon="@CustomIcons.BattleGear">
         <MudNavLink Href="/gear/armors" Icon="@CustomIcons.Breastplate" Match="NavLinkMatch.Prefix">Armors</MudNavLink>
         <MudNavLink Href="/gear/shields" Icon="@CustomIcons.VikingShield" Match="NavLinkMatch.Prefix">Shields</MudNavLink>
-        <MudNavLink Href="/gear/weapons" Icon="@CustomIcons.SwitchWeapon" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Weapons</MudNavLink>
+        <MudNavLink Href="/gear/weapons" Icon="@CustomIcons.SwitchWeapon" Match="NavLinkMatch.Prefix">Weapons</MudNavLink>
         <MudNavLink Href="/gear/adornments" Icon="@CustomIcons.Cape" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Adornments</MudNavLink>
         <MudNavLink Href="/gear/enchanted-items" Icon="@CustomIcons.MagicAxe" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Enchanted Items</MudNavLink>
         <MudNavLink Href="/gear/adventuring-items" Icon="@CustomIcons.Backpack" Match="NavLinkMatch.Prefix" Style="text-decoration: line-through;">Adventuring Items</MudNavLink>

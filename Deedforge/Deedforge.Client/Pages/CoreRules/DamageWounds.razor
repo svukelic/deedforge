@@ -1,10 +1,10 @@
-﻿@page "/core-rules/damage-injuries"
+﻿@page "/core-rules/damage-wounds"
 
 <PageTitle>
-    Core Rules - Damage & Injuries
+    Core Rules - Damage & Wounds
 </PageTitle>
 
-<h1>Damage & Injuries</h1>
+<h1>Damage & Wounds</h1>
 
 <br />
 
@@ -16,16 +16,10 @@
     Damage represents the immediate harm inflicted on a character during combat or hazardous situations, and is a synonym for when a character loses Endurance.
     <br />
     <br />
-    When a character is hit by an attack or affected by a damaging effect, they take damage. The amount of damage is subtracted from the character's Endurance. Unless otherwise specified, the amount of damage is equal to 1.
+    When a character is hit by an attack or affected by a damaging effect, they take damage. The amount of damage is subtracted from the character's Endurance.
     <br />
     <br />
     Different weapons and effects deal different types of damage. Some creatures or characters may have Resistances or Vulnerabilities to certain damage types.
-    <br />
-    <br />
-    If the Attack roll against a character is equal to double or more of their current Endurance, the Attack inflicts an Injury.
-    <br />
-    <br />
-    If the character's Endurance is reduced to zero, they are considered to be Exposed. Certain features or effects take advantage of this state.
 </MudText>
 
 <br />
@@ -77,39 +71,42 @@
 <br />
 
 <MudText Typo="@Typo.h5">
-    Injuries
+    Wounds
 </MudText>
 <br />
 <MudText Typo="@Typo.body1">
-    Injuries are more severe and lasting forms of harm that occur when a character's defenses are overwhelmed.
+    Wounds are more severe and lasting forms of harm that occur when a character's defenses are overwhelmed. If the character's Endurance is reduced to zero, the character marks one Wound and rolls on the Wound table. The character then regains their entire Endurance pool and continues the fight.
     <br />
     <br />
-    Unlike damage, which is temporary and easily recovered, Injuries represent significant trauma that can have ongoing effects on a character's performance and well-being.
+    <b>On marking the third Wound, the character dies.</b>
     <br />
     <br />
-    <b>Injury Location.</b> When a character suffers an Injury, the player must roll a 1d12 to determine the location of the Injury.
+    Unlike damage, which is temporary and easily recovered, Wounds represent significant trauma that can have ongoing effects on a character's performance and well-being.
     <br />
     <br />
-    <b>Effects of Injuries.</b> Injuries can impose penalties on various actions, or cause ongoing effects until healed. Specific Injury effects depend on combination of the Injury Location and the Damage type of the Attack that inflicted the Injury.
+    <b>Wound Location.</b> When a character suffers an Wound, the player must roll a 1d12 to determine the location of the Wound.
+    <br />
+    <br />
+    <b>Effects of Wounds.</b> Wounds can impose penalties on various actions, or cause ongoing effects until healed. Specific Wound effects depend on combination of the Wound Location and the Damage type of the Attack that inflicted the Wound.
 </MudText>
 
 <br />
 <br />
 
 <MudText Typo="@Typo.h5">
-    List of Injuries
+    List of Wounds
 </MudText>
 <br />
 
 <MudCard>
     <MudCardContent>
-        <MudTable Items="@InjuryLocations" Hover="true" Breakpoint="Breakpoint.None" Dense="true" FixedHeader="true">
+        <MudTable Items="@WoundLocations" Hover="true" Breakpoint="Breakpoint.None" Dense="true" FixedHeader="true">
             <ColGroup>
                 <col style="width: 200px;" />
                 <col />
             </ColGroup>
             <HeaderContent>
-                <MudTh>Injury Location</MudTh>
+                <MudTh>Wound Location</MudTh>
                 <MudTh>
                     <MudTabs Elevation="0" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-0" Color="Color.Primary">
                         @foreach (var damageType in DamageTypes)
@@ -120,7 +117,7 @@
                 </MudTh>
             </HeaderContent>
             <RowTemplate>
-                <MudTd DataLabel="Injury Location">@context.Location</MudTd>
+                <MudTd DataLabel="Wound Location">@context.Location</MudTd>
                 <MudTd>
                     <MudTabs Elevation="0" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-0" Color="Color.Primary">
                         @foreach (var damageType in DamageTypes)
@@ -140,26 +137,26 @@
 <br />
 
 @code {
-    public class InjuryInfo
+    public class WoundInfo
     {
         public string Location { get; set; }
         public string Effect { get; set; }
     }
 
-    public List<InjuryInfo> InjuryLocations = new List<InjuryInfo>
+    public List<WoundInfo> WoundLocations = new List<WoundInfo>
     {
-        new InjuryInfo { Location = "Arm", Effect = "Reduced manual dexterity, difficulty wielding weapons or tools" },
-        new InjuryInfo { Location = "Leg", Effect = "Impaired movement speed, balance issues" },
-        new InjuryInfo { Location = "Eye", Effect = "Partial vision loss, reduced accuracy in ranged attacks" },
-        new InjuryInfo { Location = "Ear", Effect = "Hearing loss, balance problems, reduced awareness" },
-        new InjuryInfo { Location = "Heart", Effect = "Reduced stamina, risk of fatal complications" },
-        new InjuryInfo { Location = "Liver", Effect = "Lowered poison resistance, slower healing" },
-        new InjuryInfo { Location = "Brain", Effect = "Cognitive impairment, potential loss of specific skills or memories" },
-        new InjuryInfo { Location = "Lungs", Effect = "Shortness of breath, reduced endurance" },
-        new InjuryInfo { Location = "Spine", Effect = "Partial paralysis, severe movement restrictions" },
-        new InjuryInfo { Location = "Abdomen", Effect = "Internal bleeding risk, reduced carrying capacity" },
-        new InjuryInfo { Location = "Throat", Effect = "Breathing difficulties, problems with verbal communication" },
-        new InjuryInfo { Location = "Skin", Effect = "Increased vulnerability to environmental factors, risk of infection, reduced charisma" }
+        new WoundInfo { Location = "Arm", Effect = "Reduced manual dexterity, difficulty wielding weapons or tools" },
+        new WoundInfo { Location = "Leg", Effect = "Impaired movement speed, balance issues" },
+        new WoundInfo { Location = "Eye", Effect = "Partial vision loss, reduced accuracy in ranged attacks" },
+        new WoundInfo { Location = "Ear", Effect = "Hearing loss, balance problems, reduced awareness" },
+        new WoundInfo { Location = "Heart", Effect = "Reduced stamina, risk of fatal complications" },
+        new WoundInfo { Location = "Liver", Effect = "Lowered poison resistance, slower healing" },
+        new WoundInfo { Location = "Brain", Effect = "Cognitive impairment, potential loss of specific skills or memories" },
+        new WoundInfo { Location = "Lungs", Effect = "Shortness of breath, reduced endurance" },
+        new WoundInfo { Location = "Spine", Effect = "Partial paralysis, severe movement restrictions" },
+        new WoundInfo { Location = "Abdomen", Effect = "Internal bleeding risk, reduced carrying capacity" },
+        new WoundInfo { Location = "Throat", Effect = "Breathing difficulties, problems with verbal communication" },
+        new WoundInfo { Location = "Skin", Effect = "Increased vulnerability to environmental factors, risk of infection, reduced charisma" }
     };
 
     public List<string> DamageTypes = new List<string>
@@ -170,7 +167,7 @@
     private int GetDamageRating(string location, string damageType)
     {
         // This is a placeholder function. In a real application, you would implement
-        // logic to return the appropriate damage rating based on the injury location and damage type.
+        // logic to return the appropriate damage rating based on the Wound location and damage type.
         Random rand = new Random();
         return rand.Next(1, 6);  // Returns a random number between 1 and 5
     }

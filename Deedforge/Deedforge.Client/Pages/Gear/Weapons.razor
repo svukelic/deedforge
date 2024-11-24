@@ -1,39 +1,49 @@
-﻿@page "/gear/shields"
+﻿@page "/gear/weapons"
 @using Deedforge.Client.Helpers
-@using Deedforge.Domain.Gear.Shields
+@using Deedforge.Domain.Gear.Weapons
 @using Deedforge.Shared.Compendium
 
 <PageTitle>
-    Gear - Shields
+    Gear - Weapons
 </PageTitle>
 
-<h1>Shields</h1>
+<h1>Weapons</h1>
 
 <div>
     <br />
 
-    <MudText Typo="Typo.body1">Shields are defensive barriers worn on the arm to protect against attacks and deflect blows.</MudText>
+    <MudText Typo="Typo.body1">Weapons are.</MudText>
 
     <br />
 
-    <MudText Typo="Typo.body1"><b>Granted Actions</b> defines which <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink> are granted to the character wearing the Armor.</MudText>
+    <MudText Typo="Typo.body1"><b>TBD</b> TBD</MudText>
 </div>
 
 <br />
 <br />
 
-<MudDataGrid Items="@Compendium.CompendiumData.Shields"
+<MudDataGrid Items="@Compendium.CompendiumData.Weapons"
              ReadOnly="true" EditMode="@DataGridEditMode.Cell">
     <Columns>
-        <HierarchyColumn T="Shield" />
+        <HierarchyColumn T="Weapon" />
         <PropertyColumn Property="x => x.Name" CellClass="bold-font">
             <HeaderTemplate>
-                <MudText Typo="Typo.h6">Shield</MudText>
+                <MudText Typo="Typo.h6">Weapon</MudText>
             </HeaderTemplate>
         </PropertyColumn>
         <PropertyColumn Property="x => x.Description" CellClass="italic-font">
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Description</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.Type.ToString()">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Type</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.Design.ToString()">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Design</MudText>
             </HeaderTemplate>
         </PropertyColumn>
         <PropertyColumn Property="x => x.SuccessActions">
@@ -49,6 +59,6 @@
         <Deedforge.Client.Components.SuccessActionsComponent Actions="@context.Item.SuccessActions" />
     </ChildRowContent>
     <PagerContent>
-        <MudDataGridPager T="Shield" />
+        <MudDataGridPager T="Weapon" />
     </PagerContent>
 </MudDataGrid>

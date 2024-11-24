@@ -1,54 +1,37 @@
-﻿using Deedforge.Domain.CoreRules.Attacking;
+﻿using Deedforge.Domain.CoreRules;
 using System.ComponentModel;
 
 namespace Deedforge.Domain.Gear.Weapons
 {
-    public class Weapon
+    public class Weapon : SuccessActionCollection
     {
         public required string Name { get; set; }
         public required string Description { get; set; }
         public required WeaponType Type { get; set; }
         public required WeaponDesign Design { get; set; }
-        public required List<AttackForm> Forms { get; set; }
     }
 
     public enum WeaponType
     {
-        [Description("")]
-        Simple,
-        [Description("")]
-        OneHanded,
-        [Description("")]
-        TwoHanded,
-        [Description("")]
-        Ranged,
-        [Description("")]
-        Magic,
-        [Description("")]
-        Exotic,
+        [Description("Weapons which use raw might to overpower foes.")]
+        Power,
+        [Description("Weapons which use precision to strike at weak spots.")]
+        Precision,
+        [Description("Weapons which use magic to deal damage to foes.")]
+        Mystical,
+        [Description("Weapons which are used to empower and bolster allies.")]
+        Symbolic,
     }
 
     public enum WeaponDesign
     {
-        [Description("Target of this weapon's attack is treated as having 1 less Endurance than they have.")]
-        Brutal,
-        [Description("Wielder of this weapon can take Parry reaction with it.")]
-        Dueling,
-        [Description("(Ranged Only) This weapon doesn’t suffer from Lower Hand when attacking a target within Melee vicinity.")]
-        Flexible,
-        [Description("This weapon requires two hands and Trained in Athletics to be properly used.")]
+        [Description("This weapon requires two hands and Trained in Athletics to be properly used. Heavy weapons usually either deal more damage, or can hit multiple targets at once.")]
         Heavy,
-        [Description("This weapon is exceptionally light and can be equipped at the same time as another Light or Focus weapon.")]
+        [Description("This weapon is exceptionally light and can be used in either main hand or off-hand. When carried in off-hand, it grants a specific Retaliation attack instead of its usual Attacks.")]
         Light,
-        [Description("(Melee Only) This weapon can be used to attack from Near vicinity.")]
-        Reaching,
-        [Description("(Magic Weapons Only) This weapon does not have a Primary Attack. However, it provides an additional Spell Form instead.")]
-        Focus,
-        [Description("This weapon ignores any bonuses to targets AR above their baseline AR.")]
-        Sundering,
-        [Description("Dodging or Parrying against this weapon is done with a Lower Hand.")]
+        [Description("This weapon requires only one hand, and is particularly quick. It has Upper Hand on all Attack checks done as part of a Retaliation.")]
         Swift,
-        [Description("This weapon can use multiple Primary Attacks.")]
+        [Description("This weapon requires only one hand, but can also be used with two hands. When used with two hands, it has Upper Hand on the Attack check.")]
         Versatile,
     }
 }

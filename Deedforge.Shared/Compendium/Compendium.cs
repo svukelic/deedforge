@@ -1,10 +1,14 @@
 ﻿using Deedforge.Domain.Adventuring;
 using Deedforge.Domain.CharacterRules.Professions.Collection;
 using Deedforge.Domain.CharacterRules.Professions;
-using Deedforge.Domain.CoreRules.Attacking;
 using Deedforge.Domain.CoreRules.Statuses;
-using Deedforge.Domain.Gear;
 using System.Reflection;
+using Deedforge.Domain.Gear.Weapons;
+using Deedforge.Domain.Gear.Weapons.Collection;
+using Deedforge.Domain.Gear.Armors;
+using Deedforge.Domain.Gear.Armors.Collection;
+using Deedforge.Domain.Gear.Shields;
+using Deedforge.Domain.Gear.Shields.Collection;
 
 namespace Deedforge.Shared.Compendium
 {
@@ -19,13 +23,12 @@ namespace Deedforge.Shared.Compendium
                 Deeds = GetProperties<Deed, Deeds>(),
                 Boons = GetProperties<Status, Boons>(),
                 Conditions = GetProperties<Status, Conditions>(),
-                
-                MeleeAttacks = GetProperties<AttackForm, MeleeAttacks>(),
 
                 Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
 
                 Armors = GetProperties<Armor, Armors>(),
                 Shields = GetProperties<Shield, Shields>(),
+                Weapons = GetProperties<Weapon, Weapons>(),
             };
         }
 

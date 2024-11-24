@@ -9,7 +9,7 @@ namespace Deedforge.Client.Helpers
             return new MarkupString(property);
         }
 
-        public static string ReturnStringsWithCommas(List<string> strings)
+        public static string GetStringsWithCommas(List<string> strings)
         {
             if (strings == null || strings.Count == 0)
             {
@@ -42,6 +42,27 @@ namespace Deedforge.Client.Helpers
             }
 
             return char.ToUpper(input[0]) + input.Substring(1);
+        }
+
+        public static MarkupString GetStringWithLineBreaks(List<string> strings, bool isItalized)
+        {
+            if (strings == null || strings.Count == 0)
+            {
+                return new MarkupString(string.Empty);
+            }
+            var result = string.Empty;
+            foreach (string str in strings)
+            {
+                if (isItalized)
+                {
+                    result += $"<i>{str}</i><br />";
+                }
+                else
+                {
+                    result += $"{str}<br />";
+                }
+            }
+            return new MarkupString(result);
         }
     }
 }

@@ -2,39 +2,18 @@
 {
     public class Boons
     {
-        public static Status Bolstered = new Status
-        {
-            Name = "Bolstered",
-            Description = "A surge of confidence flows through the character, steadying their hand and sharpening their mind. Their actions feel more assured, as if guided by an unseen force.",
-            Effect = "Upper Hand on the next Skill Check."
-        };
-
         public static Status Empowered = new Status
         {
             Name = "Empowered",
-            Description = "Raw energy courses through the character's veins, focusing into a singular point of power. Their next action crackles with potential, ready to be unleashed.",
-            Effect = "Next Execution Roll result is increased by one Tier."
-        };
-
-        public static Status FleetFooted = new Status
-        {
-            Name = "Fleet-Footed",
-            Description = "The character's feet barely touch the ground as they move with impossible grace and speed. Distance becomes meaningless in the face of their swiftness.",
-            Effect = "Can take Move action at the start of the turn at no AP cost."
-        };
-
-        public static Status Hastened = new Status
-        {
-            Name = "Hastened",
-            Description = "The world around the character appears to move in slow motion. Their reflexes are supercharged, allowing them to act with preternatural speed.",
-            Effect = "Start turn with 1 additional AP."
+            Description = "A surge of confidence flows through the character, steadying their hand and sharpening their mind. Their actions feel more assured, as if guided by an unseen force.",
+            Effect = "Next Skill Check is done with Upper Hand."
         };
 
         public static Status Hidden = new Status
         {
             Name = "Hidden",
             Description = "Shadows cling to the character like a second skin, blurring their outline and masking their presence. They become one with the darkness, a whisper in the night.",
-            Effect = "Attack against target against whom you are Hidden is done with Upper Hand. Attacking removes this Boon. Taking Move Action while Hidden prompts a Stealth check."
+            Effect = "Attacks while Hidden are done with Upper Hand. Attacking removes this Boon."
         };
 
         public static Status Invisible = new Status
@@ -62,7 +41,7 @@
         {
             Name = "Unyielding",
             Description = "An indomitable will suffuses the character's being. They become an immovable force, standing firm against any attempt to hinder or move them.",
-            Effect = "Immune to Pinned, Prone and Stunned, and all knock-back effects."
+            Effect = "Immune to Pinned, Prone and Stunned, and all forced movement effects."
         };
     }
 }

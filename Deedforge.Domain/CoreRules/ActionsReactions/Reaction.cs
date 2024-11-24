@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Deedforge.Domain.CoreRules.Attacking
+namespace Deedforge.Domain.CoreRules.ActionsReactions
 {
-    internal class RangedAttacks
+    internal class Reaction
     {
     }
 }
