@@ -1,4 +1,5 @@
-﻿@using Deedforge.Domain.CoreRules
+﻿@using Deedforge.Client.Helpers
+@using Deedforge.Domain.CoreRules
 @using Deedforge.Domain.Gear.Weapons
 
 @if (Actions != null)
@@ -9,18 +10,15 @@
             <MudCardHeader>
                 <CardHeaderContent>
                     <MudGrid Justify="Justify.SpaceBetween">
-                        <MudItem xs="3">
+                        <MudItem xs="4">
                             <MudText Typo="Typo.h5">@action.Name</MudText>
+                            <br />
+                            <MudText Typo="Typo.body1"><i>@action.Description</i></MudText>
                         </MudItem>
-                        <MudItem xs="3">
-                            @if(action.IsReaction)
-                            {
-                                <MudText Typo="Typo.h6"><i>Reaction</i></MudText>
-                            }
-                            else
-                            {
-                                <MudText Typo="Typo.h6"><i>Action</i></MudText>
-                            }
+                        <MudItem xs="4">
+                            <MudText Typo="Typo.h6"><i>@MarkupStringHelper.GetStringsWithCommas(@action.ActionTypes.Select(x => x.ToString()).ToList())</i></MudText>
+                            <br />
+                            <MudText Typo="Typo.body1"><b>Challenge Modifier: </b>@action.ChallengeModifier</MudText>
                         </MudItem>
                     </MudGrid>
                 </CardHeaderContent>
@@ -28,7 +26,7 @@
             <MudCardContent>
                 <MudGrid Justify="Justify.Center" Class="py-8">
                     <MudItem xs="3">
-                        <MudText Typo="Typo.body1">
+                        <MudText Typo="Typo.h6">
                             Fumbled Success
                         </MudText>
                         <MudDivider Class="my-2" />
@@ -37,7 +35,7 @@
                         </MudText>
                     </MudItem>
                     <MudItem xs="3">
-                        <MudText Typo="Typo.body1">
+                        <MudText Typo="Typo.h6">
                             Basic Success
                         </MudText>
                         <MudDivider Class="my-2" />
@@ -46,7 +44,7 @@
                         </MudText>
                     </MudItem>
                     <MudItem xs="3">
-                        <MudText Typo="Typo.body1">
+                        <MudText Typo="Typo.h6">
                             Superior Success
                         </MudText>
                         <MudDivider Class="my-2" />
@@ -55,7 +53,7 @@
                         </MudText>
                     </MudItem>
                     <MudItem xs="3">
-                        <MudText Typo="Typo.body1">
+                        <MudText Typo="Typo.h6">
                             Critical Success
                         </MudText>
                         <MudDivider Class="my-2" />

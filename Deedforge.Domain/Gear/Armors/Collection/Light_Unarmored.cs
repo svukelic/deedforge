@@ -17,7 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Rage",
                 Description = "You enter a state of primal fury, gaining increased strength and resistance.",
                 Skills = SkillHelpers.SetSkills(Skills.Health),
-                IsReaction = true,
+                ActionTypes = new List<ActionType> { ActionType.Reaction },
                 Tier1 = "You reduce the damage taken from the triggering attack by 1, and can Retaliate against the triggering enemy, but you also trigger a Retaliation.",
                 Tier2 = "You reduce the damage taken from the triggering attack by 1, and can Retaliate against the triggering enemy.",
                 Tier3 = "You reduce the damage taken from the triggering attack by 2, and can Retaliate against the triggering enemy.",

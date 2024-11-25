@@ -12,7 +12,8 @@ namespace Deedforge.Domain.CoreRules
         public string Name { get; set; }
         public string Description { get; set; }
         public List<Skill> Skills { get; set; }
-        public bool IsReaction { get; set; } = false;
+        public List<ActionType> ActionTypes { get; set; }
+        public string ChallengeModifier { get; set; } = "-";
         public string Tier1 { get; set; }
         public string Tier2 { get; set; }
         public string Tier3 { get; set; }
@@ -22,5 +23,15 @@ namespace Deedforge.Domain.CoreRules
         {
             return new List<SuccessAction> { v };
         }
+    }
+
+    public enum ActionType
+    {
+        Action,
+        Reaction,
+        Melee,
+        Ranged,
+        Spell,
+        Area
     }
 }

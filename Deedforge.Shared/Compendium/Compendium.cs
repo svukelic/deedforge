@@ -9,6 +9,8 @@ using Deedforge.Domain.Gear.Armors;
 using Deedforge.Domain.Gear.Armors.Collection;
 using Deedforge.Domain.Gear.Shields;
 using Deedforge.Domain.Gear.Shields.Collection;
+using Deedforge.Domain.CoreRules.ActionsReactions;
+using Action = Deedforge.Domain.CoreRules.ActionsReactions.Action;
 
 namespace Deedforge.Shared.Compendium
 {
@@ -20,6 +22,7 @@ namespace Deedforge.Shared.Compendium
         {
             return new CompendiumData
             {
+                Actions = GetProperties<Action, Actions>(),
                 Deeds = GetProperties<Deed, Deeds>(),
                 Boons = GetProperties<Status, Boons>(),
                 Conditions = GetProperties<Status, Conditions>(),

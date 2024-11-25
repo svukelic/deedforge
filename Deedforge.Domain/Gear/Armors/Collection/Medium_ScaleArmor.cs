@@ -17,6 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Scale Lock",
                 Description = "You lock your armor's scales in place for enhanced protection.",
                 Skills = SkillHelpers.SetSkills(Skills.Defense),
+                ActionTypes = new List<ActionType> { ActionType.Action },
                 Tier1 = "Until the start of your next turn, gain +2 Grit, but you also become Staggered.",
                 Tier2 = "Until the start of your next turn, gain +2 Grit.",
                 Tier3 = "Until the start of your next turn, gain +4 Grit.",

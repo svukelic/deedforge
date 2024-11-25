@@ -16,9 +16,11 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
             {
                 new SuccessAction
                 {
-                    Name = "Cleave",
+                    Name = "Brutal Strike",
                     Description = "You swing your weapon in a wide arc, hitting multiple foes at once.",
                     Skills = SkillHelpers.SetSkills(Skills.PowerWeapons),
+                    ActionTypes = new List<ActionType> { ActionType.Melee },
+                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
                     Tier1 = "TBD",
                     Tier2 = "TBD",
                     Tier3 = "TBD",
@@ -29,6 +31,8 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     Name = "Guard Break",
                     Description = "You strike your foe's guard, breaking it and leaving them open to attack.",
                     Skills = SkillHelpers.SetSkills(Skills.PowerWeapons),
+                    ActionTypes = new List<ActionType> { ActionType.Melee },
+                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
                     Tier1 = "TBD",
                     Tier2 = "TBD",
                     Tier3 = "TBD",

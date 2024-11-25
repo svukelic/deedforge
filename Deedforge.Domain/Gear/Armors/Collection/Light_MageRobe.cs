@@ -17,7 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Absorb Spell",
                 Description = "You nullify a spell targeting you.",
                 Skills = SkillHelpers.SetSkills(Skills.Arcana, Skills.Occultism),
-                IsReaction = true,
+                ActionTypes = new List<ActionType> { ActionType.Reaction },
                 Tier1 = "You ignore non-damaging effects of a spell targeting or affecting you, but you also become Silenced until the end of your next turn.",
                 Tier2 = "You ignore non-damaging effects of a spell targeting or affecting you.",
                 Tier3 = "You ignore non-damaging effects of a spell targeting or affecting you, and your next Spell Attack has an Upper Hand.",

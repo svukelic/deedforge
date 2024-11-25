@@ -34,15 +34,21 @@
              ReadOnly="true" EditMode="@DataGridEditMode.Cell">
     <Columns>
         <HierarchyColumn T="Armor" />
-        <PropertyColumn Property="x => x.Name" CellClass="bold-font">
+        <PropertyColumn Property="x => x.Name">
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Armor</MudText>
             </HeaderTemplate>
+            <CellTemplate>
+                <MudText Typo="Typo.body1"><b>@context.Item.Name</b></MudText>
+            </CellTemplate>
         </PropertyColumn>
-        <PropertyColumn Property="x => x.Description" CellClass="italic-font">
+        <PropertyColumn Property="x => x.Description">
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Description</MudText>
             </HeaderTemplate>
+            <CellTemplate>
+                <MudText Typo="Typo.body1"><i>@context.Item.Description</i></MudText>
+            </CellTemplate>
         </PropertyColumn>
         <PropertyColumn Property="x => x.Endurance">
             <HeaderTemplate>

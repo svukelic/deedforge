@@ -17,7 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Dodge",
                 Description = "You dodge an attack targeting you, moving out of the way just in time.",
                 Skills = SkillHelpers.SetSkills(Skills.Acrobatics),
-                IsReaction = true,
+                ActionTypes = new List<ActionType> { ActionType.Reaction },
                 Tier1 = "You move 2 hexes, but you trigger Retaliation.",
                 Tier2 = "You move 2 hexes.",
                 Tier3 = "You move 2 hexes, and the movement doesn't trigger any Reactions.",

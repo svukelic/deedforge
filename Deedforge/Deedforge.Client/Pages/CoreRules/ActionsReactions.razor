@@ -1,5 +1,7 @@
 ﻿@page "/core-rules/actions-reactions"
 @using Deedforge.Shared.Compendium
+@using Deedforge.Domain.CoreRules.ActionsReactions;
+@using Action = Deedforge.Domain.CoreRules.ActionsReactions.Action;
 
 <PageTitle>
     Core Rules - Actions & Reactions
@@ -43,9 +45,50 @@
 </MudGrid>
 
 <br />
+<br />
 
+<MudDataGrid Items="@Compendium.CompendiumData.Actions"
+             ReadOnly="true" EditMode="@DataGridEditMode.Cell">
+    <Columns>
+        <HierarchyColumn T="Action" />
+        <PropertyColumn Property="x => x.Name">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Action</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                <MudText Typo="Typo.body1"><b>@context.Item.Name</b></MudText>
+            </CellTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.Description">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Description</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                <MudText Typo="Typo.body1"><i>@context.Item.Description</i></MudText>
+            </CellTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.IsReaction">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Is Reaction?</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                @if (context.Item.IsReaction)
+                {
+                    <MudText Typo="Typo.body1">Yes</MudText>
+                }
+                else
+                {
+                    <MudText Typo="Typo.body1">No</MudText>
+                }
+            </CellTemplate>
+        </PropertyColumn>
+    </Columns>
+    <PagerContent>
+        <MudDataGridPager T="Action" />
+    </PagerContent>
+</MudDataGrid>
 
-
+<br />
 <br />
 
 <MudGrid>
@@ -64,7 +107,7 @@
             Attacks strive to reduce the target's Endurance, and can have additional effects or consequences.
             <br />
             <br />
-            Unless otherwise specified, Bane Modifier for Attacks is always the target's Endurance.
+            Unless specified otherwise, Challenge Modifier for Attacks is always the target's Endurance.
         </MudText>
     </MudItem>
 

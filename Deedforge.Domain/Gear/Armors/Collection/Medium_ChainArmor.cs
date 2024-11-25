@@ -17,7 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Sidestep",
                 Description = "You sidestep upon being hit by a melee attack, and potentially reducing taken damage.",
                 Skills = SkillHelpers.SetSkills(Skills.Defense),
-                IsReaction = true,
+                ActionTypes = new List<ActionType> { ActionType.Reaction },
                 Tier1 = "You move 1 hex, but you become Distracted.",
                 Tier2 = "You move 1 hex.",
                 Tier3 = "You move 1 hex, and you reduce the damage taken from the triggering attack by 1.",

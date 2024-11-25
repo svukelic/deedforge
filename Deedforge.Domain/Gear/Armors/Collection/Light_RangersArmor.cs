@@ -17,6 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Camouflage",
                 Description = "You blend into your surroundings, becoming nearly invisible to enemies.",
                 Skills = SkillHelpers.SetSkills(Skills.Subterfuge),
+                ActionTypes = new List<ActionType> { ActionType.Action },
                 Tier1 = "You gain partial camouflage, becoming Invisible until you move or until the end of your next turn.",
                 Tier2 = "You gain partial camouflage, becoming Invisible until you move.",
                 Tier3 = "You gain full camouflage, becoming Invisible.",

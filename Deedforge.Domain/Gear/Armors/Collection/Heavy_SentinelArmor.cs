@@ -17,7 +17,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Name = "Ward & Counter",
                 Description = "You deflect a Ranged Attack with your armor, reducing the damage taken.",
                 Skills = SkillHelpers.SetSkills(Skills.Defense),
-                IsReaction = true,
+                ActionTypes = new List<ActionType> { ActionType.Reaction },
                 Tier1 = "You reduce the damage taken from the deflected attack by 2, but you also become Maimed until the end of your next turn.",
                 Tier2 = "You reduce the damage taken from the deflected attack by 2.",
                 Tier3 = "You reduce the damage taken by 3, and you can make a Retaliation against the target that attacked you.",

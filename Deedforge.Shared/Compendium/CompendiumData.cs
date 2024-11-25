@@ -4,12 +4,14 @@ using Deedforge.Domain.CoreRules.Statuses;
 using Deedforge.Domain.Gear.Armors;
 using Deedforge.Domain.Gear.Shields;
 using Deedforge.Domain.Gear.Weapons;
+using Action = Deedforge.Domain.CoreRules.ActionsReactions.Action;
 
 namespace Deedforge.Shared.Compendium
 {
     public class CompendiumData
     {
         #region Core Rules
+        public List<Action> Actions { get; set; } = new List<Action>();
         public List<Deed> Deeds { get; set; } = new List<Deed>();
         public List<Status> Boons { get; set; } = new List<Status>();
         public List<Status> Conditions { get; set; } = new List<Status>();
