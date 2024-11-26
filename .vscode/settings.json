@@ -1,5 +1,9 @@
 {
     "cSpell.words": [
-        "Deedforge"
-    ]
+        "Antiforgery",
+        "Blazor",
+        "Deedforge",
+        "HSTS"
+    ],
+    "workbench.editor.wrapTabs": true
 }

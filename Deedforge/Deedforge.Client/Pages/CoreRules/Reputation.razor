@@ -1,4 +1,5 @@
 ﻿@page "/core-rules/reputation"
+@using Deedforge.Shared.Compendium
 
 <PageTitle>
     Core Rules - Reputation
@@ -22,9 +23,9 @@
 <MudSimpleTable Class="centered-table" Dense="true" Hover="true" Bordered="false" Striped="false" Style="overflow-x: auto;">
     <thead>
         <tr>
-            <th><b>Positive Token</b></th>
-            <th><b>Facet</b></th>
-            <th><b>Negative Token</b></th>
+            <th><strong>Positive Token</strong></th>
+            <th><strong>Facet</strong></th>
+            <th><strong>Negative Token</strong></th>
         </tr>
     </thead>
     <tbody>
@@ -103,3 +104,35 @@
 
 <br />
 <br />
+
+<MudText Typo="@Typo.h5">
+    Scars & Reputation
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Different Scars prevent characters from earning certain Reputation Tokens, and affect character's behavior in various social interactions.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    List of Scars
+</MudText>
+
+<br />
+
+<MudTable Items="@Compendium.CompendiumData.Scars" Dense="true" Hover="true">
+    <HeaderContent>
+        <MudTh><strong>Name</strong></MudTh>
+        <MudTh><strong>Blocks</strong></MudTh>
+        <MudTh><strong>Description</strong></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd><i>@context.Name</i></MudTd>
+        <MudTd>@context.ReputationBlock</MudTd>
+        <MudTd><i>@context.Description</i></MudTd>
+    </RowTemplate>
+</MudTable>

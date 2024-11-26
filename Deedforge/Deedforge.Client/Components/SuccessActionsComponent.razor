@@ -13,12 +13,21 @@
                         <MudItem xs="4">
                             <MudText Typo="Typo.h5">@action.Name</MudText>
                             <br />
+                            @if (action.Skills.Any())
+                            {
+                                <MudText Typo="Typo.h6"><i>@MarkupStringHelper.GetStringsWithCommas(@action.Skills.Select(x => x.Name).ToList())</i></MudText>
+                            }
+                            else
+                            {
+                                <MudText Typo="Typo.h6"><i>Any Skill</i></MudText>
+                            }
+                            <br />
                             <MudText Typo="Typo.body1"><i>@action.Description</i></MudText>
                         </MudItem>
                         <MudItem xs="4">
-                            <MudText Typo="Typo.h6"><i>@MarkupStringHelper.GetStringsWithCommas(@action.ActionTypes.Select(x => x.ToString()).ToList())</i></MudText>
+                            <MudText Typo="Typo.h6">@MarkupStringHelper.GetStringsWithCommas(@action.ActionTypes.Select(x => x.ToString()).ToList())</MudText>
                             <br />
-                            <MudText Typo="Typo.body1"><b>Challenge Modifier: </b>@action.ChallengeModifier</MudText>
+                            <MudText Typo="Typo.body1"><i>Challenge Modifier: </i>@action.ChallengeModifier</MudText>
                         </MudItem>
                     </MudGrid>
                 </CardHeaderContent>
@@ -68,7 +77,7 @@
 }
 else
 {
-    <p>Weapon not provided.</p>
+    <p>Action not provided.</p>
 }
 
 @code {

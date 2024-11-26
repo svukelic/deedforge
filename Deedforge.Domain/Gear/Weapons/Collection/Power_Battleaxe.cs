@@ -37,7 +37,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     Tier2 = "TBD",
                     Tier3 = "TBD",
                     Tier4 = "TBD"
-                }
+                },
             }
         };
     }

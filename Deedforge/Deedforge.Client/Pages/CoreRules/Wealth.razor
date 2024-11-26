@@ -1,0 +1,125 @@
+﻿@page "/core-rules/wealth"
+@using Deedforge.Shared.Compendium
+
+<PageTitle>
+    Core Rules - Wealth
+</PageTitle>
+
+<h1>Wealth</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Deedforge uses abstraction of Wealth in order to circumvent the hassle of counting your coins.
+    <br /><br />
+    Each character can have one of 15 levels of Wealth. Each Wealth Level represents increasing financial "security" 
+    of the character, thus allowing them to spend money on increasing number of necessities, items and services 
+    without having to worry about becoming destitute.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">Expenses</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Anything that costs money to obtain is called an Expense. All Expenses have a cost express with Wealth Level. 
+    If an Expense has a cost that is below Wealth Tier of a character, then it is considered to be a Minor Expense. 
+    Otherwise, it is considered to be a Major Expense.
+</MudText>
+
+<br />
+<br />
+
+<MudGrid Spacing="4" Justify="Justify.SpaceEvenly">
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">Minor Expenses</MudText>
+        <br />
+        <MudText Typo="@Typo.body1">
+            Everyday expenses like food, lodging, and basic supplies that wouldn't decrease the wealth level but are assumed 
+            to be covered by it, assuming character's level of Wealth is sufficiently high for a particular Minor Expense.
+            <br /><br />
+            When purchasing a Minor Expense, character's level of Wealth does not change.
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">Major Expenses</MudText>
+        <br />
+        <MudText Typo="@Typo.body1">
+            Purchasing property, rare items, or other significant assets would decrease your wealth level by one or more tiers.
+            <br /><br />
+            When purchasing a Major Expense, character's Wealth goes down a number of Wealth Levels equal to the cost 
+            of the bought item or service.
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">Wealth Tiers</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Levels of Wealth are split based on Wealth Tiers, which are used to denote whether an Expense is a Minor 
+    or a Major Expense.
+</MudText>
+
+<br />
+
+<MudSimpleTable Dense="true" Hover="true" Bordered="false" Striped="false" Style="overflow-x: auto;">
+    <thead>
+        <tr>
+            <th><strong>Wealth Level</strong></th>
+            <th><strong>Wealth Tier</strong></th>
+            <th><strong>Expense Examples</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1 Handful</td><td>Handful</td><td>Basic meals, common clothing, simple tools, overnight in a common inn.</td></tr>
+        <tr><td>2 Handfuls</td><td>Handful</td><td>Decent clothing, simple weapons like a dagger or club.</td></tr>
+        <tr><td>3 Handfuls</td><td>Handful</td><td>Fine meals, light armor, basic horse, entrance to a common festivity.</td></tr>
+        <tr><td>4 Handfuls</td><td>Handful</td><td>Medium armor, basic potions.</td></tr>
+        <tr><td>5 Handfuls</td><td>Handful</td><td>Exquisite meals, heavy armor, basic magical trinkets, hire a personal guard for a day.</td></tr>
+        <tr><td>1 Bag</td><td>Bag</td><td>Enhanced weapons, hire a team of personal guards for a week.</td></tr>
+        <tr><td>2 Bags</td><td>Bag</td><td>Enchant a weapon, own a small business, buy a carriage.</td></tr>
+        <tr><td>3 Bags</td><td>Bag</td><td>Purchase rare ingredients or exotic pets, secure a private suite in a luxury inn.</td></tr>
+        <tr><td>4 Bags</td><td>Bag</td><td>Hire a wizard for a task, purchase a magical armor, own a large house.</td></tr>
+        <tr><td>1 Chest</td><td>Chest</td><td>Purchase a small property or farm, secure rare artifacts, hire a small army.</td></tr>
+        <tr><td>2 Chests</td><td>Chest</td><td>Own a mansion, commission a powerful magic item, finance a village festival.</td></tr>
+        <tr><td>3 Chests</td><td>Chest</td><td>Buy a ship, secure an audience with a king (bribes, gifts), support a minor guild.</td></tr>
+        <tr><td>1 Hoard</td><td>Hoard</td><td>Finance a war or expedition, establish a guild, build a fortress.</td></tr>
+        <tr><td>2 Hoards</td><td>Hoard</td><td>Buy a small island, support the construction of a temple, finance a city's defense.</td></tr>
+        <tr><td>A Fortune</td><td>Fortune</td><td>Establish a town, finance major political campaigns, become a primary investor in kingdom projects, have a castle constructed.</td></tr>
+    </tbody>
+</MudSimpleTable>
+
+<br />
+<br />
+
+<MudGrid Spacing="4" Justify="Justify.SpaceEvenly">
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">Gaining Wealth</MudText>
+        <br />
+        <MudText Typo="@Typo.body1">
+            When characters perform actions that would increase their Wealth, instead of earning explicit amounts of gold 
+            or other currency, they progress towards the next level of Wealth.
+            <br /><br />
+            To ascend from one level to another, characters must undertake significant quests, find treasures, invest 
+            in businesses, or receive massive rewards. The jump between levels should represent substantial growth in their Wealth.
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h5">Losing Wealth</MudText>
+        <br />
+        <MudText Typo="@Typo.body1">
+            Major expenses, robberies, disasters, or bad investments can cause characters to lose Wealth levels. 
+            If a character loses the last Wealth Level in a Tier, their Wealth drops down one Tier.
+            <br /><br />
+            For example, having 1 Chest of Wealth and spending it would drop the character's Wealth Level to 4 Bags of Wealth.
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+

@@ -84,16 +84,16 @@
             Effect = "Cannot take any Reaction."
         };
 
+        public static Status Stupefied = new Status
+        {
+            Name = "Stupefied",
+            Description = "The target has trouble collecting their thoughts.",
+            Effect = "Lower Hand on all Knowledge Checks."
+        };
+
         #endregion
 
         #region Skill Impairments
-
-        public static Status Clumsy = new Status
-        {
-            Name = "Clumsy",
-            Description = "The target has poor motor control.",
-            Effect = "Lower Hand on all Agility checks."
-        };
 
         public static Status Dazed = new Status
         {
@@ -102,25 +102,11 @@
             Effect = "Lower Hand on all Attack checks."
         };
 
-        public static Status Fatigued = new Status
+        public static Status Weakened = new Status
         {
-            Name = "Fatigued",
-            Description = "The target is under physical duress.",
-            Effect = "Lower Hand on all Fortitude checks."
-        };
-
-        public static Status Stupefied = new Status
-        {
-            Name = "Stupefied",
-            Description = "The target has issues collecting their thoughts.",
-            Effect = "Lower Hand on all Intellect checks."
-        };
-
-        public static Status Unnerved = new Status
-        {
-            Name = "Unnerved",
-            Description = "The target has difficulty concentrating.",
-            Effect = "Lower Hand on all Charisma checks."
+            Name = "Weakened",
+            Description = "The target's capability in one specific skill is diminished.",
+            Effect = "Lower Hand on checks with specific Skill."
         };
 
         #endregion
@@ -145,7 +131,7 @@
         {
             Name = "Enraged",
             Description = "The target has difficulty controlling their actions.",
-            Effect = "All Attack checks against Enraged characters have Upper Hand. Upper Hand on all checks to resist being controlled or emotionally manipulated via magic. If the character's Endurace is less than half of their Maximum Endurance at the start of their turn, they gain 1 Endurance."
+            Effect = "All Attack checks against Enraged characters have Upper Hand. Upper Hand on all checks to resist being controlled or emotionally manipulated via magic. If the character's Endurance is less than half of their Maximum Endurance at the start of their turn, they gain 1 Endurance."
         };
 
         public static Status Frightened = new Status

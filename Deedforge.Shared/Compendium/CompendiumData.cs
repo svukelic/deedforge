@@ -1,5 +1,7 @@
 ﻿using Deedforge.Domain.Adventuring;
 using Deedforge.Domain.CharacterRules.Professions;
+using Deedforge.Domain.CoreRules;
+using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.CoreRules.Statuses;
 using Deedforge.Domain.Gear.Armors;
 using Deedforge.Domain.Gear.Shields;
@@ -11,10 +13,12 @@ namespace Deedforge.Shared.Compendium
     public class CompendiumData
     {
         #region Core Rules
+        public List<Skill> Skills { get; set; } = new List<Skill>();
         public List<Action> Actions { get; set; } = new List<Action>();
         public List<Deed> Deeds { get; set; } = new List<Deed>();
         public List<Status> Boons { get; set; } = new List<Status>();
         public List<Status> Conditions { get; set; } = new List<Status>();
+        public List<Scar> Scars { get; set; } = new List<Scar>();
         #endregion
 
         #region Character Rules

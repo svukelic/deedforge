@@ -11,9 +11,9 @@
 
 <br />
 
-<MudGrid>
+<MudGrid Justify="Justify.SpaceBetween">
 
-    <MudItem xs="6">
+    <MudItem xs="5">
         <MudText Typo="@Typo.h5">
             Actions
         </MudText>
@@ -26,7 +26,7 @@
         </MudText>
     </MudItem>
 
-    <MudItem xs="6">
+    <MudItem xs="5">
         <MudText Typo="@Typo.h5">
             Reactions
         </MudText>
@@ -48,15 +48,16 @@
 <br />
 
 <MudDataGrid Items="@Compendium.CompendiumData.Actions"
-             ReadOnly="true" EditMode="@DataGridEditMode.Cell">
+             ReadOnly="true" EditMode="@DataGridEditMode.Cell"
+             Row>
     <Columns>
-        <HierarchyColumn T="Action" />
+        <HierarchyColumn T="Action" ButtonDisabledFunc="@(x => x.SuccessActions is null)" />
         <PropertyColumn Property="x => x.Name">
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Action</MudText>
             </HeaderTemplate>
             <CellTemplate>
-                <MudText Typo="Typo.body1"><b>@context.Item.Name</b></MudText>
+                <MudText Typo="Typo.body1"><strong>@context.Item.Name</strong></MudText>
             </CellTemplate>
         </PropertyColumn>
         <PropertyColumn Property="x => x.Description">
@@ -83,6 +84,9 @@
             </CellTemplate>
         </PropertyColumn>
     </Columns>
+    <ChildRowContent>
+        <Deedforge.Client.Components.SuccessActionsComponent Actions="@context.Item.SuccessActions" />
+    </ChildRowContent>
     <PagerContent>
         <MudDataGridPager T="Action" />
     </PagerContent>
@@ -91,9 +95,9 @@
 <br />
 <br />
 
-<MudGrid>
+<MudGrid Justify="Justify.SpaceBetween">
 
-    <MudItem xs="4">
+    <MudItem xs="5">
         <MudText Typo="@Typo.h5">
             What are Attacks?
         </MudText>
@@ -111,7 +115,7 @@
         </MudText>
     </MudItem>
 
-    <MudItem xs="4">
+    <MudItem xs="5">
         <MudText Typo="@Typo.h5">
             Attack Types
         </MudText>
@@ -137,22 +141,23 @@
         </MudText>
     </MudItem>
 
-    <MudItem xs="4">
-        <MudText Typo="@Typo.h5">
-            Retaliations
-        </MudText>
-
-        <br />
-
-        <MudText Typo="@Typo.body1">
-            Retaliations are special Reactions that can be taken in response to a specific Attack or Action that targets the character.
-            <br />
-            <br />
-            Retaliations do not count against the character's Reaction limit, and can be used even if the character has already used their Reaction for the Round.
-            <br />
-            <br />
-            When a character Retaliates, they make an Attack against the attacker. The Attack must be one that the character otherwise could have made.
-        </MudText>
-    </MudItem>
-
 </MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Retaliations
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Retaliations are special Reactions that can be taken in response to a specific Attack or Action that targets the character.
+    <br />
+    <br />
+    Retaliations do not count against the character's Reaction limit, and can be used even if the character has already used their Reaction for the Round.
+    <br />
+    <br />
+    When a character Retaliates, they make an Attack against the attacker. The Attack must be one that the character otherwise could have made.
+</MudText>

@@ -11,6 +11,8 @@ using Deedforge.Domain.Gear.Shields;
 using Deedforge.Domain.Gear.Shields.Collection;
 using Deedforge.Domain.CoreRules.ActionsReactions;
 using Action = Deedforge.Domain.CoreRules.ActionsReactions.Action;
+using Deedforge.Domain.CoreRules;
+using Deedforge.Domain.CoreRules.Skills;
 
 namespace Deedforge.Shared.Compendium
 {
@@ -22,11 +24,13 @@ namespace Deedforge.Shared.Compendium
         {
             return new CompendiumData
             {
+                Skills = GetProperties<Skill, Skills>(),
                 Actions = GetProperties<Action, Actions>(),
                 Deeds = GetProperties<Deed, Deeds>(),
                 Boons = GetProperties<Status, Boons>(),
                 Conditions = GetProperties<Status, Conditions>(),
-
+                Scars = GetProperties<Scar, Scars>(),
+                
                 Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
 
                 Armors = GetProperties<Armor, Armors>(),
@@ -51,8 +55,11 @@ namespace Deedforge.Shared.Compendium
             {
                 if (field.FieldType == typeof(T))
                 {
-                    T instance = (T)field.GetValue(null); // null because it's a static field
-                    results.Add(instance);
+                    T? instance = (T?)field.GetValue(null);
+                    if (instance != null)
+                    {
+                        results.Add(instance);
+                    }
                 }
             }
 
