@@ -1,0 +1,124 @@
+﻿@page "/core-rules/spatial/vision"
+
+@using Deedforge.Domain.CoreRules
+@using Deedforge.Shared.Compendium
+
+<PageTitle>
+    Core Rules - Vision
+</PageTitle>
+
+<h1>Vision</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Vision determines how far characters can see. In normal visibility conditions, an average character sees up to roughly 1km in daylight, and up to 100m on a clear night. Various dangers, environments and weather conditions may restrict this range.
+    <br />
+    <br />
+    In context of storytelling, a character <b>sees as far as the narrative demands.</b>
+</MudText>
+
+<br />
+
+<MudText Typo="@Typo.h5">
+    Vision Types
+</MudText>
+
+<br />
+
+<MudGrid Justify="Justify.SpaceBetween">
+    <MudItem xs="2">
+        <MudText Typo="@Typo.h6">Normal Vision</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Default type of vision available to all characters (unless otherwise specified). Normal Vision requires light, as outlined in the Visibility Tiers section.
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="2">
+        <MudText Typo="@Typo.h6">Thermal Vision</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Detects differences in heat. Allows for normal sight even in Dim Light and Complete Darkness. Cold-blooded creatures and creatures that do not output heat are considered Invisible.
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="2">
+        <MudText Typo="@Typo.h6">Night Vision</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Allows sight in Dim Light and Complete Darkness, but only within limited distance.
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="2">
+        <MudText Typo="@Typo.h6">Tremor Sensitivity</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Detects any movement within limited distance, even from invisible characters, except those using Flying Speed.
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="2">
+        <MudText Typo="@Typo.h6">True Sight</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Reveals invisible characters and illusions within limited distance. Otherwise follows Normal Vision restrictions.
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Visibility Tiers
+</MudText>
+
+<br />
+
+<MudGrid Spacing="4" Justify="Justify.SpaceEvenly">
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">Bright Light</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            While in an area of Bright Light, a character sees normally up to the range that the Bright Light spans.
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">Dim Light</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Characters in Dim Light have limited distance within which they can see.
+        </MudText>
+    </MudItem>
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">Complete Darkness</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Complete Darkness indicates utter lack of natural light sources. Any character without Thermal Vision, Night Vision or Tremor Sensitivity is considered to have Blinded Status while in Complete Darkness without any light source.
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Obscured
+</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    An obscured character is partially or completely blocked from line of sight. They cannot be targeted by any action, feature or effect that explicitly requires a target character. Being obscured is typically required to take the Hide action.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Cover
+</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    When a character takes cover behind sufficiently large objects (as determined by the GM), they have Upper Hand on all Reflex and Defense checks against effects blocked by the cover. Characters in cover are considered to be obscured.
+</MudText>

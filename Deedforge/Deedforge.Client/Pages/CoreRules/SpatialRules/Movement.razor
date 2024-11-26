@@ -1,0 +1,75 @@
+﻿@page "/core-rules/spatial/movement"
+
+@using Deedforge.Domain.CoreRules
+@using Deedforge.Shared.Compendium
+
+<PageTitle>
+    Core Rules - Movement
+</PageTitle>
+
+<h1>Movement</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Movement relates to how characters move during Combat Encounters. Deedforge uses hex fields to track distances. Each hex field has a diameter of roughly 1m.
+    <br />
+    When characters move (by taking the Move action), they move across hex fields up to their Movement Speed.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Movement Types
+</MudText>
+
+<br />
+
+<MudGrid Justify="Justify.SpaceBetween">
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">Walking</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Default movement type available to all characters. Utilizes legs to walk across solid land.
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">Swimming</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Movement in water. Characters without Swimming Speed are Crippled while submerged.
+        </MudText>
+    </MudItem>
+
+    <MudItem xs="4">
+        <MudText Typo="@Typo.h6">Flying</MudText>
+        <br />
+        <MudText Typo="@Typo.body2">
+            Allows soaring through air, typically requiring wings or magical effects. While Flying, a character needs to spend 1 AP to remain in the air, otherwise they fall.
+        </MudText>
+    </MudItem>
+</MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Rough Terrain
+</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Rough Terrain is an area that is harder to traverse. Moving through Rough Terrain requires TBD
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Falling Damage
+</MudText>
+<br />
+<MudText Typo="@Typo.body1">
+    Falling damage depends on height, TBD
+</MudText>
