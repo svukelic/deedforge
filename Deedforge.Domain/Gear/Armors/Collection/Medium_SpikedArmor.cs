@@ -10,14 +10,16 @@ namespace Deedforge.Domain.Gear.Armors.Collection
         {
             Name = "Spiked Armor",
             Description = "A set of armor with spikes, providing both protection and intimidation.",
+            ArmorType = ArmorType.Medium,
             Endurance = 6,
             NumberOfReactions = 2,
             SuccessActions = new SuccessAction
             {
                 Name = "Counter-grapple",
                 Description = "You attempt to grapple an enemy that struck you.",
-                Skills = SkillHelpers.SetSkills(Skills.Athletics),
-                ActionTypes = new List<ActionType> { ActionType.Reaction, ActionType.Melee },
+                Skills = SetterHelper<Skill>.Set(Skills.Athletics),
+                ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction, ActionType.Melee),
+                Range = 1,
                 ChallengeModifier = Constants.ChallengeModifier_Endurance,
                 Tier1 = "You grapple an enemy that hit you with a Melee Attack. Both you and the target enemy become Pinned while grappled.",
                 Tier2 = "You grapple an enemy that hit you with a Melee Attack. The target enemy becomes Pinned while grappled.",

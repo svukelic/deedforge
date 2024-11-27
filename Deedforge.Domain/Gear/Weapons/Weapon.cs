@@ -7,7 +7,7 @@ namespace Deedforge.Domain.Gear.Weapons
     {
         public required string Name { get; set; }
         public required string Description { get; set; }
-        public required WeaponType Type { get; set; }
+        public required List<WeaponType> Types { get; set; }
         public required WeaponDesign Design { get; set; }
     }
 
@@ -25,7 +25,7 @@ namespace Deedforge.Domain.Gear.Weapons
 
     public enum WeaponDesign
     {
-        [Description("This weapon requires two hands and Trained in Athletics to be properly used. Heavy weapons usually either deal more damage, or can hit multiple targets at once.")]
+        [Description("This weapon requires two hands and Trained in Athletics to be properly used. Heavy weapons usually either deal more damage, or can hit multiple targets at once, and they provide one additional Attack Action.")]
         Heavy,
         [Description("This weapon is exceptionally light and can be used in either main hand or off-hand. When carried in off-hand, it grants a specific Retaliation attack instead of its usual Attacks.")]
         Light,

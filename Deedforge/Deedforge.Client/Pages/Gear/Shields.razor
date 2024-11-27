@@ -47,7 +47,7 @@
                 <MudText Typo="Typo.h6">Granted Actions</MudText>
             </HeaderTemplate>
             <CellTemplate>
-                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions.Select(s => s.Name).ToList(), true)
+                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions!.Select(s => s.Name).ToList(), true)
             </CellTemplate>
         </PropertyColumn>
     </Columns>

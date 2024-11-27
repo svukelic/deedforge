@@ -50,6 +50,11 @@
                 <MudText Typo="Typo.body1"><i>@context.Item.Description</i></MudText>
             </CellTemplate>
         </PropertyColumn>
+        <PropertyColumn Property="x => x.ArmorType">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Armor Type</MudText>
+            </HeaderTemplate>
+        </PropertyColumn>
         <PropertyColumn Property="x => x.Endurance">
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Base Endurance</MudText>
@@ -65,7 +70,7 @@
                 <MudText Typo="Typo.h6">Granted Actions</MudText>
             </HeaderTemplate>
             <CellTemplate>
-                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions.Select(s => s.Name).ToList(), true)
+                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions!.Select(s => s.Name).ToList(), true)
             </CellTemplate>
         </PropertyColumn>
     </Columns>

@@ -16,8 +16,9 @@ namespace Deedforge.Domain.Gear.Shields.Collection
                 {
                     Name = "Raise Shield",
                     Description = "You raise your Shield to intercept incoming attacks. While the Shield is raised, your Movement Speed is halved.",
-                    Skills = SkillHelpers.SetSkills(Skills.Defense),
-                    ActionTypes = new List<ActionType> { ActionType.Action },
+                    Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
+                    Range = 1,
                     Tier1 = "You gain 2 Grit, but you are also Staggered until the end of your next turn.",
                     Tier2 = "You gain 2 Grit.",
                     Tier3 = "You gain 4 Grit.",
@@ -27,8 +28,9 @@ namespace Deedforge.Domain.Gear.Shields.Collection
                 {
                     Name = "Block Assault",
                     Description = "You block an incoming assault.",
-                    Skills = SkillHelpers.SetSkills(Skills.Defense),
-                    ActionTypes = new List<ActionType> { ActionType.Reaction },
+                    Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
+                    Range = 1,
                     Tier1 = "You reduce the damage taken from the deflected attack by 2, and you become Unyielding until the end of your next turn. You also become Pinned until you either set Tower Shield free or dispose of it.",
                     Tier2 = "You reduce the damage taken from the deflected attack by 2, and you become Unyielding until the end of your next turn.",
                     Tier3 = "You reduce the damage taken from the deflected attack by 4, and you become Unyielding until the end of your next turn.",

@@ -1,12 +1,10 @@
-﻿using Deedforge.Domain.CoreRules.Skills;
-
-namespace Deedforge.Domain.Helpers
+﻿namespace Deedforge.Domain.Helpers
 {
-    public static class SkillHelpers
+    public static class SetterHelper<T>
     {
-        public static List<Skill> SetSkills(params Skill[] skills)
+        public static List<T> Set(params T[] items)
         {
-            return new List<Skill>(skills);
+            return new List<T>(items);
         }
     }
 }

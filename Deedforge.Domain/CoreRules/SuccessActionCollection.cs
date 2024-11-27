@@ -13,6 +13,7 @@ namespace Deedforge.Domain.CoreRules
         public required string Description { get; set; }
         public required List<Skill> Skills { get; set; } = new List<Skill>();
         public required List<ActionType> ActionTypes { get; set; } = new List<ActionType>();
+        public required int Range { get; set; }
         public string? ChallengeModifier { get; set; } = "-";
         public required string Tier1 { get; set; }
         public required string Tier2 { get; set; }

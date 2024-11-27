@@ -16,8 +16,9 @@ namespace Deedforge.Domain.Gear.Shields.Collection
                 {
                     Name = "Raise Shield",
                     Description = "You raise your Shield to intercept incoming attacks.",
-                    Skills = SkillHelpers.SetSkills(Skills.Defense),
-                    ActionTypes = new List<ActionType> { ActionType.Action },
+                    Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
+                    Range = 1,
                     Tier1 = "You gain 1 Grit, but you are also Staggered until the end of your next turn.",
                     Tier2 = "You gain 1 Grit.",
                     Tier3 = "You gain 2 Grit.",
@@ -27,8 +28,9 @@ namespace Deedforge.Domain.Gear.Shields.Collection
                 {
                     Name = "Deflect Attack",
                     Description = "You deflect an incoming attack.",
-                    Skills = SkillHelpers.SetSkills(Skills.Defense),
-                    ActionTypes = new List<ActionType> { ActionType.Reaction },
+                    Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
+                    Range = 1,
                     Tier1 = "You reduce the damage taken from the deflected attack by 1, but you also lose the benefits of your Raise Shield Action.",
                     Tier2 = "You reduce the damage taken from the deflected attack by 1",
                     Tier3 = "You reduce the damage taken from the deflected attack by 2.",

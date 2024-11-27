@@ -42,10 +42,13 @@
                 <MudText Typo="Typo.body1"><i>@context.Item.Description</i></MudText>
             </CellTemplate>
         </PropertyColumn>
-        <PropertyColumn Property="x => x.Type.ToString()">
+        <PropertyColumn Property="x => x.Types.ToString()">
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Type</MudText>
             </HeaderTemplate>
+            <CellTemplate>
+                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.Types.Select(t => t.ToString()).ToList(), false)
+            </CellTemplate>
         </PropertyColumn>
         <PropertyColumn Property="x => x.Design.ToString()">
             <HeaderTemplate>
@@ -57,7 +60,7 @@
                 <MudText Typo="Typo.h6">Granted Actions</MudText>
             </HeaderTemplate>
             <CellTemplate>
-                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions.Select(s => s.Name).ToList(), true)
+                @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions!.Select(s => s.Name).ToList(), true)
             </CellTemplate>
         </PropertyColumn>
     </Columns>

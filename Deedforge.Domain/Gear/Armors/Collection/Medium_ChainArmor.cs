@@ -10,14 +10,16 @@ namespace Deedforge.Domain.Gear.Armors.Collection
         {
             Name = "Chain Armor",
             Description = "A set of armor made from interlocking metal rings, providing good protection without sacrificing mobility.",
+            ArmorType = ArmorType.Medium,
             Endurance = 7,
             NumberOfReactions = 2,
             SuccessActions = new SuccessAction
             {
                 Name = "Sidestep",
                 Description = "You sidestep upon being hit by a melee attack, and potentially reducing taken damage.",
-                Skills = SkillHelpers.SetSkills(Skills.Defense),
-                ActionTypes = new List<ActionType> { ActionType.Reaction },
+                Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
+                Range = 0,
                 Tier1 = "You move 1 hex, but you become Distracted.",
                 Tier2 = "You move 1 hex.",
                 Tier3 = "You move 1 hex, and you reduce the damage taken from the triggering attack by 1.",

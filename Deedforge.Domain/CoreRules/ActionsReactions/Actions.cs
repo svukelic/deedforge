@@ -36,6 +36,7 @@ namespace Deedforge.Domain.CoreRules.ActionsReactions
                     Description = "Make a Knowledge Check using one of the Skills available to the character.",
                     Skills = new List<Skill>(),
                     ActionTypes = new List<ActionType> { ActionType.Action },
+                    Range = 0,
                     ChallengeModifier = "The Guide can determine the appropriate Challenge Modifier in case of more esoteric subjects.",
                     Tier1 = "You learn 1 true information and 1 false information about the subject, but you do not know which is which.",
                     Tier2 = "You learn 1 true information about the subject.",

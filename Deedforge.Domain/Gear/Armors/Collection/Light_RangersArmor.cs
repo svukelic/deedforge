@@ -10,14 +10,16 @@ namespace Deedforge.Domain.Gear.Armors.Collection
         {
             Name = "Ranger's Armor",
             Description = "A set of armor designed for rangers, providing excellent camouflage and mobility.",
+            ArmorType = ArmorType.Light,
             Endurance = 5,
             NumberOfReactions = 3,
             SuccessActions = new SuccessAction
             {
                 Name = "Camouflage",
                 Description = "You blend into your surroundings, becoming nearly invisible to enemies.",
-                Skills = SkillHelpers.SetSkills(Skills.Subterfuge),
-                ActionTypes = new List<ActionType> { ActionType.Action },
+                Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
+                ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
+                Range = 0,
                 Tier1 = "You gain partial camouflage, becoming Invisible until you move or until the end of your next turn.",
                 Tier2 = "You gain partial camouflage, becoming Invisible until you move.",
                 Tier3 = "You gain full camouflage, becoming Invisible.",

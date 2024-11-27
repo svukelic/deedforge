@@ -8,7 +8,7 @@
         {
             Name = "Bleeding",
             Description = "The target is bleeding and will take damage over time.",
-            Effect = "Lose 1 Endurance every time a Move or Attack action is taken."
+            Effect = "Lose 1 Endurance every time a Move action is taken."
         };
 
         public static Status Burning = new Status

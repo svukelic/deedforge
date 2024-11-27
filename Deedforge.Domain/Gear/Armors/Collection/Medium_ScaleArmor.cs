@@ -10,14 +10,16 @@ namespace Deedforge.Domain.Gear.Armors.Collection
         {
             Name = "Scale Armor",
             Description = "A set of armor made from interlocking metal or bestial scales, providing good protection against ranged attacks.",
+            ArmorType = ArmorType.Medium,
             Endurance = 7,
             NumberOfReactions = 2,
             SuccessActions = new SuccessAction
             {
                 Name = "Scale Lock",
                 Description = "You lock your armor's scales in place for enhanced protection.",
-                Skills = SkillHelpers.SetSkills(Skills.Defense),
-                ActionTypes = new List<ActionType> { ActionType.Action },
+                Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
+                Range = 0,
                 Tier1 = "Until the start of your next turn, gain +2 Grit, but you also become Staggered.",
                 Tier2 = "Until the start of your next turn, gain +2 Grit.",
                 Tier3 = "Until the start of your next turn, gain +4 Grit.",

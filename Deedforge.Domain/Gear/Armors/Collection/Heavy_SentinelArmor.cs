@@ -10,14 +10,16 @@ namespace Deedforge.Domain.Gear.Armors.Collection
         {
             Name = "Sentinel Armor",
             Description = "A heavy box-shaped armor with wide shoulder plates, designed for warrior archers.",
+            ArmorType = ArmorType.Heavy,
             Endurance = 10,
             NumberOfReactions = 1,
             SuccessActions = new SuccessAction
             {
                 Name = "Ward & Counter",
                 Description = "You deflect a Ranged Attack with your armor, reducing the damage taken.",
-                Skills = SkillHelpers.SetSkills(Skills.Defense),
-                ActionTypes = new List<ActionType> { ActionType.Reaction },
+                Skills = SetterHelper<Skill>.Set(Skills.Defense),
+                ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
+                Range = 0,
                 Tier1 = "You reduce the damage taken from the deflected attack by 2, but you also become Maimed until the end of your next turn.",
                 Tier2 = "You reduce the damage taken from the deflected attack by 2.",
                 Tier3 = "You reduce the damage taken by 3, and you can make a Retaliation against the target that attacked you.",

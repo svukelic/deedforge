@@ -10,24 +10,33 @@
             <MudCardHeader>
                 <CardHeaderContent>
                     <MudGrid Justify="Justify.SpaceBetween">
-                        <MudItem xs="4">
-                            <MudText Typo="Typo.h5">@action.Name</MudText>
+                        <MudItem xs="7">
+                            <MudText Typo="Typo.h5">
+                                @action.Name
+                            </MudText>
                             <br />
                             @if (action.Skills.Any())
                             {
-                                <MudText Typo="Typo.h6"><i>@MarkupStringHelper.GetStringsWithCommas(@action.Skills.Select(x => x.Name).ToList())</i></MudText>
+                                <MudText Typo="Typo.h6">Skill: <i>@MarkupStringHelper.GetStringsWithCommas(@action.Skills.Select(x => x.Name).ToList())</i></MudText>
                             }
                             else
                             {
-                                <MudText Typo="Typo.h6"><i>Any Skill</i></MudText>
+                                <MudText Typo="Typo.h6">Skill: <i>Any Skill</i></MudText>
                             }
                             <br />
-                            <MudText Typo="Typo.body1"><i>@action.Description</i></MudText>
+                            <MudText Typo="Typo.body1">
+                                <i>@action.Description</i>
+                            </MudText>
                         </MudItem>
-                        <MudItem xs="4">
+                        <MudItem xs="5" Style="text-align: right">
                             <MudText Typo="Typo.h6">@MarkupStringHelper.GetStringsWithCommas(@action.ActionTypes.Select(x => x.ToString()).ToList())</MudText>
+                            @if (action.Range != 0)
+                            {
+                                <br />
+                                <MudText Typo="Typo.body1">Range: <i>@action.Range</i></MudText>
+                            }
                             <br />
-                            <MudText Typo="Typo.body1"><i>Challenge Modifier: </i>@action.ChallengeModifier</MudText>
+                            <MudText Typo="Typo.body1">Challenge Modifier: <i>@action.ChallengeModifier</i></MudText>
                         </MudItem>
                     </MudGrid>
                 </CardHeaderContent>
