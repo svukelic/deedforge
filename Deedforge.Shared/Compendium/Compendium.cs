@@ -30,12 +30,15 @@ namespace Deedforge.Shared.Compendium
                 Boons = GetProperties<Status, Boons>(),
                 Conditions = GetProperties<Status, Conditions>(),
                 Scars = GetProperties<Scar, Scars>(),
-                
+
                 Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
 
-                Armors = GetProperties<Armor, Armors>(),
-                Shields = GetProperties<Shield, Shields>(),
-                Weapons = GetProperties<Weapon, Weapons>(),
+                Armors = GetProperties<Armor, Armors>().OrderBy(x => x.ArmorType).ThenBy(x => x.Name).ToList(),
+                Shields = GetProperties<Shield, Shields>().OrderBy(x => x.Name).ToList(),
+                Weapons = GetProperties<Weapon, Weapons>()
+                    .OrderBy(x => x.Types.FirstOrDefault())
+                    .ThenBy(x => x.Name)
+                    .ToList(),
             };
         }
 
