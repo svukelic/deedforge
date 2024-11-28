@@ -20,10 +20,10 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Skills = SetterHelper<Skill>.Set(Skills.Defense),
                 ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
                 Range = 0,
-                Tier1 = "Until the start of your next turn, gain +2 Grit, but you also become Staggered.",
-                Tier2 = "Until the start of your next turn, gain +2 Grit.",
-                Tier3 = "Until the start of your next turn, gain +4 Grit.",
-                Tier4 = "Until the start of your next turn, gain +4 Grit and become Unyielding."
+                Tier1 = "Gain +2 Grit until the start of your next turn, but you also become Staggered.",
+                Tier2 = "Gain +2 Grit until the start of your next turn.",
+                Tier3 = "Gain +4 Grit until the start of your next turn.",
+                Tier4 = "Gain +4 Grit until the start of your next turn and become Unyielding."
             }
         };
     }

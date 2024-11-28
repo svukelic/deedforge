@@ -36,22 +36,88 @@
     </MudItem>
     <MudItem xs="6">
         <MudText Typo="@Typo.h5">
-            Carrying Capacity
+            Gear Types
         </MudText>
 
         <br />
 
         <MudText Typo="Typo.body1">
-            A character can only carry so much items. The amount of items they can carry is defined by their Carrying Capacity.
+            Gear types are defined as follows:
             <br /><br />
-            Carrying Capacity is calculated as follows:
-            <br /><br />	
-            <code>Carrying Capacity = 7 + Athletics Proficiency Tier Value</code>
-            <br /><br />
-            Each item they carry will have its weight defined and contributed to the total current weight the character is carrying.
-            <br /><br />
-            If a character is carrying more weight than their Carrying Capacity allows, they gain <b>Burdened Status</b>. 
-            If a character attempts to carry more than twice their carrying capacity, they gain <b>Stunned Status</b>.
+            • <MudLink Href="/gear/armors">Armors</MudLink>
+            <br />
+            • <MudLink Href="/gear/shields">Shields</MudLink>
+            <br />
+            • <MudLink Href="/gear/weapons">Weapons</MudLink>
+            <br />
+            • <MudLink Href="/gear/adornments">Adornments</MudLink>
+            <br />
+            • <MudLink Href="/gear/adventuring-items">Adventuring Items</MudLink>
         </MudText>
     </MudItem>
 </MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Carrying Capacity
+</MudText>
+
+<br />
+
+<MudText Typo="Typo.body1">
+    A character can only carry so much items. The amount of items they can carry is defined by their Carrying Capacity.
+    <br /><br />
+    Carrying Capacity is calculated as follows:
+    <br /><br />	
+    <code>Carrying Capacity = 5 + Athletics Proficiency Tier</code>
+    <br /><br />
+    Worn items do not contribute to the Carrying Capacity.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Worn Items
+</MudText>
+
+<br />
+
+<MudText Typo="Typo.body1">
+    Worn item refers to any item that is being worn by the character, as opposed to item being carried in a backpack or other container.
+    <br /><br />
+    At any given time, a character can wear the following items:
+    <br />
+    • One set of armor
+    <br />
+    • Up to three weapons or shields
+    <br />
+    • One adornment
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5">
+    Item Weight
+</MudText>
+
+<br />
+
+<MudText Typo="Typo.body1">
+    Items in Deedforge have a weight associated with them. The numbers used to denote weight are arbitrary and are only used to compare the weight of different items.
+    <br /><br />
+    Item weights are as follows:
+    <br />
+    • Light Armors have a weight of 1, Medium Armors have a weight of 2, and Heavy Armors have a weight of 3.
+    <br />
+    • Shields have a weight of 1.
+    <br />
+    • Weapons have a weight of 1, except for Heavy Weapons, which have a weight of 2.
+    <br />
+    • Adornments have a weight of 1.
+    <br />
+    • Adventuring items have variable weights, depending on the item. The weight of these items will be defined next to their description at their respective <MudLink Href="/gear/adventuring-items">page</MudLink>.
+</MudText>

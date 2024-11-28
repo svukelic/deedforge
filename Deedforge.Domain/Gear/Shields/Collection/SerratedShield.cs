@@ -18,7 +18,7 @@ namespace Deedforge.Domain.Gear.Shields.Collection
                     Description = "You raise your Shield to intercept incoming attacks.",
                     Skills = SetterHelper<Skill>.Set(Skills.Defense),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
-                    Range = 1,
+                    Range = 0,
                     Tier1 = "You gain 1 Grit, but you are also Staggered until the end of your next turn.",
                     Tier2 = "You gain 1 Grit.",
                     Tier3 = "You gain 2 Grit.",
