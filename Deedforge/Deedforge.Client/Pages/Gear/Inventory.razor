@@ -1,0 +1,57 @@
+﻿@page "/gear/inventory"
+@using Deedforge.Client.Helpers
+@using Deedforge.Domain.Gear
+@using Deedforge.Shared.Compendium
+
+<PageTitle>
+    Gear - Inventory
+</PageTitle>
+
+<h1>Inventory</h1>
+
+<br />
+
+<MudGrid>
+    <MudItem xs="6">
+        <MudText Typo="@Typo.h5">
+            Gear
+        </MudText>
+
+        <br />
+
+        <MudText Typo="Typo.body1">
+            Gear (sometimes denoted as "equipment") refers to all the items being worn or carried by a character.
+            <br />
+            <br />
+            An average adventurer's gear usually includes:
+            <br />
+            • An armor (if any)
+            <br />
+            • One or more weapons
+            <br />
+            • A backpack
+            <br />
+            • A collection of potions or other items that may provide assistance
+        </MudText>
+    </MudItem>
+    <MudItem xs="6">
+        <MudText Typo="@Typo.h5">
+            Carrying Capacity
+        </MudText>
+
+        <br />
+
+        <MudText Typo="Typo.body1">
+            A character can only carry so much items. The amount of items they can carry is defined by their Carrying Capacity.
+            <br /><br />
+            Carrying Capacity is calculated as follows:
+            <br /><br />	
+            <code>Carrying Capacity = 7 + Athletics Proficiency Tier Value</code>
+            <br /><br />
+            Each item they carry will have its weight defined and contributed to the total current weight the character is carrying.
+            <br /><br />
+            If a character is carrying more weight than their Carrying Capacity allows, they gain <b>Burdened Status</b>. 
+            If a character attempts to carry more than twice their carrying capacity, they gain <b>Stunned Status</b>.
+        </MudText>
+    </MudItem>
+</MudGrid>

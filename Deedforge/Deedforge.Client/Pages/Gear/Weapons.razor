@@ -2,6 +2,7 @@
 @using Deedforge.Client.Helpers
 @using Deedforge.Domain.Gear.Weapons
 @using Deedforge.Shared.Compendium
+@using Deedforge.Shared.Helpers
 
 <PageTitle>
     Gear - Weapons
@@ -9,15 +10,23 @@
 
 <h1>Weapons</h1>
 
-<div>
-    <br />
+<br />
 
-    <MudText Typo="Typo.body1">Weapons are.</MudText>
+<MudText Typo="Typo.body1">Weapons are tools used to inflict damage on other characters or creatures.</MudText>
 
-    <br />
+<br />
 
-    <MudText Typo="Typo.body1"><b>TBD</b> TBD</MudText>
-</div>
+<br />
+
+<MudText Typo="Typo.body1"><b>Types</b> shows the type of the Weapon and thus which Skill is needed to use it: Power, Precision, Mystical or Symbolic. A Weapon can have multiple types.</MudText>
+
+<br />
+
+<MudText Typo="Typo.body1"><b>Design</b> shows the design of the Weapon. Different designs grant different properties to the Weapon.</MudText>
+
+<br />
+
+<MudText Typo="Typo.body1"><b>Granted Actions</b> defines which <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink> are granted to the character carrying the Weapon.</MudText>
 
 <br />
 <br />
@@ -54,6 +63,16 @@
             <HeaderTemplate>
                 <MudText Typo="Typo.h6">Design</MudText>
             </HeaderTemplate>
+            <CellTemplate>
+                <MudTooltip>
+                    <ChildContent>
+                        <MudText Typo="Typo.body2" Class="border-dotted border-b" Style="cursor: help;">@context.Item.Design.ToString()</MudText>
+                    </ChildContent>
+                    <TooltipContent>
+                        <MudText Typo="Typo.body2">@context.Item.Design.GetDescription()</MudText>
+                    </TooltipContent>
+                </MudTooltip>
+            </CellTemplate>
         </PropertyColumn>
         <PropertyColumn Property="x => x.SuccessActions">
             <HeaderTemplate>
