@@ -48,8 +48,7 @@
 <br />
 
 <MudDataGrid Items="@Compendium.CompendiumData.Actions"
-             ReadOnly="true" EditMode="@DataGridEditMode.Cell"
-             Row>
+             ReadOnly="true" EditMode="@DataGridEditMode.Cell">
     <Columns>
         <HierarchyColumn T="Action" ButtonDisabledFunc="@(x => x.SuccessActions is null)" />
         <PropertyColumn Property="x => x.Name">
@@ -147,17 +146,20 @@
 <br />
 
 <MudText Typo="@Typo.h5">
-    Retaliations
+    Opportunities
 </MudText>
 
 <br />
 
 <MudText Typo="@Typo.body1">
-    Retaliations are special Reactions that can be taken in response to a specific Attack or Action that targets the character.
+    Opportunities are special Reactions that can be taken in response to a specific Attack or Action. For example, Fumbled Success on certain Actions will state that the character triggers an Opportunity.
     <br />
     <br />
-    Retaliations do not count against the character's Reaction limit, and can be used even if the character has already used their Reaction for the Round.
+    When an Opportunity is triggered, the first next enemy character in the Readiness order can take an Opportunity.
     <br />
     <br />
-    When a character Retaliates, they make an Attack against the attacker. The Attack must be one that the character otherwise could have made.
+    When a character takes an Opportunity, they can take an Action of their choice - for example, a Move Action or an Attack against the character that triggered the Opportunity. The Attack must be one that the character otherwise could have made. Additionally, certain features may grant additional Actions or effects when a character takes an Opportunity.
+    <br />
+    <br />
+    Opportunities do not count against the character's Reaction limit, and can be used even if the character has already used their Reaction for the Round.
 </MudText>

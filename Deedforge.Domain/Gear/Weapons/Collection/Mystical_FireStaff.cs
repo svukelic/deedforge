@@ -1,6 +1,6 @@
-﻿using Deedforge.Domain.CoreRules;
-using Deedforge.Domain.CoreRules.Skills;
+﻿using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
+using Deedforge.Domain.AdditionalEntities;
 
 namespace Deedforge.Domain.Gear.Weapons.Collection
 {
@@ -22,7 +22,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Ranged, ActionType.Spell, ActionType.Area),
                     Range = 5,
                     ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "You deal 1 damage to the target and they start Burning until the end of their next turn, but you trigger a Retaliation.",
+                    Tier1 = "You deal 1 damage to the target and they start Burning until the end of their next turn, but you trigger a Opportunity.",
                     Tier2 = "You deal 1 damage to the target and they start Burning until the end of their next turn.",
                     Tier3 = "You deal 1 damage to the target as well as all targets within 2 hexes of the target and they start Burning until the end of their next turn.",
                     Tier4 = "You deal 1 damage to the target as well as all targets within 3 hexes of the target and they start Burning until the end of their next turn."

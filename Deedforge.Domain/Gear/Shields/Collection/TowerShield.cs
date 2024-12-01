@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 

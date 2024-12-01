@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -22,8 +22,8 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Range = 0,
                 Tier1 = "You reduce the damage taken from the deflected attack by 2, but you also become Maimed until the end of your next turn.",
                 Tier2 = "You reduce the damage taken from the deflected attack by 2.",
-                Tier3 = "You reduce the damage taken by 3, and you can make a Retaliation against the target that attacked you.",
-                Tier4 = "You reduce the damage taken by 4, and you can make a Retaliation against the target that attacked you."
+                Tier3 = "You reduce the damage taken by 3, and you can make a Opportunity against the target that attacked you.",
+                Tier4 = "You reduce the damage taken by 4, and you can make a Opportunity against the target that attacked you."
             }
         };
     }

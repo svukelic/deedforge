@@ -1,6 +1,6 @@
 ﻿using Deedforge.Domain.CoreRules.Skills;
 
-namespace Deedforge.Domain.CoreRules
+namespace Deedforge.Domain.AdditionalEntities
 {
     public class SuccessActionCollection
     {

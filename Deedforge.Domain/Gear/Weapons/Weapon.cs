@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using System.ComponentModel;
 
 namespace Deedforge.Domain.Gear.Weapons
@@ -27,9 +27,9 @@ namespace Deedforge.Domain.Gear.Weapons
     {
         [Description("This weapon requires two hands and Trained in Athletics to be properly used. Heavy weapons usually either deal more damage, or can hit multiple targets at once, and they provide one additional Attack Action.")]
         Heavy,
-        [Description("This weapon is exceptionally light and can be used in either main hand or off-hand. When carried in off-hand, it grants a specific Retaliation attack instead of its usual Attacks.")]
+        [Description("This weapon is exceptionally light and can be used in either main hand or off-hand. When carried in off-hand, it grants a specific Reaction instead of its usual Attacks.")]
         Light,
-        [Description("This weapon requires only one hand, and is particularly quick. It has Upper Hand on all Attack checks done as part of a Retaliation.")]
+        [Description("This weapon requires only one hand, and is particularly quick. It has Upper Hand on all Attack checks done as part of a Opportunity.")]
         Swift,
         [Description("This weapon requires only one hand, but can also be used with two hands. When used with two hands, it has Upper Hand on the Attack check.")]
         Versatile,

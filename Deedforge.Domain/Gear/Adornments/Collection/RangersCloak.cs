@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -10,6 +10,7 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
         {
             Name = "Ranger's Cloak",
             Description = "A cloak designed for rangers, providing excellent camouflage.",
+            AdornmentType = AdornmentType.Cloak,
             SuccessActions = new List<SuccessAction>
             {
                 new SuccessAction
@@ -19,6 +20,7 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
                     Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
                     Range = 0,
+                    ChallengeModifier = Constants.ChallengeModifier_Difficulty,
                     Tier1 = "You gain partial camouflage, becoming Invisible until you move or until the end of your next turn.",
                     Tier2 = "You gain partial camouflage, becoming Invisible until you move.",
                     Tier3 = "You gain full camouflage, becoming Invisible.",

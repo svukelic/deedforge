@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -22,7 +22,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee),
                     Range = 1,
                     ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "You deal 1 damage to the target, but you trigger a Retaliation.",
+                    Tier1 = "You deal 1 damage to the target, but you trigger a Opportunity.",
                     Tier2 = "You deal 1 damage to the target, and the target becomes Staggered until the end of their next turn.",
                     Tier3 = "You deal 2 damage to the target, and the target becomes Staggered until the end of their next turn.",
                     Tier4 = "You deal 3 damage to the target, and the target becomes Staggered until the end of their next turn."
@@ -35,7 +35,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee),
                     Range = 1,
                     ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "The target loses the benefits of their Raise Shield Action, but you trigger a Retaliation.",
+                    Tier1 = "The target loses the benefits of their Raise Shield Action, but you trigger a Opportunity.",
                     Tier2 = "The target loses the benefits of their Raise Shield Action.",
                     Tier3 = "The target loses the benefits of their Raise Shield Action, and you deal 1 damage to the target.",
                     Tier4 = "The target loses the benefits of their Raise Shield Action, and you deal 2 damage to the target."

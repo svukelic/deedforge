@@ -3,6 +3,7 @@
     public static class Constants
     {
         public const string ChallengeModifier_Endurance = "Equal to target's Endurance";
+        public const string ChallengeModifier_Difficulty = "Equal to Difficulty estimated by the Guide";
         public static string ChallengeModifier_NumberOfTargets(int modifier)
         {
             return $"-{modifier} per each affected target.";

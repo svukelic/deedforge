@@ -1,0 +1,64 @@
+﻿@page "/character-rules/ancestries"
+@using Deedforge.Shared.Compendium
+
+<PageTitle>
+    Adventuring - Ancestries
+</PageTitle>
+
+<h1>Ancestries</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Ancestries are the origins of a character and which determine some of their biological capabilities.
+    <br />
+    <br />
+    While the Ancestries are described generically to enable them to be fit in any setting, each comes with some examples of how to flavor a character with specific Ancestry using some common fantasy tropes.
+    <br />
+    <br />
+    There are two types of Ancestries: <b>Common</b> and <b>Exotic</b>.
+    <br />
+    • <b>Common Ancestries</b> are, as the name implies, the common tropes within a fantasy setting.
+    <br />
+    • <b>Exotic Ancestries</b> are more rare and represent characters with magical or supernatural origins. As result of their unique origins, Exotic Ancestries have unique Limitations bestowed upon them that require the character to make choices on how to best deal with them.
+</MudText>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5" Class="d-flex justify-center">
+    Common Ancestries
+</MudText>
+
+<br />
+
+<MudGrid Spacing="3" Justify="Justify.SpaceAround">
+    @foreach (var commonAncestry in Compendium.CompendiumData.CommonAncestries)
+    {
+    <MudItem xs="4" style="display: flex; flex-direction: column; align-items: center;">
+        <MudLink Typo="Typo.h5" Href=@($"/character-rules/ancestries/{commonAncestry.Name}") Match="NavLinkMatch.Prefix">
+            @commonAncestry.Name
+        </MudLink>
+    </MudItem>
+    }
+</MudGrid>
+
+<br />
+<br />
+
+<MudText Typo="@Typo.h5" Class="d-flex justify-center">
+    Exotic Ancestries
+</MudText>
+
+<br />
+
+<MudGrid Spacing="3" Justify="Justify.SpaceAround">
+    @foreach (var exoticAncestry in Compendium.CompendiumData.ExoticAncestries)
+    {
+    <MudItem xs="4" style="display: flex; flex-direction: column; align-items: center;">
+        <MudLink Typo="Typo.h5" Href=@($"/character-rules/ancestries/{exoticAncestry.Name}") Match="NavLinkMatch.Prefix">
+            @exoticAncestry.Name
+        </MudLink>
+    </MudItem>
+    }
+</MudGrid>

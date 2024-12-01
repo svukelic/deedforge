@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -32,7 +32,7 @@ namespace Deedforge.Domain.Gear.Shields.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
                     Range = 5,
                     ChallengeModifier = Constants.ChallengeModifier_NumberOfTargets(2),
-                    Tier1 = "All allies of your choice within range gain +2 Grit until the start of your next turn, but you also trigger Retaliation.",
+                    Tier1 = "All allies of your choice within range gain +2 Grit until the start of your next turn, but you also trigger Opportunity.",
                     Tier2 = "All allies of your choice within range gain +2 Grit until the start of your next turn.",
                     Tier3 = "All allies of your choice within range gain +4 Grit until the start of your next turn.",
                     Tier4 = "All allies of your choice within range gain +4 Grit until the start of your next turn. The range is increased to 10 hexes."

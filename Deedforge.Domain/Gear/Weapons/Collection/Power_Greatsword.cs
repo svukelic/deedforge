@@ -1,6 +1,6 @@
-﻿using Deedforge.Domain.CoreRules;
-using Deedforge.Domain.CoreRules.Skills;
+﻿using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
+using Deedforge.Domain.AdditionalEntities;
 
 namespace Deedforge.Domain.Gear.Weapons.Collection
 {
@@ -22,7 +22,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee, ActionType.Area),
                     Range = 1,
                     ChallengeModifier = Constants.ChallengeModifier_NumberOfTargets(2),
-                    Tier1 = "You deal 2 damage to your target and up to 2 other targets within 1 hex of them that are within your reach, but you trigger a Retaliation.",
+                    Tier1 = "You deal 2 damage to your target and up to 2 other targets within 1 hex of them that are within your reach, but you trigger a Opportunity.",
                     Tier2 = "You deal 2 damage to your target and up to 2 other targets within 1 hex of them that are within your reach.",
                     Tier3 = "You deal 4 damage to your target and up to 2 other targets within 1 hex of them that are within your reach.",
                     Tier4 = "You deal 6 damage to your target and up to 2 other targets within 1 hex of them that are within your reach."
@@ -35,7 +35,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee),
                     Range = 1,
                     ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "You deal 2 damage to your target, but you trigger a Retaliation. The damage is doubled if the target is Crippled, Maimed or Pinned.",
+                    Tier1 = "You deal 2 damage to your target, but you trigger a Opportunity. The damage is doubled if the target is Crippled, Maimed or Pinned.",
                     Tier2 = "You deal 2 damage to your target. The damage is doubled if the target is Crippled, Maimed or Pinned.",
                     Tier3 = "You deal 4 damage to your target. The damage is doubled if the target is Crippled, Maimed or Pinned.",
                     Tier4 = "You deal 6 damage to your target. The damage is doubled if the target is Crippled, Maimed or Pinned."

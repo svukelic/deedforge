@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -20,7 +20,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Skills = SetterHelper<Skill>.Set(Skills.Health),
                 ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
                 Range = 0,
-                Tier1 = "You reduce the damage taken from the triggering attack by 1, and can Retaliate against the triggering enemy, but you also trigger a Retaliation.",
+                Tier1 = "You reduce the damage taken from the triggering attack by 1, and can Retaliate against the triggering enemy, but you also trigger a Opportunity.",
                 Tier2 = "You reduce the damage taken from the triggering attack by 1, and can Retaliate against the triggering enemy.",
                 Tier3 = "You reduce the damage taken from the triggering attack by 2, and can Retaliate against the triggering enemy.",
                 Tier4 = "You reduce the damage taken from the triggering attack by 3, and can Retaliate against the triggering enemy."

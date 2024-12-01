@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -10,6 +10,7 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
         {
             Name = "Thief's Belt",
             Description = "A belt containing a variety of tools and implements useful for a thief.",
+            AdornmentType = AdornmentType.Belt,
             SuccessActions = new List<SuccessAction>
             {
                 new SuccessAction
@@ -19,7 +20,7 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
                     Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
                     Range = 0,
-                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
+                    ChallengeModifier = Constants.ChallengeModifier_Difficulty,
                     Tier1 = "You temporarily disable a trap or lock, but you also cause a significant amount of noise while doing so.",
                     Tier2 = "You temporarily disable a trap or lock.",
                     Tier3 = "You permanently disable a trap or lock.",

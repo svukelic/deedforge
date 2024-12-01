@@ -1,0 +1,53 @@
+﻿@page "/adventuring/dangers"
+@using Deedforge.Shared.Compendium
+
+<PageTitle>
+    Adventuring - Dangers
+</PageTitle>
+
+<h1>Dangers</h1>
+
+<br />
+
+<MudText Typo="@Typo.body1">
+    Dangers are specific threats that characters have to deal with during an Adventure. For example, freezing or scorching temperatures, thirst, higher than normal amount of bandits, etc.
+    <br />
+    <br />
+    <strong>Dangers are primarily a narrative tool to add variety and interest to Adventures.</strong> While some Dangers may bestow mechanical penalties, their primary purpose is to add depth to the story and hooks for roleplay, empower cooperation between the characters, and provide an additional layer of challenge to the Adventure.
+    <br />
+    <br />
+    The Guide determines and announces the Dangers for a specific Adventure before the Party sets out so that the characters can prepare accordingly. The Guide will also announce what Precautions the characters can take to avoid or mitigate the effects of the Dangers.
+</MudText>
+
+<br />
+
+<MudGrid>
+    @foreach (var danger in Compendium.CompendiumData.Dangers)
+    {
+        <MudItem xs="12" sm="6">
+            <MudCard Class="mt-4">
+                <MudCardContent>
+                    <MudGrid>
+                        <MudItem xs="12" sm="6" Style="text-align: center;">
+                            <MudImage Src="@danger.ImageUrl" 
+                                     Alt="@danger.Name"
+                                     Width="250" 
+                                     Height="250" 
+                                     ObjectFit="ObjectFit.Cover" />
+                        </MudItem>
+                        <MudItem xs="12" sm="6">
+                            <MudText Typo="Typo.h5">@danger.Name</MudText>
+                            <br />  
+                            <MudText Typo="Typo.body1">@danger.Description</MudText>
+                            <br />
+                            <MudText Class="mt-2">
+                                <b>Precautions:</b> @danger.Precautions
+                            </MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    }
+</MudGrid>
+

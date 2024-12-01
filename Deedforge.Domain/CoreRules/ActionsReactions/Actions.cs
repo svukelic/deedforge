@@ -1,4 +1,5 @@
-﻿using Deedforge.Domain.CoreRules.Skills;
+﻿using Deedforge.Domain.AdditionalEntities;
+using Deedforge.Domain.CoreRules.Skills;
 
 namespace Deedforge.Domain.CoreRules.ActionsReactions
 {
@@ -44,6 +45,18 @@ namespace Deedforge.Domain.CoreRules.ActionsReactions
                     Tier4 = "You learn 3 true information about the subject."
                 }
             }
+        };
+
+        public static Action SwapWeapon = new Action
+        {
+            Name = "Swap Weapon",
+            Description = "Swap your currently equipped weapons or shields with another weapon or shield from your Inventory."
+        };
+
+        public static Action RetrieveItem = new Action
+        {
+            Name = "Retrieve Item",
+            Description = "Retrieve an item from your Inventory."
         };
     }
 }

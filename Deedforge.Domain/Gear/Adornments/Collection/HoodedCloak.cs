@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -10,6 +10,7 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
         {
             Name = "Hooded Cloak",
             Description = "A cloak with a hood, providing anonymity.",
+            AdornmentType = AdornmentType.Cloak,
             SuccessActions = new List<SuccessAction>
             {
                 new SuccessAction
@@ -19,7 +20,7 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
                     Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
                     Range = 0,
-                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
+                    ChallengeModifier = Constants.ChallengeModifier_Difficulty,
                     Tier1 = "While in a crowd, you can accomplish one task, but you also noticed while doing so. The Guide decides on specific details.",
                     Tier2 = "While in a crowd, you can accomplish one task without being noticed.",
                     Tier3 = "While in a crowd, you can accomplish two tasks without being noticed.",

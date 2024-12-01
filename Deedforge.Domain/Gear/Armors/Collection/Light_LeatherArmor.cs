@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -20,7 +20,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Skills = SetterHelper<Skill>.Set(Skills.Acrobatics),
                 ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
                 Range = 0,
-                Tier1 = "You ignore the triggering attack and move 2 hexes, but you trigger Retaliation.",
+                Tier1 = "You ignore the triggering attack and move 2 hexes, but you trigger Opportunity.",
                 Tier2 = "You ignore the triggering attack and move 2 hexes.",
                 Tier3 = "You ignore the triggering attack and move 2 hexes, and the movement doesn't trigger any Reactions.",
                 Tier4 = "You ignore the triggering attack and move 3 hexes, and the movement doesn't trigger any Reactions."

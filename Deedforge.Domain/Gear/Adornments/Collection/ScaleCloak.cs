@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -6,24 +6,25 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
 {
     public partial class Adornments
     {
-        public static Adornment HoodedCloak = new Adornment
+        public static Adornment ScaleCloak = new Adornment
         {
-            Name = "Hooded Cloak",
-            Description = "A cloak with a hood, providing anonymity.",
+            Name = "Scale Cloak",
+            Description = "A cloak made from resilient scales, providing protection from area attacks.",
+            AdornmentType = AdornmentType.Cloak,
             SuccessActions = new List<SuccessAction>
             {
                 new SuccessAction
                 {
-                    Name = "Blend In",
-                    Description = "You can hide in plain sight, making it difficult for others to notice you.",
-                    Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
-                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
+                    Name = "Scale Ward",
+                    Description = "You envelope yourself in a protective barrier of scales, deflecting the damage of an area attack.",
+                    Skills = SetterHelper<Skill>.Set(Skills.Defense, Skills.Acrobatics, Skills.Arcana, Skills.Occultism),
+                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
                     Range = 0,
-                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "While in a crowd, you can accomplish one task, but you also noticed while doing so. The Guide decides on specific details.",
-                    Tier2 = "While in a crowd, you can accomplish one task without being noticed.",
-                    Tier3 = "While in a crowd, you can accomplish two tasks without being noticed.",
-                    Tier4 = "While in a crowd, you can accomplish three tasks without being noticed."
+                    ChallengeModifier = Constants.ChallengeModifier_Difficulty,
+                    Tier1 = "You reduce the damage taken from the deflected attack by 2, but you also become Slowed until the end of your next turn.",
+                    Tier2 = "You reduce the damage taken from the deflected attack by 2.",
+                    Tier3 = "You reduce the damage taken by 4.",
+                    Tier4 = "You reduce the damage taken by 8."
                 },
             }
         };

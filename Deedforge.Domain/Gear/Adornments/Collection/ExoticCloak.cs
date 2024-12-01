@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -6,24 +6,25 @@ namespace Deedforge.Domain.Gear.Adornments.Collection
 {
     public partial class Adornments
     {
-        public static Adornment HoodedCloak = new Adornment
+        public static Adornment ExoticCloak = new Adornment
         {
-            Name = "Hooded Cloak",
-            Description = "A cloak with a hood, providing anonymity.",
+            Name = "Exotic Cloak",
+            Description = "A flamboyant cloak adorned with vibrant feathers, shimmering patterns, and eye-catching embellishments designed to command attention and make a striking visual impact.",
+            AdornmentType = AdornmentType.Cloak,
             SuccessActions = new List<SuccessAction>
             {
                 new SuccessAction
                 {
-                    Name = "Blend In",
-                    Description = "You can hide in plain sight, making it difficult for others to notice you.",
+                    Name = "Distracting Flourish",
+                    Description = "You perform a dramatic display of your cloak, distracting nearby enemies.",
                     Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
-                    Range = 0,
-                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "While in a crowd, you can accomplish one task, but you also noticed while doing so. The Guide decides on specific details.",
-                    Tier2 = "While in a crowd, you can accomplish one task without being noticed.",
-                    Tier3 = "While in a crowd, you can accomplish two tasks without being noticed.",
-                    Tier4 = "While in a crowd, you can accomplish three tasks without being noticed."
+                    Range = 3,
+                    ChallengeModifier = Constants.ChallengeModifier_NumberOfTargets(2),
+                    Tier1 = "You Distract all enemies within range, but you also trigger an Opportunity.",
+                    Tier2 = "You Distract all enemies within range.",
+                    Tier3 = "You Distract and Taunt all enemies within range.",
+                    Tier4 = "You Distract and Taunt all enemies within range. The range is increased to 5 hexes."
                 },
             }
         };

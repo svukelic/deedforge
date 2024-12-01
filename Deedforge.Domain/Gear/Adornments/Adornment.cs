@@ -1,4 +1,4 @@
-using Deedforge.Domain.CoreRules;
+using Deedforge.Domain.AdditionalEntities;
 
 namespace Deedforge.Domain.Gear.Adornments
 {
@@ -6,5 +6,13 @@ namespace Deedforge.Domain.Gear.Adornments
     {
         public required string Name { get; set; }
         public required string Description { get; set; }
+        public required AdornmentType AdornmentType { get; set; }
+    }
+
+    public enum AdornmentType
+    {
+        Belt,
+        Cloak,
+        Jewelry,
     }
 }

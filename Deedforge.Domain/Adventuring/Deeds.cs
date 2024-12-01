@@ -4,11 +4,11 @@ namespace Deedforge.Domain.Adventuring
 {
     public class Deed
     {
-        public string Name { get; set; }
-        public string ImageUrl { get; set; }
-        public string Description { get; set; }
-        public string Reward { get; set; }
-        public List<PrestigeTitle> PrestigeTitles { get; set; }
+        public required string Name { get; set; }
+        public required string ImageUrl { get; set; }
+        public required string Description { get; set; }
+        public required string Reward { get; set; }
+        public required List<PrestigeTitle> PrestigeTitles { get; set; }
     }
 
     public class Deeds

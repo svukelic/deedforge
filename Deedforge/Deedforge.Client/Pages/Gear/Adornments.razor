@@ -1,0 +1,80 @@
+﻿@page "/gear/adornments"
+@using Deedforge.Client.Helpers
+@using Deedforge.Domain.Gear.Adornments
+@using Deedforge.Shared.Compendium
+@using Adornment = Deedforge.Domain.Gear.Adornments.Adornment
+
+<PageTitle>
+    Gear - Adornments
+</PageTitle>
+
+<h1>Adornments</h1>
+
+<br />
+
+<MudText Typo="Typo.body1">Adornments are items worn by characters to provide additional utility. A character can wear only one Adornment, but certain features may grant additional Adornment slots.</MudText>
+
+<br />
+<br />
+
+<MudText Typo="Typo.body1"><b>Adornment Type</b> defines general type of the Adornment.</MudText>
+
+<br />
+<br />
+
+<MudText Typo="Typo.body1"><b>Granted Actions</b> defines which <MudLink Href="/core-rules/actions-reactions">Actions & Reactions</MudLink> are granted to the character carrying the Adornment.</MudText>
+
+<br />
+<br />
+
+<MudDataGrid Items="@Compendium.CompendiumData.Adornments"
+             ReadOnly="true" EditMode="@DataGridEditMode.Cell">
+    <Columns>
+        <HierarchyColumn T="Adornment" ButtonDisabledFunc="@(x => x.SuccessActions is null)" />
+        <PropertyColumn Property="x => x.Name">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Adornment</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                <MudText Typo="Typo.body1"><strong>@context.Item.Name</strong></MudText>
+            </CellTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.Description">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Description</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                <MudText Typo="Typo.body1"><i>@context.Item.Description</i></MudText>
+            </CellTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.AdornmentType">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Adornment Type</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                @context.Item.AdornmentType.ToString()
+            </CellTemplate>
+        </PropertyColumn>
+        <PropertyColumn Property="x => x.SuccessActions">
+            <HeaderTemplate>
+                <MudText Typo="Typo.h6">Granted Actions</MudText>
+            </HeaderTemplate>
+            <CellTemplate>
+                @if (context.Item.SuccessActions != null)
+                {
+                    @MarkupStringHelper.GetStringWithLineBreaks(context.Item.SuccessActions!.Select(s => s.Name).ToList(), true)
+                }
+                else
+                {
+                    <MudText Typo="Typo.body1">-</MudText>
+                }
+            </CellTemplate>
+        </PropertyColumn>
+    </Columns>
+    <ChildRowContent>
+        <Deedforge.Client.Components.SuccessActionsComponent Actions="@context.Item.SuccessActions" />
+    </ChildRowContent>
+    <PagerContent>
+        <MudDataGridPager T="Adornment" />
+    </PagerContent>
+</MudDataGrid>

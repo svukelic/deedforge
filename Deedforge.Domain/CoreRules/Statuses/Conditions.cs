@@ -166,7 +166,7 @@
         {
             Name = "Taunted",
             Description = "The target is driven to assault a specific target.",
-            Effect = "Must attack the taunting creature if able. Lower Hand on Attack checks against other targets."
+            Effect = "Must attack the taunting character if able. Lower Hand on Attack checks against other targets. Lasts until the end of the taunted character's turn."
         };
 
         #endregion

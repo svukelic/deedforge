@@ -1,6 +1,6 @@
-﻿using Deedforge.Domain.CoreRules;
-using Deedforge.Domain.CoreRules.Skills;
+﻿using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
+using Deedforge.Domain.AdditionalEntities;
 
 namespace Deedforge.Domain.Gear.Weapons.Collection
 {

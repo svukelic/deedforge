@@ -1,31 +1,12 @@
-﻿using Deedforge.Domain.CoreRules;
-using Deedforge.Domain.CoreRules.Skills;
-using Deedforge.Domain.Helpers;
-
-namespace Deedforge.Domain.Gear.Adornments.Collection
+﻿namespace Deedforge.Domain.Gear.Adornments.Collection
 {
     public partial class Adornments
     {
-        public static Adornment HoodedCloak = new Adornment
+        public static Adornment BoneNecklace = new Adornment
         {
-            Name = "Hooded Cloak",
-            Description = "A cloak with a hood, providing anonymity.",
-            SuccessActions = new List<SuccessAction>
-            {
-                new SuccessAction
-                {
-                    Name = "Blend In",
-                    Description = "You can hide in plain sight, making it difficult for others to notice you.",
-                    Skills = SetterHelper<Skill>.Set(Skills.Subterfuge),
-                    ActionTypes = SetterHelper<ActionType>.Set(ActionType.Action),
-                    Range = 0,
-                    ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "While in a crowd, you can accomplish one task, but you also noticed while doing so. The Guide decides on specific details.",
-                    Tier2 = "While in a crowd, you can accomplish one task without being noticed.",
-                    Tier3 = "While in a crowd, you can accomplish two tasks without being noticed.",
-                    Tier4 = "While in a crowd, you can accomplish three tasks without being noticed."
-                },
-            }
+            Name = "Bone Necklace",
+            Description = "A necklace made from the bones of various creatures. As an Action, you can remove a bone from the Necklace and make a Knowledge Check. The Check is made with any Skill you choose and is done as if you had Legendary Proficiency in that Skill, but the Check must be about a specific creature type or species. The Necklace can have up to 5 bones, and each bone can be used only once, but you replenish 1 bone every time your Party defeats a Unique foe.",
+            AdornmentType = AdornmentType.Jewelry,
         };
     }
 }

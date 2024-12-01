@@ -1,6 +1,6 @@
-﻿using Deedforge.Domain.CoreRules;
-using Deedforge.Domain.CoreRules.Skills;
+﻿using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
+using Deedforge.Domain.AdditionalEntities;
 
 namespace Deedforge.Domain.Gear.Weapons.Collection
 {
@@ -22,7 +22,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee),
                     Range = 2,
                     ChallengeModifier = Constants.ChallengeModifier_Endurance,
-                    Tier1 = "You deal 1 damage to the target, but you trigger a Retaliation.",
+                    Tier1 = "You deal 1 damage to the target, but you trigger a Opportunity.",
                     Tier2 = "You deal 1 damage to the target.",
                     Tier3 = "You deal 2 damage to the target.",
                     Tier4 = "You deal 3 damage to the target."
@@ -34,7 +34,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     Skills = SetterHelper<Skill>.Set(Skills.PowerWeapons),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee),
                     Range = 1,
-                    Tier1 = "You deal 1 damage to the target and an additional 1 damage if the target is wearing a Heavy armor, but you trigger a Retaliation.",
+                    Tier1 = "You deal 1 damage to the target and an additional 1 damage if the target is wearing a Heavy armor, but you trigger a Opportunity.",
                     Tier2 = "You deal 1 damage to the target and an additional 1 damage if the target is wearing a Heavy armor.",
                     Tier3 = "You deal 1 damage to the target and an additional 3 damage if the target is wearing a Heavy armor.",
                     Tier4 = "You deal 1 damage to the target and an additional 5 damage if the target is wearing a Heavy armor."

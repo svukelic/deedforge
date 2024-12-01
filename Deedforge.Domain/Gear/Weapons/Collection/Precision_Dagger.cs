@@ -1,6 +1,6 @@
-﻿using Deedforge.Domain.CoreRules;
-using Deedforge.Domain.CoreRules.Skills;
+﻿using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
+using Deedforge.Domain.AdditionalEntities;
 
 namespace Deedforge.Domain.Gear.Weapons.Collection
 {
@@ -21,7 +21,7 @@ namespace Deedforge.Domain.Gear.Weapons.Collection
                     Skills = SetterHelper<Skill>.Set(Skills.PrecisionWeapons),
                     ActionTypes = SetterHelper<ActionType>.Set(ActionType.Melee),
                     Range = 1,
-                    Tier1 = "You deal 1 damage to the target, but you trigger a Retaliation. The damage is doubled if you attack while Hidden.",
+                    Tier1 = "You deal 1 damage to the target, but you trigger a Opportunity. The damage is doubled if you attack while Hidden.",
                     Tier2 = "You deal 1 damage to the target. The damage is doubled if you attack while Hidden.",
                     Tier3 = "You deal 2 damage to the target. The damage is doubled if you attack while Hidden.",
                     Tier4 = "You deal 3 damage to the target. The damage is doubled if you attack while Hidden."

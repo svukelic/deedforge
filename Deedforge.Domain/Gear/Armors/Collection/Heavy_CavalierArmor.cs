@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -20,10 +20,10 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Skills = SetterHelper<Skill>.Set(Skills.Defense),
                 ActionTypes = SetterHelper<ActionType>.Set(ActionType.Reaction),
                 Range = 0,
-                Tier1 = "Your mount gains +3 Grit until the start of your next turn, but you also trigger Retaliation.",
+                Tier1 = "Your mount gains +3 Grit until the start of your next turn, but you also trigger Opportunity.",
                 Tier2 = "Your mount gains +3 Grit until the start of your next turn.",
                 Tier3 = "Your mount gains +5 Grit until the start of your next turn.",
-                Tier4 = "Your mount gains +5 Grit until the start of your next turn, and you can make a Retaliation against the target that attacked your mount."
+                Tier4 = "Your mount gains +5 Grit until the start of your next turn, and you can make a Opportunity against the target that attacked your mount."
             }
         };
     }

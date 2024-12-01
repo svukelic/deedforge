@@ -13,6 +13,10 @@ using Deedforge.Domain.CoreRules.ActionsReactions;
 using Action = Deedforge.Domain.CoreRules.ActionsReactions.Action;
 using Deedforge.Domain.CoreRules;
 using Deedforge.Domain.CoreRules.Skills;
+using Deedforge.Domain.Gear.Adornments;
+using Deedforge.Domain.Gear.Adornments.Collection;
+using Deedforge.Domain.CharacterRules.Ancestries;
+using Deedforge.Domain.CharacterRules.Ancestries.Collection;
 
 namespace Deedforge.Shared.Compendium
 {
@@ -22,16 +26,20 @@ namespace Deedforge.Shared.Compendium
             
         private static CompendiumData GetCompendiumData()
         {
+            var allAncestries = GetProperties<Ancestry, Ancestries>();
+
             return new CompendiumData
             {
                 Skills = GetProperties<Skill, Skills>(),
-                Actions = GetProperties<Action, Actions>(),
+                Actions = GetProperties<Action, Actions>().OrderBy(x => x.Name).ToList(),
                 Deeds = GetProperties<Deed, Deeds>(),
-                Boons = GetProperties<Status, Boons>(),
-                Conditions = GetProperties<Status, Conditions>(),
+                Boons = GetProperties<Status, Boons>().OrderBy(x => x.Name).ToList(),
+                Conditions = GetProperties<Status, Conditions>().OrderBy(x => x.Name).ToList(),
                 Scars = GetProperties<Scar, Scars>(),
 
                 Professions = GetProperties<Profession, Professions>().OrderBy(x => x.Order).ToList(),
+                CommonAncestries = allAncestries.Where(x => x.AncestryType == AncestryType.Common).OrderBy(x => x.Order).ToList(),
+                ExoticAncestries = allAncestries.Where(x => x.AncestryType == AncestryType.Exotic).OrderBy(x => x.Order).ToList(),
 
                 Armors = GetProperties<Armor, Armors>().OrderBy(x => x.ArmorType).ThenBy(x => x.Name).ToList(),
                 Shields = GetProperties<Shield, Shields>().OrderBy(x => x.Name).ToList(),
@@ -39,6 +47,9 @@ namespace Deedforge.Shared.Compendium
                     .OrderBy(x => x.Types.FirstOrDefault())
                     .ThenBy(x => x.Name)
                     .ToList(),
+                Adornments = GetProperties<Adornment, Adornments>().OrderBy(x => x.Name).ToList(),
+
+                Dangers = GetProperties<Danger, Dangers>().OrderBy(x => x.Name).ToList(),
             };
         }
 

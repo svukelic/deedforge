@@ -1,4 +1,4 @@
-﻿using Deedforge.Domain.CoreRules;
+﻿using Deedforge.Domain.AdditionalEntities;
 using Deedforge.Domain.CoreRules.Skills;
 using Deedforge.Domain.Helpers;
 
@@ -23,7 +23,7 @@ namespace Deedforge.Domain.Gear.Armors.Collection
                 Tier1 = "You prevent Dazed, Pinned, Prone and Staggered from being applied to you, but you also become Slowed until the end of your next turn.",
                 Tier2 = "You prevent Dazed, Pinned, Prone and Staggered from being applied to you.",
                 Tier3 = "You prevent Dazed, Pinned, Prone and Staggered from being applied to you, and gain immunity to the next instance of Dazed, Pinned, Prone and Staggered that would be applied to you.",
-                Tier4 = "You prevent Dazed, Pinned, Prone and Staggered from being applied to you, and gain immunity to the next instance of Dazed, Pinned, Prone and Staggered that would be applied to you. You also can make a Retaliation against the target that attacked you."
+                Tier4 = "You prevent Dazed, Pinned, Prone and Staggered from being applied to you, and gain immunity to the next instance of Dazed, Pinned, Prone and Staggered that would be applied to you. You also can make a Opportunity against the target that attacked you."
             }
         };
     }
