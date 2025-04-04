@@ -1,4 +1,5 @@
 ﻿@page "/character-creation"
+@using Deedforge.Shared.Compendium
 
 <PageTitle>
     Core Rules - Character Creation
@@ -65,21 +66,39 @@
                 </MudCardContent>
             </MudCard>
 
-            <MudGrid Class="my-2">
-                <MudItem xs="3" Class="d-flex flex-column" Style="height: 100%;">
-                    <Deedforge.Client.Components.NumericCard ValueTitle="Maximum Endurance" DefaultValue="10" />
-                    <Deedforge.Client.Components.NumericCard ValueTitle="Current Endurance" DefaultValue="10" MaxValue="10" />
-                </MudItem>
+            <!-- <MudItem xs="6" Class="d-flex flex-column align-center justify-center mud-width-full py-8"> -->
+            <MudImage Src="https://i.redd.it/uu7edj0kiw3b1.jpg" Fluid="true" Alt="Token" Elevation="25" Class="my-2" />
 
-                <MudItem xs="6" Class="d-flex flex-column align-center justify-center mud-width-full py-8">
-                    <MudImage Src="https://i.redd.it/uu7edj0kiw3b1.jpg" Fluid="true" Alt="Token" Elevation="25" />
-                </MudItem>
-
-                <MudItem xs="3" Class="d-flex flex-column" Style="height: 100%;">
-                    <Deedforge.Client.Components.NumericCard ValueTitle="Grit" DefaultValue="0" />
-                    <Deedforge.Client.Components.NumericCard ValueTitle="Exhaustion" DefaultValue="0" MaxValue="10" />
-                </MudItem>
-            </MudGrid>
+            <MudPaper Class="pa-4 my-2" Elevation="3" Style="background-color: #333;">
+                <MudGrid>
+                    <MudItem xs="12">
+                        <div class="d-flex justify-space-between mb-2">
+                            <MudText Typo="Typo.h6" Color="Color.Surface">HP</MudText>
+                            <MudText Typo="Typo.h6" Color="Color.Surface">@Health/10</MudText>
+                        </div>
+                    </MudItem>
+                    <MudItem xs="12">
+                        <div class="d-flex justify-center">
+                            @for (int i = 0; i < 10; i++)
+                            {
+                                int index = i;
+                                <div class="mx-1 heart-container" @onclick="() => HandleHeartClick(index)">
+                                    @if (i < Health)
+                                    {
+                                        <MudIcon Icon="@Icons.Material.Filled.Favorite" Color="Color.Error" Size="Size.Large"
+                                            Class="heart-icon" />
+                                    }
+                                    else
+                                    {
+                                        <MudIcon Icon="@Icons.Material.Filled.HeartBroken" Color="Color.Default"
+                                            Size="Size.Large" Class="heart-icon grey-heart" />
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </MudItem>
+                </MudGrid>
+            </MudPaper>
 
             <MudGrid Justify="Justify.SpaceBetween" Spacing="2" Class="my-4">
                 <MudItem xs="4">
@@ -163,3 +182,112 @@
         <MudText>Content Disabled</MudText>
     </MudTabPanel>
 </MudTabs>
+
+@code {
+    [Parameter]
+    public int MaxHealth { get; set; } = 10;
+
+    [Parameter]
+    public int Health { get; set; } = 10;
+
+    [Parameter]
+    public EventCallback<int> HealthChanged { get; set; }
+
+    private bool _animating = false;
+
+    // Animation state
+    private int _displayHealth;
+    private int _targetHealth;
+    public required IJSRuntime JS { get; set; }
+    
+    [Inject]
+    public required IJSRuntime JSRuntime { get; set; }
+    
+    private DotNetObjectReference<CharacterCreation>? _dotnetRef;
+
+    protected override void OnInitialized()
+    {
+        _displayHealth = Health;
+        _targetHealth = Health;
+        JS = JSRuntime;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Create reference only once
+            _dotnetRef = DotNetObjectReference.Create(this);
+        }
+    }
+
+    private async Task SetHealth(int newHealth, bool animate)
+    {
+        if (_animating) return;
+        
+        _targetHealth = newHealth;
+        Health = newHealth;
+        await HealthChanged.InvokeAsync(Health);
+        
+        if (animate && Math.Abs(_displayHealth - _targetHealth) > 1)
+        {
+            _animating = true;
+            
+            try
+            {
+                // Use JavaScript interop for smooth animation
+                await JS.InvokeVoidAsync("animateHearts", 
+                    _dotnetRef, 
+                    _displayHealth, 
+                    _targetHealth);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"JS interop error: {ex.Message}");
+                _displayHealth = _targetHealth;
+                _animating = false;
+                StateHasChanged();
+            }
+        }
+        else
+        {
+            _displayHealth = _targetHealth;
+            StateHasChanged();
+        }
+    }
+    
+    [JSInvokable]
+    public void UpdateDisplayHealth(int value)
+    {
+        _displayHealth = value;
+        StateHasChanged();
+        
+        if (_displayHealth == _targetHealth)
+        {
+            _animating = false;
+        }
+    }
+
+    private async Task HandleHeartClick(int index)
+    {
+        // Convert to 1-based for clarity
+        int clickedPosition = index + 1;
+        
+        if (clickedPosition > Health)
+        {
+            // Clicking above current health (healing)
+            await SetHealth(clickedPosition, true);
+        }
+        else
+        {
+            // Clicking below current health (damage)
+            await SetHealth(clickedPosition - 1, true);
+        }
+    }
+
+    public void Dispose()
+    {
+        // Dispose the .NET reference when component is disposed
+        _dotnetRef?.Dispose();
+    }
+}
